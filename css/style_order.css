@@ -1,0 +1,345 @@
+/**
+ * /* reset
+ *
+ * @format
+ */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--primary-color: #51931b;
+	--secondary-color: #ec0a00;
+	--yellow-color: #ebcc07;
+	--blue-color: #326ada;
+	--dark-color: #111;
+	--light-color: #615353;
+}
+body {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+ul {
+	list-style: none;
+}
+/* html {
+	scroll-behavior: smooth;
+} */
+.line-through {
+	text-decoration: line-through;
+}
+.primary-color {
+	color: var(--primary-color);
+}
+.secondary-color {
+	color: var(--secondary-color);
+}
+.yellow-color {
+	color: var(--yellow-color);
+}
+.blue-color {
+	color: var(--blue-color);
+}
+.dark-color {
+	color: var(--dark-color);
+}
+.light-color {
+	color: var(--light-color);
+}
+.primary-bg {
+	background-color: var(--primary-color);
+}
+.light-bg {
+	background-color: var(--light-color);
+	color: #fff;
+}
+.secondary-bg {
+	background-color: var(--secondary-color);
+	transition: all 0.4s ease-in-out;
+	color: #fff;
+}
+.secondary-bg:hover {
+	transform: scale(0.95);
+	color: #fff;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.blue-bg {
+	background-color: var(--blue-color);
+	color: #fff;
+	transition: all 0.4s ease-in-out;
+}
+.blue-bg:hover {
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	transform: scale(1.05);
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+a:hover {
+	color: var(--blue-color);
+}
+a:hover {
+	text-decoration: none;
+}
+/* meal search section */
+#meal-search {
+	margin-top: 60px;
+	background: url("../img/search_food_banner.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+#meal-search .overlay {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#meal-search .title {
+	line-height: 1.8;
+}
+#meal-search main ul {
+	display: flex;
+}
+#meal-search main,
+#meal-search aside {
+	padding-left: 0;
+}
+#meal-search main ul li a,
+#meal-search main ul li .menu-all {
+	display: block;
+	padding: 0.5rem 1.22rem;
+	background-color: #fff;
+	color: #111;
+	border-right: 0.3px solid #999;
+}
+#meal-search main ul li .menu-all {
+	border: none;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+	padding: 0.5rem 1.19rem;
+	cursor: pointer;
+	color: #fff;
+	background-color: var(--primary-color);
+}
+#meal-search main ul li:first-child {
+	position: relative;
+}
+#meal-search main ul li:first-child #more-choice {
+	position: absolute;
+	width: 230px;
+	top: 45px;
+	left: 0;
+	z-index: 1;
+}
+#meal-search main nav.filter-dishes ul li a {
+	padding: 0.5rem 1.435rem;
+}
+#meal-search main ul li:first-child a {
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+#meal-search main ul li:last-child a {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+#meal-search main ul li a:hover {
+	color: #fff;
+	background-color: var(--primary-color);
+}
+#meal-search main ul li a.active {
+	color: #fff;
+	background-color: var(--primary-color);
+}
+#meal-search aside input {
+	width: 250px;
+}
+#meal-search aside input[type="submit"] {
+	display: block;
+	width: 100px;
+}
+#meal-search .search-result .card .img {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+#meal-search .search-result .card .img .view {
+	position: absolute;
+	top: 40%;
+	left: 33%;
+	transition: all 0.4s ease-in-out;
+	transform: translateX(-300px);
+	background-color: #222;
+	color: #fff;
+	padding: 0.2rem 0.6rem;
+	border-radius: 3px;
+	border: 0;
+}
+#meal-search .search-result .card .img .cart {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	transition: all 0.4s ease-in-out;
+	transform: translateY(50px);
+	background-color: rgba(34, 34, 34, 0.863);
+	color: #fff;
+	display: block;
+	width: 100%;
+	padding: 0.4rem 0.5rem;
+	border: 0;
+}
+#meal-search .search-result .card .card-title a:hover {
+	color: var(--blue-color) !important;
+}
+#meal-search .search-result .card .img .cart:hover {
+	background-color: rgba(41, 39, 39, 1);
+}
+#meal-search .search-result .card .img:hover .cart {
+	transform: translateY(0px);
+}
+#meal-search .search-result .card .img:hover .view {
+	transform: translateX(0);
+}
+#meal-search .search-result .card .tag {
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 40px;
+	height: 40px;
+}
+#meal-search .search-result .card img {
+	height: 50%;
+}
+#meal-search .search-result .card {
+	transition: all 0.4s ease-in-out;
+}
+
+#meal-search .search-result .card:hover {
+	border-color: var(--blue-color);
+}
+#meal-search .search-result .card p {
+	margin-bottom: 4px;
+}
+#meal-search .search-result .card .card-body {
+	padding: 8px;
+}
+.skew-line {
+	width: 80px;
+	height: 1px;
+	position: relative;
+	left: -75px;
+	top: -6px;
+	display: inline-block;
+	transform: rotate(-10deg);
+	background-color: #ec0a00;
+}
+#meal-search .dropdown-toggle::after {
+	display: none;
+}
+#meal-search .notification {
+	transition: all 0.5s ease-in-out;
+	transform: scale(0);
+	height: 0;
+}
+#meal-search .results {
+	transition: all 0.5s ease-in-out;
+}
+#meal-search .display-notification {
+	transform: scale(1);
+	margin-bottom: 1rem;
+	height: auto;
+}
+.rotate-circle {
+	transition: all 2 ease-in-out;
+}
+.rotate-circle {
+	animation: rotateCircle 1s linear;
+	animation-iteration-count: 1;
+}
+#meal-search .suggests .grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+#meal-search .suggests .grid a {
+	background-color: #28a746b6;
+	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
+}
+#meal-search #food-detail .list-imgs img:hover {
+	cursor: pointer;
+}
+#meal-search #food-detail .list-imgs img {
+	margin-bottom: 0.44rem;
+}
+#meal-search #food-detail .functions .group {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+#meal-search #food-detail .functions .group button {
+	border: none;
+	color: #444;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 1.8rem;
+}
+#meal-search #food-detail.dish-detail .dish-img {
+	width: 80%;
+}
+#meal-search #food-detail .functions .group button:focus {
+	outline: none;
+}
+#meal-search #food-detail .main-img img {
+	height: 80%;
+}
+#meal-search #food-detail .card-body {
+	padding: 8px;
+}
+@keyframes rotateCircle {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* hot dishes */
+#hot-dishes #hot-dishes-carousel .item {
+	margin-right: 0.3rem;
+}
+#hot-dishes #hot-dishes-carousel .owl-dots {
+	display: none;
+}
+#hot-dishes #hot-dishes-carousel {
+	position: relative;
+}
+#hot-dishes #hot-dishes-carousel .item .card-title a {
+	color: #222;
+}
+#hot-dishes #hot-dishes-carousel .item .card-body {
+	padding: 8px;
+}
+#hot-dishes #hot-dishes-carousel .item p {
+	margin-bottom: 8px !important;
+}
+#hot-dishes .owl-nav button {
+	position: absolute;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	color: #333;
+}
+#hot-dishes .owl-prev {
+	left: -35px;
+	top: 30%;
+}
+#hot-dishes .owl-next {
+	right: -35px;
+	top: 30%;
+}
+#hot-dishes .owl-carousel .owl-nav button span {
+	font-size: 5rem;
+}
+#hot-dishes .container {
+	position: relative;
+}

@@ -1,0 +1,882 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+			integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style_order.css" />
+		<link rel="stylesheet" href="./css/tablets_order.css" />
+		<link rel="stylesheet" href="./css/mobile_order.css" />
+		<link rel="icon" href="icon.ico" />
+		<title>Đặt món ăn | Tìm kiếm</title>
+	</head>
+
+	<body>
+		<!-- main header -->
+
+		<!-- main search and result section -->
+		<section id="meal-search">
+			<div class="overlay">
+				<div class="container p-2">
+					<div class="row py-3">
+						<aside class="search-bar col-lg-3">
+							<form action="" class="form-inline">
+								<input
+									type="text"
+									class="form-control mb-2"
+									placeholder="Món ăn ..."
+									required
+								/>
+								<input
+									type="submit"
+									value="Tìm kiếm"
+									class="form-control btn btn-success primary-bg"
+								/>
+							</form>
+							<div class="suggests mt-3">
+								<div class="grid">
+									<div>
+										<a href="#" class="btn btn-success">Cơm rang mực</a>
+									</div>
+									<div>
+										<a href="#" class="btn btn-success">Vịt om sấu</a>
+									</div>
+									<div>
+										<a href="#" class="btn btn-success">Cơm tấm</a>
+									</div>
+									<div>
+										<a href="#" class="btn btn-success">Lẩu lươn</a>
+									</div>
+									<div>
+										<a href="#" class="btn btn-success">Thịt kho dừa</a>
+									</div>
+									<div>
+										<a href="#" class="btn btn-success">Thịt chó</a>
+									</div>
+									<div>
+										<a href="#" class="btn btn-success">Cá hấp</a>
+									</div>
+									<div>
+										<a href="#" class="btn btn-success">Bún bò Nam Định</a>
+									</div>
+									<div class="more">
+										<button
+											data-toggle="collapse"
+											data-target="#more-food"
+											class="btn btn-success"
+										>
+											<i class="fas fa-plus"></i>
+										</button>
+									</div>
+								</div>
+								<div class="collapse" id="more-food">
+									<div class="grid">
+										<div>
+											<a href="#" class="btn btn-success">Cút lộn xào me</a>
+										</div>
+										<div>
+											<a href="#" class="btn btn-success">Nộm sứa</a>
+										</div>
+										<div>
+											<a href="#" class="btn btn-success">Khoai tây chiên</a>
+										</div>
+										<div>
+											<a href="#" class="btn btn-success">Tôm hùm</a>
+										</div>
+										<div>
+											<a href="#" class="btn btn-success">Ngao hấp</a>
+										</div>
+										<div>
+											<a href="#" class="btn btn-success">Thịt nướng</a>
+										</div>
+										<div>
+											<a href="#" class="btn btn-success">Vịt quay</a>
+										</div>
+										<div>
+											<a href="#" class="btn btn-success">Bắp cải xào</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+						<main class="search-result col-lg-9">
+							<!-- filter navbar -->
+							<nav class="nav-filter filter-dishes">
+								<ul>
+									<li>
+										<a
+											class="menu-all"
+											data-target="#more-choice"
+											data-toggle="collapse"
+										>
+											<i class="fas fa-bars"></i>
+											Tất cả
+										</a>
+										<div class="collapse" id="more-choice">
+											<a href="#">Món mặn</a>
+											<a href="#">Món cay</a>
+											<a href="#">Món nhậu</a>
+											<a href="#">Món nướng</a>
+											<a href="#">Món tráng miệng</a>
+											<a href="#">Đồ uống</a>
+											<a class="" href="#">Món ăn nhanh</a>
+											<a class="" href="#">Món ăn cho bé</a>
+											<a class="" href="#">Món ăn chay</a>
+											<a class="" href="#">Món ăn tiệc</a>
+											<a class="" href="#">Món lẩu</a>
+											<a class="" href="#">Món cỗ</a>
+										</div>
+									</li>
+
+									<li>
+										<a href="#">Món mặn</a>
+									</li>
+									<li>
+										<a href="#">Món cay</a>
+									</li>
+									<li>
+										<a href="#">Món nhậu</a>
+									</li>
+
+									<li>
+										<a href="#">Món nướng</a>
+									</li>
+									<li>
+										<a href="#">Món tráng miệng</a>
+									</li>
+									<li>
+										<a href="#">Đồ uống</a>
+									</li>
+								</ul>
+							</nav>
+							<!-- notification -->
+							<div class="card notification bg-success text-white rounded">
+								<p class="text-center mb-0 p-2">
+									Bạn vừa thêm món
+									<span class="food-type font-weight-bold"
+										>Thịt chó mắm tôm</span
+									>
+									vào giỏ hàng <i class="fas fa-check-circle"></i>
+								</p>
+							</div>
+							<!-- result -->
+							<div class="results bg-white rounded p-2">
+								<div class="row">
+									<div class="food col-lg-4 col-md-6 col-sm-12 mb-2">
+										<div class="card">
+											<div class="img">
+												<img
+													class="card-img-top"
+													src="./img/cheer.jpeg"
+													alt="Moki Thực Phẩm"
+												/>
+												<button
+													class="view"
+													data-toggle="modal"
+													data-target="#food-detail"
+												>
+													<i class="fas fa-eye"></i> Chi tiết
+												</button>
+												<img
+													src="./img/hot-icon.png"
+													class="tag"
+													alt="Hot thực phẩm"
+												/>
+												<button class="cart">
+													<i class="fas fa-cart-plus"></i> Add to cart
+												</button>
+											</div>
+
+											<div class="card-body">
+												<h5 class="card-title">
+													<a href="#" class="text-dark">
+														Cút lộn xào me
+													</a>
+												</h5>
+												<p class="real-price card-text text-secondary">
+													230.000đ <span class="skew-line"></span>
+												</p>
+												<p class="font-weight-bold secondary-color lead">
+													150.541đ/suất
+												</p>
+												<button href="#" class="btn secondary-bg px-4">
+													Đặt món
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="food col-lg-4 col-md-6 col-sm-12 mb-2">
+										<div class="card">
+											<div class="img">
+												<img
+													class="card-img-top"
+													src="./img/cart.jpg"
+													alt="Moki Món ăn"
+												/>
+												<button
+													class="view"
+													data-toggle="modal"
+													data-target="#food-detail"
+												>
+													<i class="fas fa-eye"></i> Chi tiết
+												</button>
+												<img
+													src="./img/hot-icon.png"
+													class="tag"
+													alt="Món ăn hot"
+												/>
+												<button class="cart">
+													<i class="fas fa-cart-plus"></i> Add to cart
+												</button>
+											</div>
+
+											<div class="card-body">
+												<h5 class="card-title">
+													<a href="#" class="text-dark">
+														Lẩu Ba Ba
+													</a>
+												</h5>
+												<p class="real-price card-text text-secondary">
+													230.000đ <span class="skew-line"></span>
+												</p>
+												<p class="font-weight-bold secondary-color lead">
+													150.541đ
+												</p>
+												<button href="#" class="btn secondary-bg px-4">
+													Đặt món
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="food col-lg-4 col-md-6 col-sm-12 mb-2">
+										<div class="card">
+											<div class="img">
+												<img
+													class="card-img-top"
+													src="./img/feast_1.jpg"
+													alt="Moki Món ăn"
+												/>
+												<button
+													class="view"
+													data-toggle="modal"
+													data-target="#food-detail"
+												>
+													<i class="fas fa-eye"></i> Chi tiết
+												</button>
+												<img
+													src="./img/hot-icon.png"
+													class="tag"
+													alt="Món ăn hot"
+												/>
+												<button class="cart">
+													<i class="fas fa-cart-plus"></i> Add to cart
+												</button>
+											</div>
+
+											<div class="card-body">
+												<h5 class="card-title">
+													<a href="#" class="text-dark">
+														Bánh mì pate
+													</a>
+												</h5>
+												<p class="real-price card-text text-secondary">
+													230.000đ <span class="skew-line"></span>
+												</p>
+												<p class="font-weight-bold secondary-color lead">
+													150.541đ
+												</p>
+												<button href="#" class="btn secondary-bg px-4">
+													Đặt món
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="food col-lg-4 col-md-6 col-sm-12 mb-2">
+										<div class="card">
+											<div class="img">
+												<img
+													class="card-img-top"
+													src="./img/meal_3.jpg"
+													alt="Moki Thực Phẩm"
+												/>
+												<button
+													class="view"
+													data-toggle="modal"
+													data-target="#food-detail"
+												>
+													<i class="fas fa-eye"></i> Chi tiết
+												</button>
+												<img
+													src="./img/hot-icon.png"
+													class="tag"
+													alt="Hot thực phẩm"
+												/>
+												<button class="cart">
+													<i class="fas fa-cart-plus"></i> Add to cart
+												</button>
+											</div>
+
+											<div class="card-body">
+												<h5 class="card-title">
+													<a href="#" class="text-dark">
+														Rau muống xào
+													</a>
+												</h5>
+												<p class="real-price card-text text-secondary">
+													230.000đ <span class="skew-line"></span>
+												</p>
+												<p class="font-weight-bold secondary-color lead">
+													150.541đ
+												</p>
+												<button href="#" class="btn secondary-bg px-4">
+													Đặt món
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="food col-lg-4 col-md-6 col-sm-12 mb-2">
+										<div class="card">
+											<div class="img">
+												<img
+													class="card-img-top"
+													src="./img/meal_1.jpg"
+													alt="Moki Thực Phẩm"
+												/>
+												<button
+													class="view"
+													data-toggle="modal"
+													data-target="#food-detail"
+												>
+													<i class="fas fa-eye"></i> Chi tiết
+												</button>
+												<img
+													src="./img/hot-icon.png"
+													class="tag"
+													alt="Hot thực phẩm"
+												/>
+												<button class="cart">
+													<i class="fas fa-cart-plus"></i> Add to cart
+												</button>
+											</div>
+
+											<div class="card-body">
+												<h5 class="card-title">
+													<a href="#" class="text-dark">
+														Lòng lợn tiết canh
+													</a>
+												</h5>
+												<p class="real-price card-text text-secondary">
+													230.000đ <span class="skew-line"></span>
+												</p>
+												<p class="font-weight-bold secondary-color lead">
+													150.541đ
+												</p>
+												<button href="#" class="btn secondary-bg px-4">
+													Đặt món
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="food col-lg-4 col-md-6 col-sm-12 mb-2">
+										<div class="card">
+											<div class="img">
+												<img
+													class="card-img-top"
+													src="./img/meal_2.jpg"
+													alt="Moki Thực Phẩm"
+												/>
+												<button
+													class="view"
+													data-toggle="modal"
+													data-target="#food-detail"
+												>
+													<i class="fas fa-eye"></i> Chi tiết
+												</button>
+												<img
+													src="./img/hot-icon.png"
+													class="tag"
+													alt="Hot thực phẩm"
+												/>
+												<button class="cart">
+													<i class="fas fa-cart-plus"></i> Add to cart
+												</button>
+											</div>
+
+											<div class="card-body">
+												<h5 class="card-title">
+													<a href="#" class="text-dark">
+														Canh cua
+													</a>
+												</h5>
+												<p class="real-price card-text text-secondary">
+													230.000đ <span class="skew-line"></span>
+												</p>
+												<p class="font-weight-bold secondary-color lead">
+													150.541đ
+												</p>
+												<button href="#" class="btn secondary-bg px-4">
+													Đặt món
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="load-more text-center my-3">
+									<a href="#" class="btn blue-bg rounded-pill p-2 px-4 lead">
+										Xem thêm
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="25.072"
+											height="25.176"
+											viewBox="0 0 22.072 22.176"
+										>
+											<path
+												id="ic_autorenew_24px"
+												d="M10.767,5.036V7.457l3.384-3.229L10.767,1V3.422A6.616,6.616,0,0,0,4,9.879a6.19,6.19,0,0,0,1.049,3.439l1.235-1.178a4.567,4.567,0,0,1-.592-2.26A4.967,4.967,0,0,1,10.767,5.036Zm5.718,1.4L15.25,7.619a4.682,4.682,0,0,1,.592,2.26,4.967,4.967,0,0,1-5.075,4.843V12.3L7.384,15.529l3.384,3.229V16.337a6.616,6.616,0,0,0,6.767-6.457A6.19,6.19,0,0,0,16.485,6.44Z"
+												transform="matrix(0.719, 0.695, -0.695, 0.719, 10.153, -3.498)"
+												fill="#f5f7fb"
+											/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</main>
+					</div>
+				</div>
+			</div>
+			<!-- food detail modal -->
+			<div
+				class="modal fade dish-detail"
+				id="food-detail"
+				tabindex="-1"
+				role="dialog"
+				aria-labelledby="foodModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog modal-xl" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal"
+								aria-label="Close"
+							>
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-8">
+										<div class="d-flex">
+											<div>
+												<img
+													src="./img/meal_3.jpg"
+													alt="Món ăn Ngon Moki"
+													class="rounded dish-img mr-1"
+												/>
+											</div>
+
+											<div class="info">
+												<h5 class="font-weight-bold food-name">
+													Vịt quay Vân Đình
+												</h5>
+												<p class="rating">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="30.295"
+														height="30.549"
+														viewBox="0 0 12.295 12.549"
+													>
+														<path
+															id="ic_grade_24px"
+															d="M8.147,12.086l3.8,2.464L10.938,9.906l3.357-3.124-4.42-.4L8.147,2,6.42,6.379,2,6.782,5.357,9.906,4.348,14.549Z"
+															transform="translate(-2 -2)"
+															fill="#d4b90c"
+														/>
+													</svg>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="30.295"
+														height="30.549"
+														viewBox="0 0 12.295 12.549"
+													>
+														<path
+															id="ic_grade_24px"
+															d="M8.147,12.086l3.8,2.464L10.938,9.906l3.357-3.124-4.42-.4L8.147,2,6.42,6.379,2,6.782,5.357,9.906,4.348,14.549Z"
+															transform="translate(-2 -2)"
+															fill="#d4b90c"
+														/>
+													</svg>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="30.295"
+														height="30.549"
+														viewBox="0 0 12.295 12.549"
+													>
+														<path
+															id="ic_grade_24px"
+															d="M8.147,12.086l3.8,2.464L10.938,9.906l3.357-3.124-4.42-.4L8.147,2,6.42,6.379,2,6.782,5.357,9.906,4.348,14.549Z"
+															transform="translate(-2 -2)"
+															fill="#d4b90c"
+														/>
+													</svg>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="30.295"
+														height="30.549"
+														viewBox="0 0 12.295 12.549"
+													>
+														<path
+															id="ic_grade_24px"
+															d="M8.147,12.086l3.8,2.464L10.938,9.906l3.357-3.124-4.42-.4L8.147,2,6.42,6.379,2,6.782,5.357,9.906,4.348,14.549Z"
+															transform="translate(-2 -2)"
+															fill="#d4b90c"
+														/>
+													</svg>
+												</p>
+												<p class="benefits">
+													Công dụng :
+													<span class="detail">
+														Mát gan, đẹp da, bổ mắt ….
+													</span>
+												</p>
+
+												<p class="text-warning small">
+													Khuyến cáo không dùng cho người béo phì
+												</p>
+												<p class="btn secondary-bg px-4">
+													Giảm giá 25%
+												</p>
+												<div
+													class="d-flex justify-content-between align-items-center"
+												>
+													<p
+														class="real-price card-text text-secondary line-through"
+													>
+														230.000đ
+													</p>
+													<p class="lead secondary-color font-weight-bold">
+														120.254đ/l
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 text-center">
+										<p class="lead">
+											Nếu cảm thấy việc nấu ăn quá phức tạp hãy để chúng tôi
+											phục vụ bạn
+										</p>
+										<a href="#" class="btn px-4 secondary-bg"
+											>Mua thực phẩm <i class="fas fa-share-square"></i
+										></a>
+									</div>
+								</div>
+								<div class="">
+									<div class="card">
+										<div class="card-body functions">
+											<div class="group">
+												<button class="function like" title="  Like  ">
+													<i class="fas fa-thumbs-up"></i>
+												</button>
+												<button class="function dislike" title="  Dislike  ">
+													<i class="fas fa-thumbs-down"></i>
+												</button>
+												<button
+													class="function rating"
+													title=" Đánh giá 5 sao  "
+												>
+													<i class="fas fa-star"></i>
+												</button>
+												<button
+													class="function cart"
+													title="  Thêm vào giỏ hàng  "
+												>
+													<i class="fas fa-cart-plus"></i>
+												</button>
+												<button
+													class="function load"
+													title="  Xem thực phẩm thay thế tương tự  "
+												>
+													<i class="fas fa-redo"></i>
+												</button>
+												<button
+													class="function share"
+													title="  Chia sẻ thực phẩm  "
+												>
+													<i class="fas fa-share-alt-square"></i>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-dismiss="modal"
+							>
+								Close
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="hot-dishes" class="py-5">
+			<div class="container">
+				<div class="title text-center">
+					<h3 class="font-weight-bold py-3">
+						Món ăn được nhiểu người chọn nhất trong mùa dịch Corona
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="30"
+							viewBox="0 0 15 21"
+						>
+							<path
+								id="ic_touch_app_24px"
+								d="M9,11.24V7.5a2.5,2.5,0,0,1,5,0v3.74a4.5,4.5,0,1,0-5,0Zm9.84,4.63L14.3,13.61a1.408,1.408,0,0,0-.54-.11H13v-6a1.5,1.5,0,0,0-3,0V18.24l-3.43-.72a1.748,1.748,0,0,0-.24-.03,1.119,1.119,0,0,0-.79.33l-.79.8,4.94,4.94a1.505,1.505,0,0,0,1.06.44h6.79a1.457,1.457,0,0,0,1.44-1.28l.75-5.27a1.437,1.437,0,0,0-.89-1.58Z"
+								transform="translate(-4.75 -3)"
+								fill="#51931b"
+							/>
+						</svg>
+					</h3>
+				</div>
+				<!-- hot dished owl carousel -->
+				<div
+					id="hot-dishes-carousel"
+					class="carousel slide py-3"
+					data-ride="carousel"
+				>
+					<!-- The slideshow -->
+					<div class="owl-carousel owl-theme">
+						<!-- dishes 1 -->
+						<div class="item">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/food_1.jpg"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								<div class="card-body">
+									<h6 class="card-title">
+										<a href="#"> Bánh mì thanh long</a>
+									</h6>
+									<p class="rating text-warning">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
+									<p class="price lead font-weight-bold secondary-color">
+										30.645đ
+									</p>
+
+									<a href="#" class="btn secondary-bg px-4">
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- dishes 2-->
+						<div class="item">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/food_2.jpg"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								<div class="card-body">
+									<h6 class="card-title">
+										<a href="#"> Bún đậu mắm tôm</a>
+									</h6>
+									<p class="rating text-warning">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
+									<p class="price lead font-weight-bold secondary-color">
+										40.645đ
+									</p>
+									<a href="#" class="btn secondary-bg px-4">
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- dishes 3-->
+						<div class="item">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/food_3.jpg"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								<div class="card-body">
+									<h6 class="card-title">
+										<a href="#">Thịt om chuối đậu</a>
+									</h6>
+									<p class="rating text-warning">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
+									<p class="price lead font-weight-bold secondary-color">
+										20.645đ
+									</p>
+									<a href="#" class="btn secondary-bg px-4">
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- dishes 4-->
+						<div class="item">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/food_4.jpg"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								<div class="card-body">
+									<h6 class="card-title">
+										<a href="#">Cút lộn xào me</a>
+									</h6>
+									<p class="rating text-warning">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
+									<p class="price lead font-weight-bold secondary-color">
+										20.645đ
+									</p>
+									<a href="#" class="btn secondary-bg px-4">
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- dishes 5-->
+						<div class="item">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/food_5.jpg"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								<div class="card-body">
+									<h6 class="card-title">
+										<a href="#">Bắp rang bơ</a>
+									</h6>
+									<p class="rating text-warning">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
+									<p class="price lead font-weight-bold secondary-color">
+										50.645đ
+									</p>
+									<a href="#" class="btn secondary-bg px-4">
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- dishes 5-->
+						<div class="item">
+							<div class="card">
+								<a href="#">
+									<img
+										class="card-img-top"
+										src="./img/food_6.jpg"
+										alt="Hotel Mandala"
+									/>
+								</a>
+								<div class="card-body">
+									<h6 class="card-title">
+										<a href="#">Thịt trâu gác bếp</a>
+									</h6>
+									<p class="rating text-warning">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</p>
+									<p class="price lead font-weight-bold secondary-color">
+										50.645đ
+									</p>
+									<a href="#" class="btn secondary-bg px-4">
+										Đặt ngay
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- end -->
+					</div>
+				</div>
+				<!-- end -->
+			</div>
+		</section>
+		<!-- main footer -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+		<script src="./js/add_to_cart_success.js"></script>
+		<script src="./js/toggle_time.js"></script>
+		<script src="./js/dishes_food_owl_carousel.js"></script>
+	</body>
+</html>
