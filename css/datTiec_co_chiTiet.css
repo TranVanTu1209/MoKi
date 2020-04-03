@@ -1,0 +1,55 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+img{
+	width: 100%;
+}
+.l-link{
+	background-color: #D9D9D9;
+}
+.l-link div{
+	padding: 15px 20px;
+}
+.l-link a{
+	color: #000000;
+}
+.l-link a:hover{
+	color: #51931B;
+}
+.l-menu-lg-img{
+	height: 400px;
+}
+.l-sm-img{
+	height: 50px;
+}
+.l-icon i:hover{
+	color: blue;
+	cursor: pointer;
+}
+.l-text-yellow{
+	color: #E5C600;
+}
+.l-text-green{
+	color: #51931B;
+}
+.l-border span{
+	padding: 0 10px;
+}
+.l-border-green{
+	border:1px dashed #51931B;
+}
+.l-text-red{
+	color: #EC0A00;
+}
+.l-menu-btn{
+	background-color: #EC0A00;
+	border: none;
+	padding: 5px 20px;
+	border-radius: 5px;
+}
+.l-no-gutter > [class*='col-'] {
+    margin:0;
+}
+.l-set-lg-img{
+	height: 150px;
+}
