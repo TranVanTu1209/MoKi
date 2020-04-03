@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tạo thực đơn</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/taotdstyle.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+            integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css"
+            integrity="sha256-AjyoyaRtnGVTywKH/Isxxu5PXI0s4CcE0BzPAX83Ppc=" crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <header class="container-fluid">
+            <img id="clickshow" width="50px" height="50px" src="image/logo.png" alt="">
+        </header>
+        <main class="container-fluid">
+            <div class="row">
+                <!-- menu left -->
+                <div class="main_left">
+                    <div class="main_left_logo">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                    <div class="main_left_list">
+                        <ul class="nav flex-column">
+                            <li class="nav-item main_left_logoprf">
+                                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                                    <img src="image/logo.png" alt="">Nguyễn Văn Ngọc
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                                        <path id="ic_receipt_24px"
+                                            d="M18,17H6V15H18Zm0-4H6V11H18Zm0-4H6V7H18ZM3,22l1.5-1.5L6,22l1.5-1.5L9,22l1.5-1.5L12,22l1.5-1.5L15,22l1.5-1.5L18,22l1.5-1.5L21,22V2L19.5,3.5,18,2,16.5,3.5,15,2,13.5,3.5,12,2,10.5,3.5,9,2,7.5,3.5,6,2,4.5,3.5,3,2Z"
+                                            transform="translate(-3 -2)" fill="#51931b" />
+                                    </svg>
+                                    Thực đơn của tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Đặt món</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Mua thực phẩm</a>
+                            </li>
+                            <li class="nav-item main_left_list_search">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Món ăn, thực phẩm..."
+                                    aria-label="Search">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- menu right -->
+                <div class="main_right">
+                    <div class="main_right_list_btn">
+                        <p>Kế hoạch thực đơn, Tháng 4 2020</p>
+                        <nav class=" navbar_main_right_list navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" id="navbar_main_right_list_btn" type="button"
+                                data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <nav class="width-100 navbar_main_right_list navbar navbar-light">
+                                    <div class="">
+                                        <ul class="navbar-nav mr-auto">
+                                            <li class="nav-item">
+                                                <button type="button"
+                                                    class="btn main_right_list_btn_list main_right_btn_active">Cả
+                                                    nhà</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button" class="btn main_right_list_btn_list">Cho
+                                                    bé</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button" class="btn main_right_list_btn_list">Ăn
+                                                    kiêng</button>
+                                            </li>
+                                            <li class="nav-item">
+                                                <button type="button" class="btn main_right_list_btn_list">Người
+                                                    già</button>
+                                            </li>
+                                        </ul>
+                                    </div><br>
+                                    <div style="float: right;" class="">
+                                        <button type="button" class="btn main_right_list_btn_list"><i
+                                                class="fas fa-backward"></i></button>
+                                        <button type="button" class="btn main_right_btn_active">Hôm nay</button>
+                                        <button type="button" class="btn main_right_list_btn_list"><i
+                                                class="far fa-calendar-check"></i></button>
+                                        <button type="button" class="btn main_right_list_btn_list"><i
+                                                class="fas fa-forward"></i></button>
+                                        <button type="button" style="margin-left: 10px;"
+                                            class="btn main_right_btn_active">Ngày</button>
+                                        <button type="button" class="btn main_right_list_btn_list">Tháng</button>
+                                    </div>
+                                </nav>
+
+                            </div>
+                        </nav>
+                        <div class="navbar_main_right_list_day">
+                            <a class="navbar-brand">Chủ nhật</a><br>
+                            <i class="fas fa-calendar-day"></i>
+                            <span class="navbar_main_right_list_today">15</span>
+                        </div>
+                        <div id="main_right_main">
+                            <div class="container main_right_container">
+                                <h5 class="main_right_container_title">Bạn chưa có kế hoạch cho hôm nay?</h5>
+                                <div class="main_right_container_listbtn">
+                                    <button type="button" id="taorand" class="btn main_right_btn_active"><a href="setmenu.html"><i class="fas fa-sync-alt"></i>
+                                    Tạo ngẫu nhiên</a></button>
+                                    <button type="button" class="btn main_right_btn_active"><i class="far fa-copy"></i>
+                                        Lấy
+                                        từ ngày trước</button>
+                                    <button type="button" class="btn main_right_btn_active"><i
+                                            class="fas fa-plus-circle"></i> Tạo menu mới</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="container-fluid">
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+            </script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+        <script src="script/taotdscript.js"></script>
+    </body>
+
+</html>
