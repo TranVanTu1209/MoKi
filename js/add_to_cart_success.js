@@ -19,4 +19,4 @@ $('#meal-search .results .load-more a').on('click', (e) => {
     $('#meal-search .results .load-more a svg').removeClass('rotate-circle');
   }, 1000);
   e.preventDefault();
-})
+});
