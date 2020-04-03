@@ -3,27 +3,10 @@
 @media (max-width: 1024px) {
 	#meal-search main nav.filter-dishes ul li a {
 		font-size: small;
-		padding: 0.5rem 1.29rem;
+		padding: 0.5rem 1.252rem;
 	}
 	#meal-search main nav.filter-food ul li a {
 		font-size: small;
-		padding: 0.5rem 1.14rem;
-	}
-	#meal-search #food-detail .skew-line {
-		left: -6px;
-		top: -25px;
-	}
-}
-@media (max-width: 768px) {
-	#meal-search #food-detail .list-imgs {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-	}
-	#meal-search .search-bar input[type="text"] {
-		margin-bottom: 0 !important;
-	}
-	#meal-search #food-detail .skew-line {
-		left: -75px;
-		top: -6px;
+		padding: 0.5rem 0.9rem;
 	}
 }

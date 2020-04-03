@@ -8,11 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
     integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
-    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
   <link rel="stylesheet" href="./css/style_order.css">
   <link rel="stylesheet" href="./css/tablets_order.css">
   <link rel="stylesheet" href="./css/mobile_order.css">
@@ -30,8 +25,8 @@
         <div class="row py-3">
           <aside class="search-bar col-lg-3">
             <form action="" class="form-inline">
-              <input type="text" class="form-control mb-2" placeholder="Thực phẩm ..." required>
-              <input type="submit" value="Tìm kiếm" class="form-control btn btn-success primary-bg">
+              <input type="text" class="form-control" placeholder="Thực phẩm ..." required>
+              <input type="submit" value="Tìm kiếm" class="form-control btn btn-success mt-3 primary-bg">
             </form>
             <div class="suggests mt-3">
               <div class="grid">
@@ -102,16 +97,16 @@
 
                 <li>
                   <a class="menu-all text-center" data-target="#more-choice" data-toggle="collapse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
+                      <path id="ic_view_list_24px"
+                        d="M4,14H8V10H4Zm0,5H8V15H4ZM4,9H8V5H4Zm5,5H21V10H9Zm0,5H21V15H9ZM9,5V9H21V5Z"
+                        transform="translate(-4 -5)" fill="#fefefe" />
+                    </svg>
 
-                    <i class="fas fa-bars"></i>
 
                     Tất cả
                   </a>
                   <div class="collapse" id="more-choice">
-                    <a href="#">Thực phẩm bán chạy</a>
-                    <a href="#">Thực phẩm giảm giá</a>
-                    <a href="#">Thực phẩm mới</a>
-                    <a href="#">Thực phẩm được ưa thích</a>
                     <a class="" href="#">Thực phẩm bán chạy</a>
                     <a class="" href="#">Thực phẩm giàu vitamin</a>
                     <a class="" href="#">Thực phẩm cho bé</a>
@@ -356,8 +351,8 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-lg-1"></div>
-              <div class="col-lg-1 extra-imgs">
+              <div class="col-md-1"></div>
+              <div class="col-md-1 extra-imgs">
                 <div class="list-imgs">
                   <div class="card">
                     <img src="./img/food_detail_1.jpg" class="card-img-top" alt="Thực phẩm Moki">
@@ -377,7 +372,7 @@
 
                 </div>
               </div>
-              <div class="col-lg-5 main-img">
+              <div class="col-md-5 main-img">
                 <div class="card">
                   <img src="./img/oil_food.jpg" class="card-img-top" alt="Thực phẩm Moki">
                   <div class="card-body functions">
@@ -404,7 +399,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 info">
+              <div class="col-md-4 info">
                 <h5 class="font-weight-bold food-name">
                   Dầu vừng Nghệ An
                 </h5>
@@ -448,199 +443,14 @@
       </div>
     </div>
   </section>
-  <section id="hot-dishes" class="py-5 hot-food">
-    <div class="container">
-      <div class="title text-center">
-        <h3 class="font-weight-bold py-3">Thực phẩm được nhiểu người chọn nhất trong mùa dịch Corona <svg
-            xmlns="http://www.w3.org/2000/svg" width="20" height="30" viewBox="0 0 15 21">
-            <path id="ic_touch_app_24px"
-              d="M9,11.24V7.5a2.5,2.5,0,0,1,5,0v3.74a4.5,4.5,0,1,0-5,0Zm9.84,4.63L14.3,13.61a1.408,1.408,0,0,0-.54-.11H13v-6a1.5,1.5,0,0,0-3,0V18.24l-3.43-.72a1.748,1.748,0,0,0-.24-.03,1.119,1.119,0,0,0-.79.33l-.79.8,4.94,4.94a1.505,1.505,0,0,0,1.06.44h6.79a1.457,1.457,0,0,0,1.44-1.28l.75-5.27a1.437,1.437,0,0,0-.89-1.58Z"
-              transform="translate(-4.75 -3)" fill="#51931b" />
-          </svg>
-        </h3>
-      </div>
-      <!-- hot dished owl carousel -->
-      <div id="hot-dishes-carousel" class="carousel slide py-3" data-ride="carousel">
-        <!-- The slideshow -->
-        <div class="owl-carousel owl-theme">
-          <!-- dishes 1 -->
-          <div class="item">
-            <div class="card">
-              <a href="#">
-                <img class="card-img-top" src="./img/food_1.jpg" alt="Hotel Mandala" />
-              </a>
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="#"> Thịt ba chỉ</a>
-                </h6>
-                <p class="rating text-warning">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </p>
-                <p class="price lead font-weight-bold secondary-color">
-                  30.645đ
-                </p>
 
-                <a href="#" class="btn secondary-bg px-4">
-                  Đặt ngay
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- dishes 2-->
-          <div class="item">
-            <div class="card">
-              <a href="#">
-                <img class="card-img-top" src="./img/food_2.jpg" alt="Hotel Mandala" />
-              </a>
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="#"> Tôm hùm</a>
-                </h6>
-                <p class="rating text-warning">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </p>
-                <p class="price lead font-weight-bold secondary-color">
-                  40.645đ
-                </p>
-                <a href="#" class="btn secondary-bg px-4">
-                  Đặt ngay
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- dishes 3-->
-          <div class="item">
-            <div class="card">
-              <a href="#">
-                <img class="card-img-top" src="./img/food_3.jpg" alt="Hotel Mandala" />
-              </a>
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="#">Bào Ngư</a>
-                </h6>
-                <p class="rating text-warning">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </p>
-                <p class="price lead font-weight-bold secondary-color">
-                  20.645đ
-                </p>
-                <a href="#" class="btn secondary-bg px-4">
-                  Đặt ngay
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- dishes 4-->
-          <div class="item">
-            <div class="card">
-              <a href="#">
-                <img class="card-img-top" src="./img/food_4.jpg" alt="Hotel Mandala" />
-              </a>
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="#">Cút lộn xào me</a>
-                </h6>
-                <p class="rating text-warning">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </p>
-                <p class="price lead font-weight-bold secondary-color">
-                  20.645đ
-                </p>
-                <a href="#" class="btn secondary-bg px-4">
-                  Đặt ngay
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- dishes 5-->
-          <div class="item">
-            <div class="card">
-              <a href="#">
-                <img class="card-img-top" src="./img/food_5.jpg" alt="Hotel Mandala" />
-              </a>
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="#">Bắp rang bơ</a>
-                </h6>
-                <p class="rating text-warning">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </p>
-                <p class="price lead font-weight-bold secondary-color">
-                  50.645đ
-                </p>
-                <a href="#" class="btn secondary-bg px-4">
-                  Đặt ngay
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- dishes 5-->
-          <div class="item">
-            <div class="card">
-              <a href="#">
-                <img class="card-img-top" src="./img/food_6.jpg" alt="Hotel Mandala" />
-              </a>
-              <div class="card-body">
-                <h6 class="card-title">
-                  <a href="#">Thịt trâu gác bếp</a>
-                </h6>
-                <p class="rating text-warning">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </p>
-                <p class="price lead font-weight-bold secondary-color">
-                  50.645đ
-                </p>
-                <a href="#" class="btn secondary-bg px-4">
-                  Đặt ngay
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- end -->
-
-
-        </div>
-
-
-      </div>
-      <!-- end -->
-    </div>
-  </section>
   <!-- main footer -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-
   <script src="./js/add_to_cart_success.js"></script>
   <script src="./js/toggle_time.js"></script>
-  <script src="./js/dishes_food_owl_carousel.js"></script>
 </body>
 
 </html>
