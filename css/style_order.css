@@ -87,7 +87,7 @@ a:hover {
 }
 /* meal search section */
 #meal-search {
-	/* margin-top: 60px; */
+	margin-top: 60px;
 	background: url("../img/search_food_banner.jpg");
 	background-position: center;
 	background-size: cover;
