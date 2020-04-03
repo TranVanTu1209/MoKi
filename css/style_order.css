@@ -286,6 +286,40 @@ a:hover {
 #meal-search #food-detail.dish-detail .dish-img {
 	width: 80%;
 }
+#meal-search #food-detail.dish-detail .info p {
+	margin-bottom: 8px;
+}
+#meal-search #food-detail.dish-detail .dish-recipe .ingredients img {
+	width: 80%;
+}
+#meal-search #food-detail.dish-detail .dish-recipe .ingredients .ingredient {
+	margin-bottom: 0.5rem;
+}
+#meal-search #food-detail.dish-detail .dish-recipe .recipe .steps .step {
+	line-height: 1.9;
+	margin-bottom: 1rem;
+}
+#meal-search
+	#food-detail.dish-detail
+	.dish-recipe
+	.recipe
+	.steps
+	.step
+	.step-number {
+	background-color: #51931b;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	line-height: 16px;
+	padding: 0.5rem;
+	text-align: center;
+	border-radius: 50%;
+}
+#meal-search #food-detail.dish-detail .dish-recipe #amount {
+	width: 4rem;
+	margin-left: 1rem;
+}
 #meal-search #food-detail .functions .group button:focus {
 	outline: none;
 }

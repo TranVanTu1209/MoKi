@@ -13,7 +13,7 @@ header .hotline{
 	box-sizing: border-box;
 }
 header .hotline .follow{
-	color #fff;
+	color: #fff;
 	float: left;
 }
 header .hotline .follow li {
