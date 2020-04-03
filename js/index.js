@@ -1,10 +1,12 @@
-	$(document).ready(function() {
+	// --------------header---------------
+  $(document).ready(function() {
 		$('.menu-mobile').click(function(event) {
 			/* Act on the event */
 			$('#top-menu-nav').toggleClass('open');
 			document.querySelector(".menu-mobile").classList.toggle("open");
 		});
 	});
+  // --------------het header---------------
 $('.slick-banner').slick({
  dots: true,
   dotsClass: "dot-slick",
@@ -32,7 +34,6 @@ $('.slick-banner').slick({
 $('.slick-product').slick({
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 3,
    prevArrow: '<a type="button" class="left carousel-control"><i class="fa fa-angle-left"></i></a>',
    nextArrow: '<a type="button" class="right carousel-control"><i class="fa fa-angle-right"></i></a>',
 
@@ -63,12 +64,18 @@ $('.slick-product').slick({
     // instead of a settings object
   ]
 });
+$(function() {
+  $('.toggle-menu').click(function(event) {
+  /* Act on the event */
+  $(this).next().slideToggle();
+});
+});
 
-//slick-doi-tac
+// ---------footer------------
+//slick-doi-tac 
 $('.slick-doi-tac').slick({
   infinite: true,
   slidesToShow: 5,
-  slidesToScroll: 5,
    dots: true,
         infinite: true,
          responsive: [
@@ -100,9 +107,3 @@ $('.slick-doi-tac').slick({
 });
 
 
-$(function() {
-	$('.toggle-menu').click(function(event) {
-	/* Act on the event */
-	$(this).next().slideToggle();
-});
-});

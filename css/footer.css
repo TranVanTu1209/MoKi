@@ -1,0 +1,99 @@
+/* /////////////////phan chung footer///////////////////////////////*/
+ /*   ========đối tac-==========*/
+ .doi-tac .title{
+ 	text-align: center;
+ 	margin : 50px 0;
+ }
+ .doi-tac .title h3{
+ 	font-size: 30px;
+ 	color: #51931B;
+ 	font-weight: bold;
+ 	text-transform: uppercase;
+ }
+ .doi-tac {
+ 	text-align: center;
+ 	display: flex;
+ 	justify-content: space-evenly;
+ 	margin-bottom: 50px;
+ }
+ .doi-tac img{
+ 	margin-right: 60px;
+ 	margin-bottom: 30px
+ }
+ .slick-prev:before,
+ .slick-next:before {
+ 	color: white;
+ 	font-size: 14px !important;
+ 	padding: 5px !important;;
+ 	border-radius: 50% !important;;
+ 	background: red !important;;
+ }
+
+ /*///////footer*/
+ footer{
+ 	background: url('../image/bg-footer.jpeg') ;
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+ 	padding-top: 40px;
+ 	position:relative;
+ 	color: rgb(248, 248, 248);
+ }
+ footer:before{	
+ 	width: 100%;
+ 	height: 100%;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	background-color: rgba(0, 0, 0, 0.5);
+ 	content: '';
+ }
+ footer .follow li {
+ 	display: inline-block;
+ 	margin: 0 3px;
+ }
+ footer .follow li a {
+ 	width: 30px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	border-radius: 50%;
+ 	background: #fff;
+ 	border: 1px solid #fff;
+ 	text-align: center;
+ 	display: inline-block;
+ 	font-size: 14px;
+ 	transition: all .5s;
+ }
+ footer .follow li a i{
+ 	color: #51931B;
+ 	font-size: 15px;
+ }
+ footer .follow li a:hover{
+ 	background: #51931B;
+ }
+ footer .follow li a:hover i{
+ 	color: #fff;
+ }
+ footer .title{
+ 	color: #fff;
+ 	text-transform: uppercase;
+ 	font-weight: bold;
+ 	font-size: 18px
+ }
+ footer ul{
+ 	list-style: none;
+ }
+ footer ul li{
+ 	margin-top: 15px
+ }
+ footer ul a{
+ 	color: rgb(248, 248, 248);
+ }
+ footer ul a:hover{
+ 	color: #51931B;
+ }
+ .view-all{
+ 	margin-top: 10px
+ }
+ .view-all a{
+ 	font-size: 13px
+ }

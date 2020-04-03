@@ -13,7 +13,7 @@ header .hotline{
 	box-sizing: border-box;
 }
 header .hotline .follow{
-	color: #fff;
+	color #fff;
 	float: left;
 }
 header .hotline .follow li {
@@ -46,7 +46,7 @@ header .hotline .follow li a:hover i{
 
 
 header .hotline .my-hotline{
-	font-size: 18px;
+	font-size: 16px;
 	float: right;
 }
 header .hotline .my-hotline li {
@@ -58,6 +58,7 @@ header .hotline .my-hotline li:nth-child(even){
 header .hotline .my-hotline li a {
 	font-weight: bold;
 	color: #fff;
+	padding-top: 5px;
 	text-align: center;
 	display: inline-block;
 	transition: all .5s;
@@ -538,9 +539,10 @@ header .nav-menu .cart .count{
  .category-food  .active a{
  	color: #51931B
  }
- .category-food li a i {
- 	padding-left: 61px;
- 	margin-right: 0px;
+ .category-food .menu-child a i {
+	position: absolute;
+	right:20px;
+	padding-top: 2px;
  }
  .category-food  .menu-child ul{
 
@@ -552,11 +554,19 @@ header .nav-menu .cart .count{
  	z-index: 1000;
 
  }
- .menu-child ul li a{
- 	padding-right: 70px;
- 	padding-left: 10px;
- 	line-height: 20px;
+ .menu-child a{
+ 	 	color: #000;
+ }
 
+  .menu-child ul li{
+  }
+ .menu-child ul li a{
+ 	color: #000;
+ 	line-height: 40px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+	padding-left: 10px;
+ 	padding-right: 42px;
  }
  .category-food  .menu-child:hover ul{
  	display: block;
@@ -703,6 +713,7 @@ transform: translateY(50px);
  .banner-food .create-menu {
  	border: none;
  }
+/* /////////////////phan chung footer///////////////////////////////*/
  /*   ========đối tac-==========*/
  .doi-tac .title{
  	text-align: center;
