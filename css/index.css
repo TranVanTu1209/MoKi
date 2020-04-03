@@ -619,7 +619,7 @@ header .nav-menu .cart .count{
  .danh-sach-food  .product .action-product .favourite a:hover{
  	color: #EC0A00;
  }
- .danh-sach-food  .product .image:hover .action-product{
+ .danh-sach-food  .product .img:hover .action-product{
 	  opacity: 1;
 	   transform: translateX(0px);
     transition: all 0.5s ease-in-out;
@@ -661,7 +661,7 @@ transform: translateY(50px);
  .danh-sach-food  .product .add-cart a span{
  	padding-left: 30px;
  }
- .danh-sach-food  .product .image:hover .add-cart a{
+ .danh-sach-food  .product .img:hover .add-cart a{
  	transform: translateY(0px);
  	 opacity: 1;
  	 transition: all 0.5s ease-in-out;
@@ -746,7 +746,7 @@ transform: translateY(50px);
 
  /*///////footer*/
  footer{
- 	background: url('../image/bg-footer.jpeg') ;
+ 	background: url('../img/bg-footer.jpeg') ;
  	background-size: cover;
  	background-repeat: no-repeat;
  	padding-top: 40px;
