@@ -1,0 +1,344 @@
+/** @format */
+
+.content .img-header {
+	width: 100%;
+}
+.content .breadcrumb-item + .breadcrumb-item::before {
+	content: "/";
+}
+.payment-header .cart .active i {
+	color: #51931b;
+}
+
+.content .breadcrumb {
+	background: transparent;
+}
+.content .breadcrumb-item a {
+	color: #000;
+}
+.content .breadcrumb-item a:hover {
+	text-decoration: none;
+}
+.content .custom-select {
+	position: relative;
+	font-family: Arial;
+	border: none;
+	background: none;
+	margin-bottom: 30px;
+	padding: 0px;
+	width: 100%;
+}
+.content .career-units {
+	margin-top: 10px;
+}
+.content .custom-select select {
+	display: none;
+	/*hide original SELECT element:*/
+}
+.content .select-selected {
+	background-color: #fff;
+	color: #474742b8 !important;
+	width: 100%;
+	display: block;
+	position: absolute;
+	border: none !important;
+	cursor: pointer;
+	padding: 5px 16px;
+	-webkit-user-select: none;
+	user-select: none;
+	border-radius: 5px;
+}
+.content .select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #000 transparent transparent transparent;
+}
+.content .select-selected.select-arrow-active:after {
+	border-color: transparent transparent #000 transparent;
+	top: 7px;
+}
+.content .select-items div,
+.content .select-selected {
+	color: #474742b8;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+	transition: 0.2s;
+}
+.content .select-items {
+	position: absolute;
+	background: #d2d4d2;
+	top: 100%;
+	left: 0px;
+	right: 0px;
+	z-index: 99;
+}
+.content .select-hide {
+	display: none;
+}
+.content .select-items div:hover,
+.content .same-as-selected {
+	background: #fff;
+	color: #000;
+}
+.content form {
+	background: #81869145;
+	padding: 20px;
+}
+.content form input[type="submit"] {
+	background-color: #ec0a00;
+}
+.content form .title-text h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+.content form .title-text p.small {
+	font-size: 0.7rem;
+	padding-bottom: 10px;
+}
+.content form .title-text h3 span {
+	color: #ec0a00;
+}
+.content form .title-text input {
+	width: 100%;
+	border: none;
+	padding: 8px 10px;
+	margin-bottom: 20px;
+	outline: none;
+	border-radius: 5px;
+}
+.content form .title-text .fa {
+	position: absolute;
+	right: 22px;
+	top: 12px;
+	font-size: 20px;
+}
+.content form .title-text .note {
+	padding-bottom: 50px;
+}
+.content form .submit {
+	margin: 10px 0px;
+}
+.content form .submit a {
+	padding: 10px 30px;
+	background: #326ada;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	transition: 0.2s;
+}
+.content form .submit a:hover {
+	text-decoration: none;
+	background: #1152d6;
+}
+.content .choose-payments {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 85px;
+	margin-bottom: 30px;
+}
+.content .envelop {
+	display: flex;
+	justify-content: space-around;
+}
+.content .envelop .item {
+	display: inline-block;
+	max-width: 160px;
+	height: 170px;
+	border: 1px solid #a9a9a9;
+	text-align: center;
+	margin-right: 5px;
+	transition: 0.3s all ease-in-out;
+}
+
+.content .envelop .item:focus {
+	outline: none;
+}
+.content .envelop .item button {
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+.content .envelop .item img {
+	margin-top: 10px;
+	width: 100px;
+	height: 90px;
+}
+.content .envelop .item .text {
+	padding: 10px;
+	font-size: 13px;
+}
+.content .envelop .item .text p {
+	color: #000;
+	font-weight: bold;
+}
+.content .envelop .item a:hover {
+	text-decoration: none;
+}
+
+.content .title-text h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.content table {
+	border-bottom: 1px solid #bbbdbf;
+	margin-bottom: 30px;
+}
+.content table thead th {
+	font-size: 14px;
+}
+.content table tbody img {
+	width: 80px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.content .related-info {
+	margin-bottom: 10px;
+}
+.content .related-info .text-left {
+	display: inline-block;
+}
+.content .related-info .text-left input {
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+}
+.content .related-info .text-right {
+	display: inline-block;
+	right: 20px;
+	position: absolute;
+}
+.content .related-info .text-right button {
+	border: none;
+	background: #ec0a00;
+	padding: 10px 20px;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: bold;
+}
+.content .related-info p {
+	color: #070707;
+}
+.content .receiver {
+	/* border: 1px solid #1b1f17; */
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px grey, -2px -2px 2px grey;
+}
+.content .receiver .accepter {
+	font-weight: bold;
+}
+.content .receiver .sumpay {
+	color: red;
+}
+.content .receiver .final {
+	padding-top: 22px;
+	margin-top: 23px;
+	border-top: 1px solid #707070;
+	margin-bottom: 30px;
+}
+.content .receiver a {
+	padding: 8px 30px;
+	background: #ec0a00;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	transition: 0.2s;
+}
+.content .receiver .cancel {
+	background: #707070;
+}
+.content .receiver a:hover {
+	text-decoration: none;
+	background: #ec0a00;
+}
+.content .receiver .pay {
+	float: left;
+}
+.content .modal-body {
+	padding: 40px;
+}
+.content .modal-body input {
+	width: 100%;
+	padding: 8px 10px;
+	outline: none;
+}
+.content .modal-body p {
+	color: blue;
+	text-align: left;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.content .modal-body a {
+	text-align: right;
+	display: block;
+	margin-top: 20px;
+	color: #326ada;
+	font-weight: bold;
+}
+/* cart */
+.cart-items .table img {
+	width: 80px;
+}
+.cart-items .table .amount input {
+	width: 140px;
+}
+.cart-items .table button:focus {
+	outline: none;
+}
+#more-info-dish form .choice {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+.apply-code-notification {
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+}
+.apply-code-notification.show {
+	transform: scale(1);
+}
+@media all and (max-width: 767px) {
+	.content .your-order {
+		margin-top: 50px;
+	}
+}
+@media all and (max-width: 600px) {
+	.cart-items .container {
+		padding: 1rem 0 !important;
+	}
+	.cart-items .container table {
+		font-size: 0.7rem;
+	}
+	.cart-items .table .amount input {
+		width: 60px;
+	}
+}
+@media(max-width: 414px) {
+	.cart-items table img {
+		display: none;
+	}
+}
+@media all and (max-width: 390px) {
+	.content .related-info .text-right button {
+		padding: 11px 5px;
+	}
+
+	.content .related-info .text-right {
+		right: 5px;
+	}
+
+	.content .receiver .pay {
+		margin-bottom: 30px;
+	}
+}

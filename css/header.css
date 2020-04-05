@@ -1,19 +1,12 @@
-*{
-	margin: 0;
-	padding: 0;
-	font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-body{
-	background:   rgb(248, 248, 248) !important;
-}
-header .hotline{
+/** @format */
+
+header .hotline {
 	padding-top: 10px;
-	background: #51931B;
-	
+	background: #51931b;
 	box-sizing: border-box;
 }
-header .hotline .follow{
-	color #fff;
+header .hotline .follow {
+	color: #fff;
 	float: left;
 }
 header .hotline .follow li {
@@ -30,29 +23,28 @@ header .hotline .follow li a {
 	text-align: center;
 	display: inline-block;
 	font-size: 14px;
-	transition: all .5s;
+	transition: all 0.5s;
 }
-header .hotline .follow li a i{
-	color: #51931B;
+header .hotline .follow li a i {
+	color: #51931b;
 	font-size: 15px;
 }
 
-header .hotline .follow li a:hover{
-	background: #51931B;
+header .hotline .follow li a:hover {
+	background: #51931b;
 }
-header .hotline .follow li a:hover i{
+header .hotline .follow li a:hover i {
 	color: #fff;
 }
 
-
-header .hotline .my-hotline{
+header .hotline .my-hotline {
 	font-size: 16px;
 	float: right;
 }
 header .hotline .my-hotline li {
 	display: inline-block;
 }
-header .hotline .my-hotline li:nth-child(even){
+header .hotline .my-hotline li:nth-child(even) {
 	margin: 0 30px;
 }
 header .hotline .my-hotline li a {
@@ -61,25 +53,30 @@ header .hotline .my-hotline li a {
 	padding-top: 5px;
 	text-align: center;
 	display: inline-block;
-	transition: all .5s;
+	transition: all 0.5s;
 }
-header .hotline .my-hotline li a i{
+header .hotline .my-hotline li a i {
 	padding-right: 5px;
-	font-size: 20px
+	font-size: 20px;
 }
-header .hotline .my-hotline li select{
-	background: #51931B;
-	border: 1px solid #51931B;
+header .hotline .my-hotline li select {
+	background: #51931b;
+	border: 1px solid #51931b;
+	cursor: pointer;
 	color: #fff;
 	font-weight: bold;
 }
-header .hotline .my-hotline li select option{
+header .hotline .my-hotline li select:focus {
+	outline: none;
+}
+header .hotline .my-hotline li select option {
 	color: #fff;
 	font-weight: bold;
+	cursor: pointer !important;
 }
 /*==========het-hotline=========*/
-header .menu-top{
-	background:   rgb(248, 248, 248);
+header .menu-top {
+	background: rgb(248, 248, 248);
 }
 header .nav-menu {
 	height: 5rem;
@@ -88,7 +85,7 @@ header .nav-menu {
 	text-transform: uppercase;
 	/* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2); */
 }
-header .nav-menu .logo{
+header .nav-menu .logo {
 	margin-top: -37px;
 	margin-left: -10px;
 }
@@ -97,7 +94,7 @@ header .nav-menu ul {
 	justify-content: space-evenly;
 	list-style: none;
 	margin-right: -20px;
-	margin-left : -20px;
+	margin-left: -20px;
 }
 header .nav-menu .nav-link {
 	font-weight: bold;
@@ -105,36 +102,47 @@ header .nav-menu .nav-link {
 	font-weight: 600;
 	padding: 0 10px;
 	display: block;
-	color: #EC0A00;
+	color: #ec0a00;
 	position: relative;
-	transition: all 0.5s;
+	transition: all 0.4s ease-in-out;
 }
-header .nav-menu .active{
-	color: #51931B;
+header .nav-menu .nav-link:hover {
+	color: #51931b;
 }
-header .nav-menu .login{
+header .nav-menu .active {
+	color: #51931b;
+}
+header .nav-menu .login {
 	font-weight: bold;
-	background:#51931B;
-	padding: 8px 40px ;
+	background: #51931b;
+	padding: 6px 18px;
 	color: #fff;
-	border-radius: 40px
-
+	border-radius: 40px;
 }
-header .nav-menu .cart{
+header .nav-menu .cart {
 	position: relative;
 }
-header .nav-menu .cart i{
+header .nav-menu .cart i {
 	font-size: 30px;
 	margin-top: 25px;
 	margin-left: 15px;
-	color: #EC0A00;
+	color: #ec0a00;
 }
-header .nav-menu .cart .count{
+header .nav-menu .cart .count {
 	position: absolute;
 	top: 15px;
 	left: 40px;
-	background:#EC0A00; 
+	background: #ec0a00;
 	border-radius: 50%;
-	padding: .25em .5em;
+	padding: 0.25em 0.5em;
 }
-/*=====menu-header==========*/
+@media (max-width: 767px) {
+	header .logo img {
+		/* height: 100px; */
+		position: relative;
+		top: -37px;
+	}
+	header .col-xs-12.col-sm-12.col-md-2.col-lg-2 {
+		height: 0;
+	}
+}

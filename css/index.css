@@ -9,7 +9,19 @@ a:hover {
 body {
   background: #fafafa !important;
 }
-
+a#btnmodal {
+  color: white !important;
+  cursor: pointer !important ;
+}
+ol.breadcrumb.brea-comvp {
+  border-radius: 0;
+  border-bottom: 1px solid #a39a9a;
+  background: none;
+  font-size: 14px;
+}
+li.breadcrumb-item a {
+  color: #51931b;
+}
 header .hotline {
   padding-top: 10px;
   background: #51931b;
@@ -153,18 +165,21 @@ header .nav-menu .cart .count {
 a.active-rice {
   color: #51931b;
   background-color: white;
-  padding: 20px 20px;
+  padding: 10px 20px;
   display: block;
   font-size: 15px;
   border-bottom: 1px solid #51931b;
 }
 .comvp-title a.create-rice {
-  padding: 20px;
+  padding: 10px 20px;
   display: block;
   color: #666;
   font-size: 15px;
 }
-
+button.btn.btn-danger.w-100.mt-2.now-seclect {
+  background-color: #ec0a00;
+  height: 38px;
+}
 .main-comvp .list-comvp {
   padding: 10px;
 }
@@ -226,12 +241,15 @@ a.active-rice {
 .review i.fas.fa-star {
   color: #ffc107;
 }
-.review .mottram {
+.review span.mottram {
   background-color: #ffc107;
   padding: 0 5px;
   border-radius: 4px;
   color: #fff;
   margin: 0 5px;
+}
+.review span {
+  font-size: 14px;
 }
 button.detail-uti {
   border: 1px solid #51931b;
@@ -260,13 +278,13 @@ i.fas.fa-shipping-fast.shipper {
 .comvp-navbar a.active-rice {
   color: #51931b;
   background-color: white;
-  padding: 20px 20px;
+  padding: 10px 20px;
   display: block;
   font-size: 15px;
   border-bottom: 1px solid #51931b;
 }
 .comvp-navbar a.create-rice {
-  padding: 20px;
+  padding: 10px 20px;
   display: block;
   color: #666;
   font-size: 15px;
@@ -317,6 +335,7 @@ i.fas.fa-plus-circle.float-right.mt-4 {
 }
 .aside-detail p.aside-title span {
   font-size: 12px;
+  color: #ec0a00;
 }
 .aside-detail .sum-money {
   padding: 10px;
@@ -349,8 +368,11 @@ i.fas.fa-plus-circle.float-right.mt-4 {
   padding: 10px;
 }
 /* tao suat */
+.create-title ul {
+  background-color: #eeeeee;
+}
 .create-title {
-  margin-top: 14px;
+  margin-top: 62px;
 }
 .create-title ul li {
   margin: 0 auto;
@@ -361,6 +383,9 @@ i.fas.fa-plus-circle.float-right.mt-4 {
   display: block;
   color: #666;
   font-size: 14px;
+}
+p.desc-price.mt-2 span {
+  color: #ec0a00;
 }
 .create-title ul li .active-product {
   border-bottom: 1px solid #51931b;
@@ -373,6 +398,7 @@ i.fas.fa-plus-circle.float-right.mt-4 {
   padding: 10px;
 }
 .aside-list a.titles-comvp {
+  font-weight: 600;
   font-size: 14px;
   color: #000;
 }
@@ -393,6 +419,11 @@ i.fas.fa-plus-circle.float-right.mt-4 {
 }
 .main-set {
   padding: 5px 15px;
+}
+.main-set a {
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
 }
 .main-oder button.fas.fa-plus-square {
   border: none;
@@ -432,6 +463,70 @@ i.fas.fa-plus-circle.float-right.mt-4 {
   padding: 5px !important;
   border-radius: 50% !important;
   background: red !important;
+}
+/* reivew */
+.functions.revie-del .group button:focus {
+  color: blue !important;
+  border: none !important;
+  outline: none !important;
+}
+.card.border-0 {
+  background-color: #fafafa;
+}
+.card-body.functions.revie-del {
+  padding: 0px;
+  margin-bottom: 7px;
+  background-color: #fafafa;
+}
+.card-body.functions.revie-del .group {
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.functions.revie-del .group button {
+  cursor: pointer;
+  border: none;
+  color: #444;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.8rem;
+}
+.utilities p.desc-set {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.review-deatil p.ads {
+  color: #51931b;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 13px 0px;
+  display: block;
+}
+img.d-flex.w-75.thub-img {
+  height: 55px;
+}
+img.d-flex.w-50.list-thumb {
+  height: 84px;
+}
+/* text auto */
+img.d-flex.w-75.thumb-img {
+  height: 138px;
+}
+p.ads {
+  animation: colorBackground 0.5s infinite;
+  -webkit-animation: colorBackground 5s infinite;
+  -moz-animation: colorBackground 5s infinite;
+  -o-animation: colorBackground 0.5s infinite;
+}
+@keyframes colorBackground {
+  0% {
+    color: #ec0a00;
+  }
+  50% {
+    color: rgb(0, 0, 0);
+  }
+}
+.create-content a:hover {
+  color: #ffffff !important;
 }
 
 /*///////footer*/
@@ -501,4 +596,299 @@ footer ul a:hover {
 }
 .view-all a {
   font-size: 13px;
+}
+.title-set p {
+  margin-bottom: 0px;
+  padding: 7px 20px;
+  background-color: #51931b;
+  color: white;
+}
+.title-set {
+  border-bottom: 1px solid #51931b;
+}
+.title-set .main-oder {
+  padding: 7px 14px;
+}
+.title-set .main-oder span {
+  color: #ec0a00;
+}
+.main-set {
+  margin-bottom: 10 20px;
+  box-shadow: 0px 0px 3px 2px #51931b2b;
+  padding: 10px;
+}
+.create-content a {
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: #51931b;
+}
+
+/* reponsive */
+@media only screen and (max-width: 1024px) {
+  .review-deatil p.ads {
+    font-size: 13px;
+  }
+  .wp-comvp .list-comvp p {
+    font-size: 12px;
+  }
+  .wp-comvp .list-comvp span {
+    font-size: 14px;
+  }
+  .wp-comvp .list-comvp a.title-rice {
+    font-size: 14px;
+  }
+  .create-title ul li .select-produc {
+    padding: 8px 27px;
+  }
+  button.detail-uti {
+    font-size: 14px;
+    padding: 3px 7px;
+  }
+  button.btn.btn-danger.float-right.now-seclect {
+    margin-bottom: 10px;
+  }
+  .aside-detail p.aside-title span {
+    float: none !important;
+  }
+  .aside-detail p.aside-title {
+    margin-bottom: 3px !important;
+  }
+  .aside-comvp {
+    padding: 5px 10px;
+  }
+  .aside-note input {
+    font-size: 12px;
+  }
+  p.desc-price.mt-2 {
+    font-size: 12px;
+  }
+  .create-content a {
+    font-size: 15px;
+  }
+  .create-content.my-2.p-2 {
+    margin-bottom: 0 !important;
+  }
+  .create-title ul {
+    margin-bottom: 10px;
+  }
+  input.form-control.mr-sm-2.w-75 {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aside-note.float-right{
+    float: none !important;
+  }
+  p.ads.sm-andi {
+    display: none;
+  }
+  .col-xs-12.col-sm-12.col-md-12.col-lg-2.mt-4.widget-detail {
+    margin-top: 5px !important;
+  }
+  img.d-flex.w-75.thumb-img {
+    height: 135px;
+  }
+  .wrapper-thumbnail {
+    padding: 10px;
+  }
+  .wp-comvp .list-comvp a.title-rice {
+    font-size: 12px;
+    margin: 5px 0px !important;
+  }
+  .wp-comvp .list-comvp p {
+    font-size: 9px;
+    margin-bottom: 7px !important;
+  }
+  .wp-comvp .list-comvp span {
+    font-size: 10px;
+  }
+  .wp-comvp .list-comvp a button {
+    width: 70%;
+    background-color: #ec0a00;
+    border: none;
+    height: 23px;
+    font-size: 11px;
+    padding: 0px 7px;
+  }
+  a.active-rice,
+  .comvp-title a.create-rice {
+    padding: 7px 20px;
+  }
+  img.d-flex.w-50.list-thumb {
+    width: 75% !important;
+  }
+  .main-set a {
+    font-size: 14px;
+  }
+  p.desc-price.mt-2 span {
+    color: #ec0a00;
+    font-size: 12px;
+  }
+  p.desc-price.mt-2 {
+    font-size: 11px;
+    margin: 3px 0px !important;
+  }
+  .title-set .main-oder > span {
+    font-size: 14px;
+  }
+  .create-title ul li .select-produc {
+    padding: 8px 15px;
+  }
+  .create-title ul li .select-produc {
+    font-size: 11px;
+  }
+  .create-search button.btn.btn-outline-success {
+    font-size: 10px;
+    padding: 5px 7px;
+  }
+  input.form-control.mr-sm-2.w-75 {
+    font-size: 10px;
+  }
+  .aside-list {
+    padding: 5px;
+  }
+  img.d-flex.w-75 {
+    width: 92% !important;
+  }
+  .aside-list a.titles-comvp {
+    font-size: 10px;
+  }
+  .aside-list .aside-price {
+    font-size: 10px;
+    margin: 2px 0px !important;
+  }
+  i.fas.fa-plus-circle.float-right.mt-3 {
+    margin: 0 !important;
+  }
+  .detail-title p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  img.d-flex.w-75.thub-img{
+    height: auto;
+  }
+  .aside-comvp{
+    padding: 10px 15px;
+  }
+  .aside-detail p.aside-title{
+    margin-bottom: 7px !important;
+  }
+  .aside-note.float-right{
+    float: right !important;
+  }
+  img.d-flex.w-75.thumb-img{
+    height: auto !important;
+  }
+  .wp-comvp .list-comvp a.title-rice {
+    font-size: 18px;
+    padding: 14px 0px !important;
+  }
+  .wp-comvp .list-comvp p {
+    font-size: 14px;
+    margin-bottom: 15px !important;
+  }
+  .wp-comvp .list-comvp span {
+    font-size: 17px;
+  }
+  .wp-comvp .list-comvp a button {
+    width: 78%;
+    background-color: #ec0a00;
+    border: none;
+    height: 41px;
+    font-size: 19px;
+    padding: 0px 7px;
+    margin-bottom: 5px;
+  }
+  .detail-title h1 {
+    margin-top: 15px;
+  }
+  .detail-title p {
+    font-size: 16px;
+  }
+  button.btn.btn-danger.float-right.now-seclect {
+    float: none !important;
+    margin-top: 10px;
+  }
+  p.desc-price.mt-2 {
+    font-size: 15px;
+    margin: 5px 0px !important;
+  }
+  p.desc-price.mt-2 span {
+    color: #ec0a00;
+    font-size: 16px;
+  }
+  img.d-flex.w-75 {
+    width: 100% !important;
+  }
+  .col-xs-4.col-sm-4.col-md-4.col-lg-4.p-0.w-75 {
+    width: auto !important;
+  }
+  .wp-listcomvp {
+    padding: 15px;
+  }
+  .aside-detail {
+    margin-bottom: 14px;
+  }
+  .col-xs-8.col-sm-8.col-md-8.col-lg-8.pding {
+    padding: 0;
+  }
+  .main-set.row.m-3 {
+    margin: 10px 0 !important;
+  }
+  img.d-flex.w-50.list-thumb {
+    width: 100% !important;
+  }
+  .main-set a {
+    font-size: 16px;
+    padding-top: 10px;
+    display: block;
+  }
+  p.desc-price.mt-2 {
+    font-size: 14px;
+  }
+  p.desc-price.mt-2 span {
+    font-size: 15px;
+  }
+  .main-oder.float-right.mt-4 {
+    margin-top: 3px !important;
+  }
+  .create-title ul li .select-produc {
+    font-size: 16px;
+    padding: 8px 30px;
+  }
+  input.form-control.mr-sm-2.w-75 {
+    font-size: 14px;
+  }
+  .create-search button.btn.btn-outline-success {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  .aside-list a.titles-comvp {
+    font-size: 20px;
+    display: block;
+    padding: 10px 5px;
+  }
+  .aside-list .aside-price {
+    font-size: 16px;
+    margin: 5px !important;
+  }
+  .aside-list .aside-price span {
+    font-size: 18px;
+  }
+  i.fas.fa-plus-circle.float-right.mt-3 {
+    font-size: 20px;
+    margin-right: 15px !important;
+  }
+  input.form-control.mr-sm-2.w-75 {
+    width: 85% !important;
+  }
+  img.d-flex.w-50 {
+    width: 100% !important;
+  }
+  button.btn.btn-danger.float-right.w-25.mt-3 {
+    width: 42% !important;
+  }
 }

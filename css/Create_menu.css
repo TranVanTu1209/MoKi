@@ -1,0 +1,317 @@
+
+#body-create-menu {
+    background-color: #FBFBFB;
+    padding: 30px;
+}
+/* body create left */
+#body-create-menu .self-create .total-money{
+    display: flex;
+    justify-content: space-between;
+}
+#body-create-menu .self-create .total-money .money {
+    font-weight: bold;
+}
+#body-create-menu .self-create .total-money .money::after{
+    content: "đ";
+}
+#body-create-menu .form-select label, #body-create-menu .title {
+    font-weight: bold;
+}
+#body-create-menu .container-fluid .self-create{
+    padding: 10px 70px 40px 30px;
+}
+#body-create-menu .container-fluid #sel1{
+    padding: 0px 5px;
+    border: none;
+}
+#body-create-menu .container-fluid .btn-icon {
+    text-align: right;
+}
+#body-create-menu .container-fluid .btn-icon button{
+    background-color: #FBFBFB;
+    border: none;
+}
+#body-create-menu .list-menu .card-menu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+    margin: 30px 0px;
+    background-color: white;
+}
+#body-create-menu .list-menu .header-card-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#body-create-menu .list-menu .header-card-menu .title-menu {
+    color: #51931B;
+}
+#body-create-menu .list-menu .body-card-menu {
+    line-height: 3;
+    text-align: center;
+    padding: 10px 20px 70px 10px;
+}
+#body-create-menu .list-menu .body-card-menu button {
+    border: none;
+    box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.1);
+    padding: 5px 50px;
+    border-radius: 50px;
+    background-color: white;
+}
+#body-create-menu .order-now {
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+}
+/* body create right */
+#body-create-menu #alternative-menu {
+    padding-left: 50px;
+}
+#body-create-menu #alternative-menu .title{
+    margin-bottom: 20px;
+}
+#body-create-menu #alternative-menu .btn-title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#body-create-menu #alternative-menu .btn-title button,
+#body-create-menu #alternative-menu .btn-species button {
+    font-size: 12px;
+}
+#body-create-menu #alternative-menu .btn-title button{
+    background-color: white;
+    border: 1px solid #707070;
+}
+#body-create-menu #alternative-menu .btn-title .active{
+    color: white;
+    background-color: #51931B;
+}
+#body-create-menu #alternative-menu .btn-species{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#body-create-menu #alternative-menu .btn-species button{
+    background-color: white;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 3px 8px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 15px;
+    padding: 0px 15px;
+}
+#body-create-menu #alternative-menu .btn-species .active{
+    color: white;
+    background-color: #FF4E46;
+}
+#body-create-menu #alternative-menu .card-combo-alternative{
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 3px 8px 0 rgba(0, 0, 0, 0.14);
+    margin: 30px 0px;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .header-card-alternative{
+    display: flex;
+    justify-content: space-between;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .header-card-alternative .title-menu {
+    color: #51931B;
+    font-weight: bold;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .header-card-alternative .btn-icon i{
+    color: #326ADA;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .media {
+    margin: 20px 0px;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .media img{
+    width: 50px;
+    height: 50px;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .media .media-body .price-old{
+    position: relative;
+    margin-right: 30px;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .media .media-body .price-old .slash-letters{
+    width: 70px;
+    rotate: 10deg;
+    background-color: red;
+    display: inline-block;
+    height: 1px;
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 10px;
+    left: -2px;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .media .media-body .price-new{
+    color: red;
+    font-weight: bold;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .total-money {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+#body-create-menu #alternative-menu .card-combo-alternative .total-money .money{
+    color: red;
+}
+/* menu-other */
+#body-create-menu .menu-other{
+    margin: 40px;
+}
+#body-create-menu .menu-other .title{
+    text-align: center;
+    padding: 30px;
+}
+#body-create-menu .menu-other .title i{
+    color: #E5C600;
+    margin-right: 5px;
+}
+
+#body-create-menu .menu-other .list-menu-other {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    transition: 0.6s ease;
+}
+#body-create-menu .menu-other .list-menu-other .prev{
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transition: 0.6s ease;
+    color: #51931B;
+    font-size: 20px;
+    cursor: pointer;
+}
+#body-create-menu .menu-other .list-menu-other .next{
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    color: #51931B;
+    font-size: 20px;
+    cursor: pointer;
+}
+#body-create-menu .menu-other .list-menu-other .card {
+    margin: 10px;
+    background-color: white;
+    line-height: 1.2;
+    display: none;
+}
+#body-create-menu .menu-other .list-menu-other .card .img-card{
+    position: relative;
+    color: white;
+
+}
+#body-create-menu .menu-other .list-menu-other .card .img-card .fa-heart{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+#body-create-menu .menu-other .list-menu-other .card .img-card p{
+    position: absolute;
+    bottom: 0px;
+    right: 25%;
+   
+}
+
+#body-create-menu .menu-other .list-menu-other .card .card-body .icon-star .fa-star{
+    color: #E5C600;
+}
+#body-create-menu .menu-other .list-menu-other .card .card-body .fa-heart{
+    color: red;
+    margin: 0px 10px;
+}
+#body-create-menu .menu-other .list-menu-other .card .card-body .endow {
+    color: #51931B;
+    margin-top: 5px;
+}
+#body-create-menu .menu-other .list-menu-other .card .card-body .price{
+    display: flex;
+    justify-content: space-between;
+}
+#body-create-menu .menu-other .list-menu-other .card .card-body .price .price-new{
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#body-create-menu .menu-other .list-menu-other .card .card-body .price .price-old{
+    position: relative;
+}
+#body-create-menu .menu-other .list-menu-other .card .card-body .price .price-old .slash-letters {
+    width: 80px;
+    rotate: 10deg;
+    background-color: red;
+    height: 1px;
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 10px;
+    left: -5px;
+    margin-right: 5px;
+}
+#body-create-menu .menu-other .list-menu-other .card .card-body button{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 2px 20px;
+    margin-top: 10px ;
+}
+/* reponsive */
+@media (max-width :900px){
+    #body-create-menu .container-fluid .self-create{
+        padding: 10px 20px 40px 10px;
+    }
+    #body-create-menu #alternative-menu {
+        padding-left: 20px;
+    }
+    #body-create-menu #alternative-menu .btn-title button,
+    #body-create-menu #alternative-menu .btn-species button {
+        font-size: 10px;
+    }
+}
+@media (max-width:770px) {
+    #body-create-menu .menu-other .list-menu-other {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:500px){
+    #body-create-menu .menu-other .list-menu-other {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #body-create-menu .menu-other .title {
+        padding: 10px;
+    }
+}
+@media (max-width:350px){
+    #body-create-menu {
+        font-size: 10px;
+    }
+    #body-create-menu #alternative-menu .btn-title button,
+    #body-create-menu #alternative-menu .btn-species button {
+        font-size: 8px;
+    }
+    #body-create-menu #alternative-menu .card-combo-alternative .media .media-body h5{
+        font-size: 12px;
+    }
+   
+    #body-create-menu .menu-other .title h4{
+        font-size: 14px;
+        padding: 0px;
+    }
+    #body-create-menu #alternative-menu .card-combo-alternative .media .media-body .price-old .slash-letters{
+        width: 45px;      
+        transform: rotate(-10deg);
+        top: 6px;
+        left: -2px;
+    }
+    #body-create-menu .menu-other .list-menu-other .card .card-body h5{
+        font-size: 12px;
+    }
+    #body-create-menu .menu-other .list-menu-other .card .card-body .price .price-old .slash-letters {
+        width: 45px;      
+        transform: rotate(-10deg);
+        top: 6px;
+        left: -2px;
+    }
+}

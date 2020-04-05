@@ -1,0 +1,431 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Thanh toán Moki</title>
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+			integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/payment_cart.css" />
+				<link rel="stylesheet" href="./css/header.css">
+				<link rel="stylesheet" href="./css/footer.css">
+				<link rel="stylesheet" href="css/reponsive.css">
+				<link rel="icon" href="icon.ico" />
+	</head>
+	<body>
+			<header id="header" id="ripples">
+
+				<!-- 	============menu==================== -->
+				<div class="menu">
+					<div class="overlay"></div>
+					<div class="container">
+						<nav class="nav-menu">
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+									<div class="logo" style="width: 150px ">
+										<a href="index.html"><img class="img-fluid" src="img/logo.jpg" alt="Logo Moki"></a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+									<div class="menu-mobile">
+										<div class="bar"></div>
+									</div>
+									<ul id="top-menu-nav">
+										<li class="nav-item">
+											<a href="taothucdon.html" title="" class="nav-link " data-text="cơm VP">tạo thực đơn</a>
+										</li>
+			
+										<li class="nav-item">
+											<a href="order_dish.html" title="" class="nav-link" data-text="món ăn">đặt món ăn</a>
+										</li>
+										<li class="nav-item">
+											<a href="order_food.html" title="" class="nav-link" data-text="thực phẩm">mua thực phẩm</a>
+										</li>
+										<li class="nav-item">
+											<a href="choose-comvp.html" title="" class="nav-link " data-text="cơm VP">cơm VP</a>
+										</li>
+			
+										<li class="nav-item">
+											<a href="blog.html" title="" class="nav-link " data-text="cơm VP">blog</a>
+										</li>
+										<li class="nav-item">
+											<a href="intro.html" title="" class="nav-link" data-text="giới thiệu">giới thiệu</a>
+										</li>
+										<li class="nav-item">
+											<a href="contact.html" title="" class="nav-link " data-text="cơm VP">liên hệ</a>
+										</li>
+										<li class="nav-item">
+											<a href="login.html" title="" class="login" data-text="cơm VP"> <i class="fas fa-user"></i> login</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+									<div class="cart">
+										<a href="cart.html" title="Giỏ hàng của bạn">
+											<i class="fas fa-cart-arrow-down"></i>
+											<span class="badge badge-secondary count">0</span>
+										</a>
+									</div>
+						</nav>
+					</div>
+				</div>
+				</div>
+			
+				</div>
+				<!-- =============hết menu============================= -->
+			</header>
+		<div class="content payment-section pb-5">
+			<img
+				class="img-header"
+				src="./img/banner_payment.jpg"
+			/>
+			<div class="container">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a href="index.html" class="font-weight-bold">Trang chủ</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a href="cart.html" class="font-weight-bold">Cart</a>
+						</li>
+						<li class="breadcrumb-item active" aria-current="page">
+							Thanh toán
+						</li>
+					</ol>
+				</nav>
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<form class="pb-5">
+							<div class="title-text">
+								<h3>
+									Thông tin người nhận
+								</h3>
+								<p class="small text-danger note">*Nếu đặt hàng cho người khác</p>
+								<div class="row">
+									<div class="col-lg-6 col-md-6">
+										<input type="text" name="" placeholder="Họ tên" />
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<input type="text" name="" placeholder="Số điện thoại" />
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<div class="custom-select">
+											<select>
+												<option value="0">Tỉnh, Thành phố</option>
+												<option value="1">Hà Nội</option>
+												<option value="2">Lai Châu</option>
+												<option value="3">Hòa Bình</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<div class="custom-select">
+											<select>
+												<option value="0">Quận, huyện</option>
+												<option value="1">Ba Đình</option>
+												<option value="2">Đống Đa</option>
+												<option value="3">Cầu Giấy</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12">
+										<input type="text" name="" placeholder="Địa chỉ chi tiết" />
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<label for="">Ngày nhận</label>
+										<input type="date" name="" placeholder="Ngày nhận" />
+									</div>
+									<div class="col-lg-6 col-md-6">
+										<label for="">Giờ nhận</label>
+										<input type="time" name="" placeholder="Giờ nhận" />
+									</div>
+									<div class="col-lg-12 col-md-12">
+										<input
+											class="note"
+											type="text"
+											name=""
+											placeholder="Thêm ghi chú"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+									<input type="submit" class="btn btn-danger font-weight-bold float-right">
+							</div>
+						
+						</form>
+						<h3 class="choose-payments">Chọn hình thức thanh toán</h3>
+						<div class="envelop">
+							<div class="item">
+									<a href="#" type="button"
+									class=""
+									data-toggle="modal"
+									data-target="#paymentModal">
+										<img src="img/logo-momo.jpg" />
+										<div class="text text-white"><p>Ví điện tử MOMO</p></div>
+									</a>
+								<div
+									class="modal fade"
+									id="paymentModal"
+									tabindex="-1"
+									role="dialog"
+									aria-labelledby="exampleModalLabel"
+									aria-hidden="true"
+								>
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">
+													Thanh toán bằng Ví MOMO
+												</h5>
+												<button
+													type="button"
+													class="close"
+													data-dismiss="modal"
+													aria-label="Close"
+												>
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<input
+													type="text"
+													name=""
+													placeholder="Số điện thoại đăng ký Ví MOMO"
+												/>
+												<p>Nhận mã xác thực thanh toán từ hệ thống</p>
+												<input
+													type="text"
+													name=""
+													placeholder="Nhập mã xác nhận"
+												/>
+												<a href="#" title
+													>Nhận lại mã
+													<i class="fa fa-spinner" aria-hidden="true"></i
+												></a>
+											</div>
+											<div class="modal-footer">
+												<button
+													type="button"
+													class="btn btn-secondary"
+													data-dismiss="modal"
+												>
+													Đổi hình thức thanh toán
+												</button>
+												<button type="button" class="btn btn-primary">
+													Tiếp tục
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+									<a href="#" type="button" class="" data-toggle="modal" data-target="#paymentModal">
+										<img src="img/cod_driver.jpg" />
+										<div class="text text-white">
+											<p>Thanh toán khi nhận hàng</p>
+										</div>
+									</a>
+							
+							</div>
+							<div class="item">
+										<a href="#" type="button" class="" data-toggle="modal" data-target="#paymentModal">
+											<img src="img/credit_card.png" />
+											<div class="text text-white">
+												<p>Thanh toán bằng thẻ</p>
+											</div>
+										</a>							
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="title-text your-order">
+							<h3>Đơn hàng của bạn</h3>
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">Món ăn</th>
+									<th scope="col">Đơn giá</th>
+									<th scope="col">Số lượng</th>
+									<th scope="col">Thành tiền</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">
+										<img src="img/cart.jpg" />
+										<p>Piza Ý</p>
+									</th>
+									<td>250000 đ</td>
+									<td>2</td>
+									<td>500000 đ</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										<img src="img/feast_1.jpg" />
+										<p>Bún bò</p>
+									</th>
+									<td>250000 đ</td>
+									<td>2</td>
+									<td>500000 đ</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="related-info">
+							<div class="text-left"><p>Phí ship</p></div>
+							<div class="text-right"><p>30000 đ</p></div>
+						</div>
+						<div class="related-info">
+							<div class="text-left">
+								<input type="text" name="" placeholder="Mã giảm giá" />
+							</div>
+							<div class="text-right">
+								<button type="submit">Sử dụng mã</button>
+							</div>
+						</div>
+						<div class="related-info">
+							<div class="text-left"><p>Thuế VAT</p></div>
+							<div class="text-right"><p>0 đ</p></div>
+						</div>
+						<div class="related-info">
+							<div class="text-left"><p>Tổng giá trị đơn</p></div>
+							<div class="text-right"><p>1.500.000 đ</p></div>
+						</div>
+						<div class="receiver">
+							<p class="accepter">Người nhận: <span>Trần Văn Tú</span></p>
+							<p>
+								Địa chỉ người nhận<span>
+									Ngõ 1 Phạm Văn Đồng Cầu Giấy Hà Nội</span
+								>
+							</p>
+							<p>Số điện thoại: 098765424</p>
+							<div class="final">
+								<p>Tổng tiền: <span class="sumpay">1.280.000 đ</span></p>
+								<p>Hình thức thanh toán: <span>Ví Momo</span></p>
+							</div>
+							<div class="pay">
+								<a href="#" title >Thanh Toán</a>
+							</div>
+							<a href="#" title class="cancel">Hủy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 	////////footer -->
+		<!-- 	////////footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+		
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="contact">
+							<h5 style="color: #fff font-weight-bold">LIÊN HỆ</h5>
+						</div>
+						<div class="contact-details">
+							<p>
+								<i class="fas fa-map-marker-alt"></i> Tòa CT2 Constrexim Thái Hà, Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội
+							</p>
+							<p>
+								<a href="contact.html" class="text-white"><i class="fas fa-mobile-alt"></i> 0927151535 </a>
+							</p>
+							<p>
+								<a href="contact.html" class="text-white"><i class="fas fa-envelope"></i> contact@moki.ai</a>
+							</p>
+							<p>
+								<ul class="pull-left follow">
+									<span style="color: #fff;font-size: 18px"><strong>Liên kết Moki:</strong></span>
+									<li><a href="#0"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#0"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="#0"><i class="fab fa-twitter"></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="mon-an">
+							<div class="title">
+								món ăn
+							</div>
+							<div class="content">
+								<ul>
+									<li><a href="#0">Món ăn theo bữa</a></li>
+									<li><a href="#0">Món ăn chay</a></li>
+									<li><a href="#0">Món tiệc, cỗ</a></li>
+									<li><a href="#0">Món trẻ con</a></li>
+									<div class="view-all"><a href="">Xem tất cả</a></div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="thuc-pham">
+							<div class="title">
+								thực phẩm
+							</div>
+							<div class="content">
+								<ul>
+									<li><a href="#0">Rau xanh</a></li>
+									<li><a href="#0">Củ quả</a></li>
+									<li><a href="#0">Gia cầm</a></li>
+									<li><a href="#0">Hải sản</a></li>
+									<div class="view-all"><a href="">Xem tất cả</a></div>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="share thuc-don">
+							<div class="title">
+								chia sẻ thực đơn
+							</div>
+							<div class="content">
+								<ul>
+									<li><a href="#0">Thực đơn ăn sang</a></li>
+									<li><a href="#0">Thực đơn tiệc</a></li>
+									<li><a href="#0">Thực đơn ăn trưa</a></li>
+									<li><a href="#0">Thực đơn ăn tối`</a></li>
+									<div class="view-all"><a href="">Xem tất cả</a></div>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr style="border-top: 1px solid #fff !important">
+			<div class="copyright text-white" style="text-align: center;padding:20px 0;">
+				Copyright &copy; All Rights Reserved
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/script_payment.js" defer></script>
+		<script src="./js/header.js"></script>
+
+	</body>
+</html>

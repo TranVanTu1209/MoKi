@@ -95,7 +95,7 @@ a:hover {
 	position: relative;
 }
 #meal-search .overlay {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 #meal-search .title {
 	line-height: 1.8;
@@ -292,13 +292,23 @@ a:hover {
 #meal-search #food-detail.dish-detail .dish-recipe .ingredients img {
 	width: 80%;
 }
+#meal-search #food-detail.dish-detail .dish-recipe .ingredients {
+	transition: all 0.4s ease-in-out;
+	background-color: #eee;
+	border-radius: 3px;
+}
+#meal-search #food-detail.dish-detail .dish-recipe .ingredients:hover {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px rgba(0, 0, 0, 0.2);
+}
 #meal-search #food-detail.dish-detail .dish-recipe .ingredients .ingredient {
 	margin-bottom: 0.5rem;
 }
 #meal-search #food-detail.dish-detail .dish-recipe .recipe .steps .step {
 	line-height: 1.9;
-	margin-bottom: 1rem;
+	margin-bottom: 1.1rem;
+	display: flex;
 }
+
 #meal-search
 	#food-detail.dish-detail
 	.dish-recipe
@@ -310,11 +320,27 @@ a:hover {
 	color: #fff;
 	height: 30px;
 	width: 30px;
-	display: inline-block;
+	display: block;
 	line-height: 16px;
-	padding: 0.5rem;
+	padding: 0.5rem 0.6rem;
 	text-align: center;
 	border-radius: 50%;
+	margin-right: 1rem;
+	position: relative;
+}
+#meal-search
+	#food-detail.dish-detail
+	.dish-recipe
+	.recipe
+	.steps
+	.step
+	.step-number::after {
+	position: absolute;
+	width: 1px;
+	height: 60px;
+	bottom: 0;
+	left: 50%;
+	background-color: #51931b;
 }
 #meal-search #food-detail.dish-detail .dish-recipe #amount {
 	width: 4rem;
@@ -341,6 +367,10 @@ a:hover {
 /* hot dishes */
 #hot-dishes #hot-dishes-carousel .item {
 	margin-right: 0.3rem;
+	transition: all ease-in-out 0.4s;
+}
+#hot-dishes #hot-dishes-carousel .item:hover {
+	transform: scale(1.05);
 }
 #hot-dishes #hot-dishes-carousel .owl-dots {
 	display: none;

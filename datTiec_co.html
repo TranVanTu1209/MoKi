@@ -1,51 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Đặt tiệc - cỗ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/datTiec_co.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
 		integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
-			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-			<link rel="stylesheet" type="text/css"
-				href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
-		<link rel="stylesheet" href="./css/header.css">
+		
+			<link rel="stylesheet" type="text/css" href="css/datTiec_co.css">
+			<link rel="stylesheet" href="./css/header.css">
 			<link rel="stylesheet" href="./css/footer.css">
+			<link rel="stylesheet" href="css/reponsive.css">
 			<link rel="icon" href="icon.ico" />
 </head>
 <body>
 	<!-- Navigation -->
 		<!-- main header -->
 		<header id="header" id="ripples">
-			<div class="hotline">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6">
-							<ul class="pull-left follow">
-								<span style="color: #fff;font-size: 18px"><strong>follow us:</strong></span>
-								<li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="#0"><i class="fab fa-facebook"></i></a></li>
-								<li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-							</ul>
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-6">
-							<ul class=" pull-right my-hotline">
-								<li><a href="#0"><i class="fas fa-phone-alt"></i><span>0975857238</span></a></li>
-								<li><a href="#0"><i class="fas fa-envelope"></i><span>contact@moki.ai</span></a></li>
-								<li><a href="#0"><i class="fas fa-globe"></i>
-										<select name="">
-											<option value="">Vie</option>
-											<option value="">Eng</option>
-										</select>
-									</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- ===================hết hotline===================== -->
 			<!-- 	============menu==================== -->
 			<div class="menu">
 				<div class="overlay"></div>
@@ -64,7 +36,7 @@
 								</div>
 								<ul id="top-menu-nav">
 									<li class="nav-item">
-										<a href="intro.html" title="" class="nav-link" data-text="giới thiệu">giới thiệu</a>
+										<a href="taothucdon.html" title="" class="nav-link " data-text="cơm VP">tạo thực đơn</a>
 									</li>
 									<li class="nav-item">
 										<a href="order_dish.html" title="" class="nav-link" data-text="món ăn">đặt món ăn</a>
@@ -75,14 +47,15 @@
 									<li class="nav-item">
 										<a href="choose-comvp.html" title="" class="nav-link " data-text="cơm VP">cơm VP</a>
 									</li>
+								
 									<li class="nav-item">
-										<a href="taothucdon.html" title="" class="nav-link " data-text="cơm VP">tạo thực đơn</a>
+										<a href="blog.html" title="" class="nav-link " data-text="cơm VP">blog</a>
 									</li>
+										<li class="nav-item">
+											<a href="intro.html" title="" class="nav-link" data-text="giới thiệu">giới thiệu</a>
+										</li>
 									<li class="nav-item">
-										<a href="#" title="" class="nav-link " data-text="cơm VP">blog</a>
-									</li>
-									<li class="nav-item">
-										<a href="contact" title="" class="nav-link " data-text="cơm VP">liên hệ</a>
+										<a href="contact.html" title="" class="nav-link " data-text="cơm VP">liên hệ</a>
 									</li>
 									<li class="nav-item">
 										<a href="login.html" title="" class="login" data-text="cơm VP">login</a>
@@ -111,11 +84,14 @@
 			<h3 class="text-center text-white font-weight-bold">Tiệc tùng, party thả ga chỉ với 1 click chuột <i class="fa fa-hand-pointer"></i></h3>
 			<div class="text-center text-white">80% khách hàng tin dùng dịch vụ cung cấp thực phẩm, món ăn của chúng tôi</div>
 			<div class="text-center text-white">Bạn vui lòng đặt món trước 3 tiếng để được phục vụ sớm nhát</div>
-			<div class="text-center"><button class="btn text-center text-white font-weight-bold" id="l-myBtn">Tạo menu của bạn</button></div>
+			<div class="text-center">
+				<button class="btn text-center text-white font-weight-bold px-4" data-target="#menu-detail" data-toggle="modal">
+				Tạo menu của bạn <i class="fas fa-bread-slice"></i></button>
+			</div>
 		</div>
 	</div>
 	<!-- Content -->
-	<div class="container">
+	<div class="container" id="feast-combo">
 		<h4 class="text-center font-weight-bold l-text-green">Combo | Menu thực đơn hot nhất dành riêng cho bạn</h4>
 		<!-- Select and search box -->
 		<div class="l-search row">
@@ -128,9 +104,10 @@
 			</div>
 			<div class="col-6">
 				<span><button class="l-icon"><i class="fas fa-search-plus"></i></button></span>
-			    <span><input type="text" class="l-input" placeholder="Tên combo"></span>
+			    <span><input type="text" class="l-input rounded" placeholder="Tên combo"></span>
 		 	</div>
-	 	</div>
+		 </div>
+		 <div class="hot-menu">
 	 	<!-- View menu -->
 	 	<div class="l-viewMenu row">
 	 		<div class="col-md-3">
@@ -138,7 +115,7 @@
 				<i class="far fa-heart l-heart"></i>
 				<a href="datTiec_co_chiTiet.html" class="l-view-text text-white font-weight-bold"><i class="fas fa-th-list"></i> View menu 1</a>	
 				<div class="l-view-text mt-5 l-text-red">125k/Suất</div>
-				<div class="l-view-text-2 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>	
+				<div class="l-view-text-2 text-white"><button><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</button></div>	
 	 		</div>
 		 	<div class="col-md-9">
 		 		<div class="row">
@@ -147,14 +124,14 @@
 		 				<i class="far fa-heart l-heart"></i>
 						<a href="datTiec_co_chiTiet.html"  class="l-view-text text-white font-weight-bold"><i class="fas fa-th-list"></i> View menu 2</a>	
 						<div class="l-view-text mt-5 l-text-red">125k/Suất</div>
-						<div class="l-view-text-2 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
+						<div class="l-view-text-2 text-white"><button><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</button></div>
 		 			</div>
 		 			<div class="col-md-6">
 		 				<img class="l-view-img" src="img/datTiec_co/grilling-kebab-53148.png">
 		 				<i class="far fa-heart l-heart"></i>
 						<a href="datTiec_co_chiTiet.html" class="l-view-text text-white font-weight-bold"><i class="fas fa-th-list"></i> View menu 3</a>	
 						<div class="l-view-text mt-5 l-text-red">125k/Suất</div>
-						<div class="l-view-text-2 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
+						<div class="l-view-text-2 text-white"><button><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</button></div>
 		 			</div>
 		 		</div>
 		 	</div>
@@ -165,7 +142,9 @@
 				<i class="far fa-heart l-heart"></i>
 				<a href="datTiec_co_chiTiet.html"  class="l-view-text text-white font-weight-bold"><i class="fas fa-th-list"></i> View menu 4</a>	
 				<div class="l-view-text mt-5 l-text-red">125k/Suất</div>
-				<div class="l-view-text-2 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>	
+				<div class="l-view-text-2 text-white">
+					<button><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+					</div>	
 	 		</div>
 		 	<div class="col-md-9">
 		 		<div class="row">
@@ -174,22 +153,23 @@
 		 				<i class="far fa-heart l-heart"></i>
 						<a href="datTiec_co_chiTiet.html"  class="l-view-text text-white font-weight-bold"><i class="fas fa-th-list"></i>View menu 5</a>	
 						<div class="l-view-text mt-5 l-text-red">125k/Suất</div>
-						<div class="l-view-text-2 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
+						<div class="l-view-text-2 text-white"><button><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</button></div>
 		 			</div>
 		 			<div class="col-md-6">
 		 				<img class="l-view-img" src="img/datTiec_co/grilling-kebab-53148.png">
 		 				<i class="far fa-heart l-heart"></i>
 						<a href="datTiec_co_chiTiet.html"  class="l-view-text text-white font-weight-bold"><i class="fas fa-th-list"></i>View menu 6</a>	
 						<div class="l-view-text mt-5 l-text-red">125k/Suất</div>
-						<div class="l-view-text-2 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
+						<div class="l-view-text-2 text-white"><button><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</button></div>
 		 			</div>
 		 		</div>
 		 	</div>
 	 	</div>
 	 	<!-- Xem thêm -->
-	 	<div class="mt-4 mb-5 text-center"><button class="font-weight-bold text-white l-btn-xt">Xem Thêm <i class="fas fa-sync-alt"></i></button></div>
+	 	<div class="mt-4 mb-5 text-center more-menu"><button class="font-weight-bold text-white l-btn-xt px-4">Xem Thêm <i class="fas fa-sync-alt"></i></button></div>
 	 	<!-- Slide combo tiệc giá rẻ -->
-	 	<h4 class="text-center font-weight-bold mb-5">Combo menu tiệc giá rẻ</h4>
+			</div>
+		 <h4 class="text-center font-weight-bold mb-5">Combo menu tiệc giá rẻ</h4>
 	 	<div class="container">
 	 		<div class="l-slide row">
 				<div class="col-1"></div>
@@ -200,7 +180,7 @@
 							<div class="card-body">
 								<i class="far fa-heart l-heart"></i>
 							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
+							    <a href="datTiec_co_chiTiet.html" class="font-weight-bold text-dark">Combo lẩu đuôi bò</a>
 							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
 							    <div class="l-text-green">Ưu đãi free đồ uống</div>
 							    <div class="row">
@@ -215,22 +195,7 @@
 							<div class="card-body">
 								<i class="far fa-heart l-heart"></i>
 							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-							    <div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a></div>
-						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides1">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
+									<a href="datTiec_co_chiTiet.html" class="font-weight-bold text-dark">Combo lẩu đuôi bò</a>
 							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
 							    <div class="l-text-green">Ưu đãi free đồ uống</div>
 							    <div class="row">
@@ -245,37 +210,7 @@
 							<div class="card-body">
 								<i class="far fa-heart l-heart"></i>
 							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-							    <div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a></div>
-						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides2">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-							    <div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a></div>
-						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides2">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
+									<a href="datTiec_co_chiTiet.html" class="font-weight-bold text-dark">Combo lẩu đuôi bò</a>
 							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
 							    <div class="l-text-green">Ưu đãi free đồ uống</div>
 							    <div class="row">
@@ -287,424 +222,140 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-1"></div>
-				<button onclick="plusDivs1(+1)">&#10094;</button>
-		  		<button class="l-btn-right" onclick="plusDivs1(-1)">&#10095;</button>
 			</div>
+					<div class="mt-4 mb-5 text-center more-menu"><button class="font-weight-bold text-white l-btn-xt px-4">Xem Thêm <i
+				class="fas fa-sync-alt"></i></button></div>
+
 	 	</div>
-	 	<!-- Slide combo tiệc VIP -->
-	 	<h4 class="text-center font-weight-bold mt-5 mb-5">Combo menu tiệc VIP</h4>
-	 	<div class="container">
-	 		<div class="l-slide row">
-				<div class="col-1"></div>
-				<div class="col-10">
-					<div class="row">
-						<div class="col-md-4 l-mySlides3">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-									<div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a> </div>						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides3">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-									<div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a> </div>						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides3">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-									<div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a> </div>						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides4">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-							    <div class="mt-3"><input class="text-white font-weight-bold" type="button" value="Đặt menu"></div>
-						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides4">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-<div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a> </div>						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides4">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-<div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a> </div>						  	</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-1"></div>
-				<button onclick="plusDivs2(+1)">&#10094;</button>
-		  		<button class="l-btn-right" onclick="plusDivs2(-1)">&#10095;</button>
-			</div>
-	 	</div>
-	 	<!-- Slide combo tiệc bình dân -->
-	 	<h4 class="text-center font-weight-bold mt-5 mb-5">Combo menu tiệc VIP</h4>
-	 	<div class="container">
-	 		<div class="l-slide row">
-				<div class="col-1"></div>
-				<div class="col-10">
-					<div class="row">
-						<div class="col-md-4 l-mySlides5">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-<div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a> </div>						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides5">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-<div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a> </div>						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides5">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-<div class="mt-3"><a href="datTiec_co_chiTiet.html" class="btn btn-danger">Đặt menu</a> </div>						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides6">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-							    <div class="mt-3"><input class="text-white font-weight-bold" type="button" value="Đặt menu"></div>
-						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides6">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-							    <div class="mt-3"><input class="text-white font-weight-bold" type="button" value="Đặt menu"></div>
-						  	</div>
-						</div>
-						<div class="col-md-4 l-mySlides6">
-							<img src="img/datTiec_co/feast_1.png">
-							<div class="card-body">
-								<i class="far fa-heart l-heart"></i>
-							    <div class="l-combo-text-1 text-white"><i class="fas fa-shopping-cart"></i>Thêm vào giỏ hàng</div>
-							    <div class="font-weight-bold">Combo lẩu đuôi bò</div>
-							    <div class="mt-1 mb-1"><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i><i class="far fa-heart l-text-red"></i></div>
-							    <div class="l-text-green">Ưu đãi free đồ uống</div>
-							    <div class="row">
-							    	<div class="l-text-red col-6">125k/Suất</div>
-							    	<div class="text-right col-6">250.541đ</div>
-							    </div>
-							    <div class="mt-3"><input class="text-white font-weight-bold" type="button" value="Đặt menu"></div>
-						  	</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-1"></div>
-				<button onclick="plusDivs3(+1)">&#10094;</button>
-		  		<button class="l-btn-right" onclick="plusDivs3(-1)">&#10095;</button>
+	 	
 			</div>
 	 	</div>
 	</div>
 	<!-- Modal -->
-	<div id="l-myModal" class="modal">
-		<div class="l-modal-content">
-			<div class="l-close">&times;</div>
-			<div class="container">
-				<div class="l-text-green text-center font-weight-bold mt-4">Bạn muốn tạo menu thực đơn của riêng mình</div>
-				<!-- Box1 -->
-				<div class="l-box row ml-4 mb-4 no-gutters">
-					<div class="col-6">Số người ăn</div>
-					<div class="col-6 text-right">
-						<button><i class="l-up"></i></button>
-						<button><i class="l-down"></i></button>
-					</div>
+	<div id="menu-detail" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+	
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					
 				</div>
-				<!-- Box2 -->
-				<div class="l-box ml-4 mb-4">Tiền dự chi/suất</div>
-				<!-- Box3 -->
-				<select class="l-box ml-4 mb-2">
-					<option>Loại thực đơn</option>
-				</select>
-				<div class="l-text-red ml-4 mb-4">Thực đơn VIP đang giảm giá 30%</div>
-				<div class="ml-4 mb-5"><button class="text-white font-weight-bold l-modal-btn">Tiếp tục</button></div>
+				<div class="modal-body px-4">
+					<form action="">
+						<div class="l-text-green text-center font-weight-bold">Bạn muốn tạo menu thực đơn của riêng mình ?</div>
+						<!-- Box1 -->
+						<div class="form-group">
+							<label for="amount-people">Số người của bữa tiệc</label>
+							<input type="number" class="form-control">
+						</div>
+						<!-- Box2 -->
+						<div class="form-group py-3">
+							<label for="money">Tiền dự chi</label>
+							<input type="number" class="form-control" id="money" required>
+						</div>
+						<!-- Box3 -->
+						<select class="form-control" required>
+							<option>Loại thực đơn</option>
+							<option>Thực đơn VIP</option>
+							<option>Thực bình dân</option>
+							<option>Thực đơn giá rẻ</option>
+						</select>
+						<div class="l-text-red py-3">Thực đơn VIP đang giảm giá 30%</div>
+						<div class="py-3"><a href="feast_create_menu.html" class="text-white rounded font-weight-bold p-2 px-4 l-modal-btn">Tiếp
+								tục</a></div>
+					</form>
+				</div>
+				
 			</div>
+	
 		</div>
 	</div>
-		<!-- 	////////footer -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2">
-						<div class="logo" style="width: 150px">
-							<img class="img-fluid" src="img/logo.jpg" alt="">
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="contact">
-							<h5 style="color: #fff">Contact</h5>
-						</div>
-						<div class="contact-details">
-							<p>
-								Địa chỉ: 236b hoàng quốc việt, hà nội
-							</p>
-							<p>
-								số điện thoại: 0975857238
-							</p>
-							<p>
-								E-mail: contact@moki.ai
-							</p>
-							<p>
-								<ul class="pull-left follow">
-									<span style="color: #fff;font-size: 18px"><strong>follow us:</strong></span>
-									<li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-									<li><a href="#0"><i class="fab fa-facebook"></i></a></li>
-									<li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-								</ul>
-							</p>
-						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="mon-an">
-							<div class="title">
-								món ăn
+
+			<!-- 	////////footer -->
+			<footer>
+				<div class="container">
+					<div class="row">
+			
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="contact">
+								<h5 style="color: #fff font-weight-bold">LIÊN HỆ</h5>
 							</div>
-							<div class="content">
-								<ul>
-									<li><a href="#0">Món ăn theo bữa</a></li>
-									<li><a href="#0">Món ăn chay</a></li>
-									<li><a href="#0">Món tiệc, cỗ</a></li>
-									<li><a href="#0">Món trẻ con</a></li>
-									<div class="view-all"><a href="">xem tất cả</a></div>
-								</ul>
+							<div class="contact-details">
+								<p>
+									<i class="fas fa-map-marker-alt"></i> Tòa CT2 Constrexim Thái Hà, Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội
+								</p>
+								<p>
+									<a href="contact.html" class="text-white"><i class="fas fa-mobile-alt"></i> 0927151535 </a>
+								</p>
+								<p>
+									<a href="contact.html" class="text-white"><i class="fas fa-envelope"></i> contact@moki.ai</a>
+								</p>
+								<p>
+									<ul class="pull-left follow">
+										<span style="color: #fff;font-size: 18px"><strong>Liên kết Moki:</strong></span>
+										<li><a href="#0"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="#0"><i class="fab fa-facebook"></i></a></li>
+										<li><a href="#0"><i class="fab fa-twitter"></i></a></li>
+									</ul>
+								</p>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-2">
-						<div class="thuc-pham">
-							<div class="title">
-								thực phẩm
-							</div>
-							<div class="content">
-								<ul>
-									<li><a href="#0">Rau xanh</a></li>
-									<li><a href="#0">Củ quả</a></li>
-									<li><a href="#0">Gia cầm</a></li>
-									<li><a href="#0">Hải sản</a></li>
-									<div class="view-all"><a href="">xem tất cả</a></div>
-								</ul>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="mon-an">
+								<div class="title">
+									món ăn
+								</div>
+								<div class="content">
+									<ul>
+										<li><a href="#0">Món ăn theo bữa</a></li>
+										<li><a href="#0">Món ăn chay</a></li>
+										<li><a href="#0">Món tiệc, cỗ</a></li>
+										<li><a href="#0">Món trẻ con</a></li>
+										<div class="view-all"><a href="">Xem tất cả</a></div>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="share thuc-don">
-							<div class="title">
-								chia sẻ thực đơn
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="thuc-pham">
+								<div class="title">
+									thực phẩm
+								</div>
+								<div class="content">
+									<ul>
+										<li><a href="#0">Rau xanh</a></li>
+										<li><a href="#0">Củ quả</a></li>
+										<li><a href="#0">Gia cầm</a></li>
+										<li><a href="#0">Hải sản</a></li>
+										<div class="view-all"><a href="">Xem tất cả</a></div>
+									</ul>
+								</div>
 							</div>
-							<div class="content">
-								<ul>
-									<li><a href="#0">Thực đơn ăn sang</a></li>
-									<li><a href="#0">Thực đơn tiệc</a></li>
-									<li><a href="#0">Thực đơn ăn trưa</a></li>
-									<li><a href="#0">Thực đơn ăn tối`</a></li>
-									<div class="view-all"><a href="">xem tất cả</a></div>
-								</ul>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="share thuc-don">
+								<div class="title">
+									chia sẻ thực đơn
+								</div>
+								<div class="content">
+									<ul>
+										<li><a href="#0">Thực đơn ăn sang</a></li>
+										<li><a href="#0">Thực đơn tiệc</a></li>
+										<li><a href="#0">Thực đơn ăn trưa</a></li>
+										<li><a href="#0">Thực đơn ăn tối`</a></li>
+										<div class="view-all"><a href="">Xem tất cả</a></div>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<hr style="border-top: 1px solid #fff !important">
-			<div class="copyright" style="text-align: center;padding:20px 0;">
-				ⓒAll Rights Reserved
-			</div>
-		</footer>
-	<script type="text/javascript">
-		// Slide show
-		var slideIndex1 = 1;
-		showDivs1(slideIndex1);
-
-		function plusDivs1(n) {
-		  showDivs1(slideIndex1 += n);
-		}
-
-		function showDivs1(n) {
-		  	var i;
-		  	var x1 = document.getElementsByClassName("l-mySlides1");
-		  	var y1 = document.getElementsByClassName("l-mySlides2")
-		  	if (n > x1.length) {slideIndex1 = 1}
-		  	if (n < 1) {slideIndex1 = x1.length}
-		  	for (i = 0; i < y1.length; i++) {
-		    	y1[i].style.display = "none";  
-		  	}
-		  	for (i = 0; i < x1.length; i++) {
-		    	x1[i].style.display = "inline";  
-		  	}
-		  	for (i = 0; i < slideIndex1 - 1; i++) {
-		    	x1[i].style.display = "none";  
-		  	}
-		 	for (i = 0; i < slideIndex1 - 1; i++){
-		    	y1[i].style.display = "inline";
-		  	}
-		}
-
-		var slideIndex2 = 1;
-		showDivs2(slideIndex2);
-
-		function plusDivs2(n) {
-		  showDivs2(slideIndex2 += n);
-		}
-
-		function showDivs2(n) {
-		  	var i;
-		  	var x2 = document.getElementsByClassName("l-mySlides3");
-		  	var y2 = document.getElementsByClassName("l-mySlides4")
-		  	if (n > x2.length) {slideIndex2 = 1}
-		  	if (n < 1) {slideIndex2 = x2.length}
-		  	for (i = 0; i < y2.length; i++) {
-		    	y2[i].style.display = "none";  
-		  	}
-		  	for (i = 0; i < x2.length; i++) {
-		    	x2[i].style.display = "inline";  
-		  	}
-		  	for (i = 0; i < slideIndex2 - 1; i++) {
-		    	x2[i].style.display = "none";  
-		  	}
-		 	for (i = 0; i < slideIndex2 - 1; i++){
-		    	y2[i].style.display = "inline";
-		  	}
-		}
-		
-		var slideIndex3 = 1;
-		showDivs3(slideIndex3);
-
-		function plusDivs3(n) {
-		  showDivs3(slideIndex3 += n);
-		}
-
-		function showDivs3(n) {
-		  	var i;
-		  	var x3 = document.getElementsByClassName("l-mySlides5");
-		  	var y3 = document.getElementsByClassName("l-mySlides6")
-		  	if (n > x3.length) {slideIndex3 = 1}
-		  	if (n < 1) {slideIndex3 = x3.length}
-		  	for (i = 0; i < y3.length; i++) {
-		    	y3[i].style.display = "none";  
-		  	}
-		  	for (i = 0; i < x3.length; i++) {
-		    	x3[i].style.display = "inline";  
-		  	}
-		  	for (i = 0; i < slideIndex3 - 1; i++) {
-		    	x3[i].style.display = "none";  
-		  	}
-		 	for (i = 0; i < slideIndex3 - 1; i++){
-		    	y3[i].style.display = "inline";
-		  	}
-		}
-
-		// Modal
-		var modal = document.getElementById("l-myModal");
-		var btn = document.getElementById("l-myBtn");
-		var span = document.getElementsByClassName("l-close")[0];
-		btn.onclick = function() {
-		  modal.style.display = "block";
-		}
-		span.onclick = function() {
-		  modal.style.display = "none";
-		}
-		window.onclick = function(event) {
-		  if (event.target == modal) {
-		    modal.style.display = "none";
-		  }
-		}
-	</script>
+				<hr style="border-top: 1px solid #fff !important">
+				<div class="copyright text-white" style="text-align: center;padding:20px 0;">
+					Copyright &copy; All Rights Reserved
+				</div>
+			</footer>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -712,7 +363,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-		<script src="./js/header.js"></script>
+		<script src="./js/index.js"></script>
 		<script src="./js/footer.js"></script>
 </body>
 </html>

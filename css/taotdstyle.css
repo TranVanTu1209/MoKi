@@ -7,15 +7,24 @@
 }
 .main_left {
 	/* position: fixed; */
-	background-color: #090908;
+	background-color: #ccc;
 	height: 100vh;
 	width: 16%;
 	float: left;
 }
+.card{
+	position: initial;
+	cursor: pointer;
+}
+col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+	position: inherit;
+}
 .main_left_logo {
 	width: 100%;
-	text-align: center;
+	/* text-align: center; */
+	margin-left: 15px;
 	margin-top: 50px;
+
 }
 .main_left_logo img {
 	width: 50%;
@@ -28,7 +37,7 @@
 }
 .main_left_list ul li a {
 	font-weight: 700;
-	color: #fff;
+	color: red;
 }
 .main_left_logoprf img {
 	width: 30%;
@@ -44,15 +53,44 @@
 .main_left_list_search form input {
 	width: 100%;
 }
+.main_left_list_search input.form-control {
+	width: 80%;
+	margin-left: 15px;
+}
 .main_right {
 	overflow-y: scroll;
 	height: 100vh;
 	width: 84%;
 	float: right;
 }
+.main_right .create button {
+	transition: 0.2s all ease-out;
+}
+.main_right .create button:hover {
+	background-color: #51931b;
+	color: #fff;
+}
 .main_right_btn_active {
 	background-color: #51931b;
 	color: #fff;
+}
+.main_right ul button {
+	transition: all 0.4s ease-in-out;
+}
+.main_right #main_right_main button {
+	transition: all 0.4s ease-in-out;
+}
+.main_right #main_right_main button:hover a {
+	text-decoration: none;
+	color: red;
+}
+.main_right #main_right_main button:hover {
+	transform: scale(1.05);
+	text-decoration: none;
+}
+.main_right ul button:hover {
+	color: #fff;
+	background-color: #51931b;
 }
 .main_right_list_btn {
 	margin: 50px 50px 10px 50px;
@@ -78,9 +116,20 @@
 	border: 1px solid #51931b;
 	padding: 5px 20px;
 }
+.main_right_list_btn_list a{
+	color: #000;
+}
+.main_right_list_btn_list a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.main_right_list_btn_list:hover{
+	background-color: #51931b;
+	padding: 5px 20px;
+	color: #fff;
+}
 .main_right_container {
-	border: 1px solid #51931b;
-	box-shadow: 0px 0px 5px 1px #51931b;
+	box-shadow: 0px 0px 2px 1px #51931bc4;
 	margin-top: 50px;
 }
 .main_right_container_title {
@@ -95,6 +144,9 @@
 .main_right_container_listbtn button {
 	margin: 20px;
 }
+.main_right_container_listbtn button a {
+	color: #fff;
+}
 .btn {
 	margin-left: 1px;
 }
@@ -104,9 +156,8 @@
 	position: relative;
 }
 .main_right_bua {
-	border: 1px solid #0000005e;
 	margin-top: 10px;
-	box-shadow: 5px 5px 5px 0px #0000005e;
+	box-shadow: 2px 2px 2px 0px #0000005e;
 	border-radius: 5px;
 }
 .main_right_bua_list_icon {
@@ -128,8 +179,7 @@
 	padding: 10px;
 }
 .main_right_bua_search {
-	border: 1px solid #0000005e;
-	margin-top: 10px;
+	margin: 10px 0px;
 	box-shadow: 5px 5px 5px 0px #0000005e;
 	border-radius: 5px;
 }
@@ -146,7 +196,6 @@
 	line-height: 50px;
 }
 .main_right_search_list {
-	border: 1px solid #0000005e;
 	margin-top: 10px;
 	box-shadow: 5px 5px 5px 0px #0000005e;
 	border-radius: 5px;
@@ -159,8 +208,8 @@
 	padding-left: 10px;
 }
 .main_right_day_menu_list {
-	border: 1px solid #51931b;
-	box-shadow: 0px 0px 10px 1px #51931b;
+	position: relative;
+	z-index: 3;
 }
 .main_right_day_menu_list.show {
 	display: block;
@@ -181,6 +230,9 @@
 }
 .text-center {
 	width: 100%;
+}
+.text-center img{
+		height: 100%;
 }
 .setmenu_showtp {
 	width: 100%;
@@ -252,10 +304,10 @@
 	overflow-y: scroll;
 }
 .chinhsuabuan_chinhsuamd {
-	box-shadow: 0px 0px 10px 5px #51931b;
+	box-shadow: 0px 0px 10px 5px #51931b96;
 }
 .chitietmonan_chinhsua_add {
-	box-shadow: 0px 0px 10px 5px #51931b;
+	box-shadow: 0px 0px 10px 5px #51931b93;
 }
 .main_left.show {
 	z-index: 999;
@@ -301,6 +353,10 @@
 		position: absolute;
 		width: 100%;
 	}
+	.main_right nav ul button {
+		margin-top: 0.3rem;
+		display: inline-block;
+	}
 	#clickshow {
 		display: block;
 	}
@@ -310,7 +366,7 @@
 		display: none;
 	}
 	.card-img {
-		width: 20%;
+		width: 30%;
 		margin: 0px auto;
 	}
 	.width-mb {
