@@ -855,3 +855,15 @@ footer ul a:hover {
 .view-all a {
 	font-size: 13px;
 }
+
+#co-operate .owl-carousel .item {
+	margin: 0 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 200px;
+	height: 200px !important;
+}
+#co-operate .owl-carousel button {
+	display: none;
+}

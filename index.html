@@ -12,7 +12,9 @@
 	<link rel="stylesheet" type="text/css"
 	href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 	<link rel="stylesheet" href="css/home.css">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 	<link rel="stylesheet" href="css/reponsive.css">
 	<link rel="icon" href="icon.ico">
 	<title>Trang chủ</title>
@@ -2186,38 +2188,67 @@
 
 		<!-- 	----------------------------------------phần chung footer ----------------------------------------------------->
 		<!-- =====doi tac========= -->
-		<section style="overflow:hidden" class="doi-tac">
+		<div id="co-operate" class="py-5">
 			<div class="container">
-				<div class="title">
-					<h3>đối tác của moki</h3>
-				</div>
-				<div class="cac-doi-tac slick-doi-tac" style="position: relative;">
-					<div>
-						<img src="img/organic.png" alt="Đối tác của Moki" class="img-fluid" width="120px">
-					</div>
-					<div>
-						<img src="img/vinmart.jpg" alt="Đối tác của Moki" class="img-fluid" width="120px">
-					</div>
-					<div>
-						<img src="img/hoa_phuong.jpg" alt="Đối tác của Moki" class="img-fluid" width="120px">
-					</div>
-					<div>
-						<img src="img/nutifood.png" alt="Đối tác của Moki" class="img-fluid" width="120px">
-					</div>
-					<div>
-						<img src="img/feast_1.jpg" alt="Đối tác của Moki" class="img-fluid" width="120px">
-					</div>
-					<div>
-						<img src="img/feast_table.jpg" alt="Đối tác của Moki" class="img-fluid" width="120px">
-					</div>
-				</div>
+				<div class="title text-center">
+							<h3 class="font-weight-bold py-3 text-uppercase text-success">
+								Đối tác của moki <i class="fas fa-handshake"></i>
+								
+							</h3>
+						</div>
+						<!-- hot dished owl carousel -->
+						<div class="carousel slide py-3" data-ride="carousel">
+							<!-- The slideshow -->
+							<div class="owl-carousel owl-theme">
+								<!-- dishes 1 -->
+								<div class="item">
+									<div class="card">
+											<img class="" src="./img/vinmart.jpg" alt="Đối tác Moki" />
+									
+									</div>
+								</div>
+								<!-- dishes 2-->
+								<div class="item">
+									<div class="card">
+											<img class="" src="./img/vingroup.png" alt="Đối tác Moki" />
+									
+									</div>
+								</div>
+								<!-- dishes 3-->
+								<div class="item">
+									<div class="card">
+											<img class="" src="./img/logo-momo.jpg" alt="Đối tác Moki" />
+									
+									</div>
+								</div>
+								<!-- dishes 4-->
+								<div class="item">
+									<div class="card">
+											<img class="" src="./img/amazone.png" alt="Đối tác Moki" />
+									
+									</div>
+								</div>
+								<!-- dishes 5-->
+								<div class="item">
+									<div class="card">
+											<img class="" src="./img/vinamilk.png" alt="Đối tác Moki" />
+									
+									</div>
+								</div>
+								<!-- dishes 5-->
+								<div class="item">
+									<div class="card">
+											<img class="" src="./img/alibaba.png" alt="Đối tác Moki" />
+								
+									</div>
+								</div>
+				
+								<!-- end -->
+							</div>
+						</div>
+						<!-- end -->
 			</div>
-		</section>
-		<section id="co-operate">
-			<div class="container py-3">
-
-			</div>
-		</section>
+		</div>
 		<!-- 	////////footer -->
 		<footer>
 			<div class="container">
@@ -2428,7 +2459,6 @@
 		</div>
 	</div>
 </div>
-</div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -2439,10 +2469,12 @@ crossorigin="anonymous"></script>
 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/header.js"></script>
 <script type="text/javascript" src="js/footer.js"></script>
+<script src="./js/dishes_food_owl_carousel.js"></script>
 </body>
 
 </html>
