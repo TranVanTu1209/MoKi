@@ -438,6 +438,7 @@ a:hover {
 }
 .search-product .toggle-menu:hover ~ .food-menu {
 	display: block;
+	animation: zoomInUp 0.4s;
 }
 .search-product .food .nav-menu {
 	list-style: none;
@@ -485,8 +486,28 @@ a:hover {
 }
 .search-product .food ul .nav-item-has-children:hover .sub-menu {
 	display: inline-block;
-	transition: all 0.4s;
+	animation: zoomInUp 0.4s ;
 }
+
+@-webkit-keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.1) translateY(2000px);
+    transform: scale(.1) translateY(2000px);
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(.475) translateY(-60px);
+    transform: scale(.475) translateY(-60px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+
 .search-product .food ul .nav-item-children {
 	margin-bottom: 20px;
 }
@@ -657,7 +678,7 @@ a:hover {
 	overflow: hidden;
 	position: absolute;
 	top: 49%;
-	transform: translateY(5px);
+	transform: translateY(10px);
 	left: 0;
 	background-color: rgba(34, 34, 34, 0.863);
 	color: #fff;
@@ -681,6 +702,22 @@ a:hover {
 }
 .danh-sach-food .product .add-cart a:hover {
 	color: #ec0a00;
+}
+
+.food-new .danh-sach-food .cart-success{
+display: none;
+}
+.food-new .danh-sach-food .display-notification{
+	display: block;
+	animation: scale-cart-success 0.2s ;
+}
+@keyframes scale-cart-success{
+	0%{
+		transform: scale(0.5);
+	}
+	100%{
+		transform: scale(1);
+	}
 }
 .danh-sach-food .product .add-cart a i {
 	font-size: 25px;

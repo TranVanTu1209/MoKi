@@ -64,12 +64,93 @@ $('.slick-product').slick({
     // instead of a settings object
   ]
 });
-$(function() {
-  $('.toggle-menu').click(function(event) {
-  /* Act on the event */
-  $(this).next().slideToggle();
+// $(function() {
+//   $('.toggle-menu').click(function(event) {
+//    Act on the event 
+//   $(this).next().slideToggle();
+// });
+// });
+
+
+// add to cart success
+//món ăn mới
+$('.food #disk-new .danh-sach-food .product .add-cart').on('click', (e) => {
+  $(' #disk-new .danh-sach-food .cart-success').addClass('display-notification');
+  var cartIcon = $(e.target).children('i');
+  cartIcon.removeClass('fa-cart-plus')
+  cartIcon.addClass('fa-check-circle text-success');
+  console.log(cartIcon);
+  setTimeout((e) => {
+    $('#disk-new .danh-sach-food .cart-success').removeClass('display-notification');
+    cartIcon.removeClass('fa-check-circle text-success');
+    cartIcon.addClass('fa-cart-plus');
+  }, 3000);
+  e.preventDefault();
 });
+
+//món ăn bán chạy
+$('.food #disk-selling .danh-sach-food .product .add-cart').on('click', (e) => {
+  $(' #disk-selling .danh-sach-food .cart-success').addClass('display-notification');
+  var cartIcon = $(e.target).children('i');
+  cartIcon.removeClass('fa-cart-plus')
+  cartIcon.addClass('fa-check-circle text-success');
+  console.log(cartIcon);
+  setTimeout((e) => {
+    $('#disk-selling .danh-sach-food .cart-success').removeClass('display-notification');
+    cartIcon.removeClass('fa-check-circle text-success');
+    cartIcon.addClass('fa-cart-plus');
+  }, 3000);
+  e.preventDefault();
 });
+
+//món ăn ưa thích
+$('.food #disk-favorite .danh-sach-food .product .add-cart').on('click', (e) => {
+  $(' #disk-favorite .danh-sach-food .cart-success').addClass('display-notification');
+  var cartIcon = $(e.target).children('i');
+  cartIcon.removeClass('fa-cart-plus')
+  cartIcon.addClass('fa-check-circle text-success');
+  console.log(cartIcon);
+  setTimeout((e) => {
+    $(' #disk-favorite .danh-sach-food .cart-success').removeClass('display-notification');
+    cartIcon.removeClass('fa-check-circle text-success');
+    cartIcon.addClass('fa-cart-plus');
+  }, 3000);
+  e.preventDefault();
+});
+
+
+//Thực phẩm ưu đãi
+$('.food #food-new .danh-sach-food .product .add-cart').on('click', (e) => {
+  $(' #food-new .danh-sach-food .cart-success').addClass('display-notification');
+  var cartIcon = $(e.target).children('i');
+  cartIcon.removeClass('fa-cart-plus')
+  cartIcon.addClass('fa-check-circle text-success');
+  console.log(cartIcon);
+  setTimeout((e) => {
+    $('#food-new .danh-sach-food .cart-success').removeClass('display-notification');
+    cartIcon.removeClass('fa-check-circle text-success');
+    cartIcon.addClass('fa-cart-plus');
+  }, 3000);
+  e.preventDefault();
+});
+
+
+//Thực phẩm bán chạy
+$('.food #food-selling .danh-sach-food .product .add-cart').on('click', (e) => {
+  $(' #food-selling .danh-sach-food .cart-success').addClass('display-notification');
+  var cartIcon = $(e.target).children('i');
+  cartIcon.removeClass('fa-cart-plus')
+  cartIcon.addClass('fa-check-circle text-success');
+  console.log(cartIcon);
+  setTimeout((e) => {
+    $('#food-selling .danh-sach-food .cart-success').removeClass('display-notification');
+    cartIcon.removeClass('fa-check-circle text-success');
+    cartIcon.addClass('fa-cart-plus');
+  }, 3000);
+  e.preventDefault();
+});
+
+
 
 // // ---------footer------------
 // //slick-doi-tac 

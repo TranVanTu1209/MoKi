@@ -19,7 +19,8 @@ header .bar::after{
 	position: absolute;
 	right: 37px;
 	top: 17px;
-	    padding: 23px;
+	z-index: 3;
+	    padding: 30px;
 	display: none;
 }
 .menu-mobile .bar::before{
@@ -107,7 +108,7 @@ header .nav-menu .cart {
 	z-index: 6;
 	display: block;
 	width: 290px;
-	animation: fade 2s ;
+	animation: fade 0.7s ;
 	}
 	header .nav-menu ul li a{
 	border-bottom: 1px solid #e5e5e5;
