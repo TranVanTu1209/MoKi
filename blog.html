@@ -19,6 +19,10 @@
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
 		/>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+		<link rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 		<link rel="stylesheet" href="./css/header.css">
 		<link rel="stylesheet" href="./css/footer.css">
 		<link rel="stylesheet" href="./css/reponsive.css">
@@ -26,8 +30,7 @@
 	</head>
 	<body>
 				<!-- main header -->
-		<header id="header" id="ripples">
-					<!-- 	============menu==================== -->
+		<header id="header" id="ripples">	<!-- 	============menu==================== -->
 					<div class="menu">
 						<div class="overlay"></div>
 						<div class="container">
@@ -88,53 +91,98 @@
 		</header>
 		<!-- main body blog -->
 		<div id="foodMe" class="container">
-			<div class="card-food">
-				<div class="img-food">
-					<img src="./img/party.jpg" alt="Second slide" />
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+						<div class="card-food">
+							<div class="img-food">
+								<img src="./img/party.jpg" alt="Second slide" />
+							</div>
+							<div class="content-card">
+								<h5>Công thức nấu thịt gà xào xả ớt</h5>
+								<p class="note">
+									<span>FoodMe Blog</span>
+									, written by Tú Văn Trần
+								</p>
+								<div>
+									Chúng tôi cam kết cung cấp thực phẩm, thức ăn đảm bảo chất lượng,
+									hương vị cho quý khách
+								</div>
+								<div class="btn-read-more">
+									<a href="blog_detail.html" class="btn btn-success">Read more</a>
+								</div>
+							</div>
+						</div>
 				</div>
-				<div class="content-card">
-					<h5>Công thức nấu thịt gà xào xả ớt</h5>
-					<p class="note">
-						<span>FoodMe Blog</span>
-						, written by Tú Văn Trần
-					</p>
-					<div>
-						Chúng tôi cam kết cung cấp thực phẩm, thức ăn đảm bảo chất lượng,
-						hương vị cho quý khách
+				<div class="item">
+					<div class="card-food">
+						<div class="img-food">
+							<img src="./img/vegetable_drill.jpg" alt="Second slide" />
+						</div>
+						<div class="content-card">
+							<h5>Công thức nấu thịt gà xào xả ớt</h5>
+							<p class="note">
+								<span>FoodMe Blog</span>
+								, written by Tú Văn Trần
+							</p>
+							<div>
+								Chúng tôi cam kết cung cấp thực phẩm, thức ăn đảm bảo chất lượng,
+								hương vị cho quý khách
+							</div>
+							<div class="btn-read-more">
+								<a href="blog_detail.html" class="btn btn-success">Read more</a>
+							</div>
+						</div>
 					</div>
-					<div class="btn-read-more">
-						<button>Read more</button>
+				</div>
+				<div class="item">
+					<div class="card-food">
+						<div class="img-food">
+							<img src="./img/apple.jpg" alt="Second slide" />
+						</div>
+						<div class="content-card">
+							<h5>Công thức nấu thịt chó chấm mắm Nam Ngư</h5>
+							<p class="note">
+								<span>FoodMe Blog</span>
+								, written by Tú Văn Trần
+							</p>
+							<div>
+								Chúng tôi cam kết cung cấp thực phẩm, thức ăn đảm bảo chất lượng,
+								hương vị cho quý khách
+							</div>
+							<div class="btn-read-more">
+								<a href="blog_detail.html" class="btn btn-success">Read more</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		
 		</div>
 		<!-- hot-blog -->
 		<div class="container" id="hot-blog">
 			<h3>Blog hot nhất hôm nay</h3>
 			<div class="blogs">
 				<div class="img-blog-1 card-blog">
-					<img src="./img/party.jpg" alt="Second slide" />
-					<div class="text-blog">
+					<img src="./img/banner1.jpeg" class="rounded" alt="Second slide" />
+					<div class="text-blog text-white">
 						<h4>Công thức nấu ăn cho mùa dịch Covid 19</h4>
 						<p><i class="far fa-clock"></i> Thứ ba, 21 - 4 - 2020</p>
-						<button>View menu</button>
+						<a href="dish_detail.html" class="btn btn-secondary">Xem menu</a>
 					</div>
 				</div>
 				<div class="img-blog-2 card-blog">
-					<img src="./img/party.jpg" alt="Second slide" />
-					<div class="text-blog">
+					<img src="./img/banner2.jpeg" alt="Second slide" />
+					<div class="text-blog text-white">
 						<h6>Nấu mì tôm chưa bao giờ dễ đến thế</h6>
 						<p><i class="far fa-clock"></i> Thứ ba, 21 - 4 - 2020</p>
-						<button>Read more</button>
+						<a href="dish_detail.html" class="btn btn-info">Xem chi tiết</a>
 					</div>
 				</div>
 				<div class="img-blog-3 card-blog">
-					<img src="./img/party.jpg" alt="Second slide" />
-					<div class="text-blog">
+					<img src="./img/banner3.jpeg" alt="Second slide" />
+					<div class="text-blog text-white">
 						<h6>Nấu mì tôm chưa bao giờ dễ đến thế</h6>
 						<p><i class="far fa-clock"></i> Thứ ba, 21 - 4 - 2020</p>
-						<button>Read more</button>
+						<a href="dish_detail.html" class="btn btn-info">Xem chi tiết</a>
 					</div>
 				</div>
 			</div>
@@ -143,23 +191,76 @@
 		<div class="container pb-5" id="top6-food">
 			<h3>Top 6 món ăn Việt</h3>
 			<div class="row">
-				<div class="col-lg-4">
-					<img src="./img/Cá.jpg" alt="Cá" />
+				<div class="col-lg-4 col-md-6">
+					<div class="card">
+							<img src="./img/Cá.jpg" class="card-ing-top" alt="Food me blog" />
+							<div class="card-body">
+								<h5 class="card-title">Ăn gì để giảm cân</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<a href="#" class="btn btn-success">Chi tiết</a>
+							</div>
+					</div>
+					
 				</div>
-				<div class="col-lg-4">
-					<img src="./img/Cá.jpg" alt="Cá" />
+				<div class="col-lg-4 col-md-6">
+					<div class="card">
+						<img src="./img/feast_1.jpg" class="card-ing-top" alt="Food me blog" />
+						<div class="card-body">
+							<h5 class="card-title">Món thịt om chuối đậu</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+								content.</p>
+							<a href="#" class="btn btn-success">Chi tiết</a>
+						</div>
+					</div>
+				
 				</div>
-				<div class="col-lg-4">
-					<img src="./img/Cá.jpg" alt="Cá" />
+				<div class="col-lg-4 col-md-6">
+					<div class="card">
+						<img src="./img/meal_1.jpg" class="card-ing-top" alt="Food me blog" />
+						<div class="card-body">
+							<h5 class="card-title">Ăn gì để giảm cân</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+								content.</p>
+							<a href="#" class="btn btn-success">Chi tiết</a>
+						</div>
+					</div>
+				
 				</div>
-				<div class="col-lg-4">
-					<img src="./img/Cá.jpg" alt="Cá" />
+				<div class="col-lg-4 col-md-6">
+					<div class="card">
+						<img src="./img/meal_2.jpg" class="card-ing-top" alt="Food me blog" />
+						<div class="card-body">
+							<h5 class="card-title">Ăn gì để tăng cân</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+								content.</p>
+							<a href="#" class="btn btn-success">Chi tiết</a>
+						</div>
+					</div>
+				
 				</div>
-				<div class="col-lg-4">
-					<img src="./img/Cá.jpg" alt="Cá" />
+				<div class="col-lg-4 col-md-6">
+					<div class="card">
+						<img src="./img/meal_3.jpg" class="card-ing-top" alt="Food me blog" />
+						<div class="card-body">
+							<h5 class="card-title">Ăn gì để đẹp da</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+								content.</p>
+							<a href="#" class="btn btn-success">Chi tiết</a>
+						</div>
+					</div>
+				
 				</div>
-				<div class="col-lg-4">
-					<img src="./img/Cá.jpg" alt="Cá" />
+				<div class="col-lg-4 col-md-6">
+					<div class="card">
+						<img src="./img/banh-mi-kep-thit-thumb.jpg" class="card-ing-top" alt="Food me blog" />
+						<div class="card-body">
+							<h5 class="card-title">Ăn gì để giảm cân</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+								content.</p>
+							<a href="#" class="btn btn-success">Chi tiết</a>
+						</div>
+					</div>
+				
 				</div>
 			</div>
 		</div>
@@ -262,5 +363,8 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+			<script src="./js/blog_owl_carousel.js"></script>
+
 	</body>
 </html>

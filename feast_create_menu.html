@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create Menu</title>
+  <title>Tạo menu tiệc</title>
   <link rel="stylesheet" href="./css/Create_menu.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
     integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/header.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/reponsive.css">
   <link rel="icon" href="icon.ico">
   </head>
-
 <body>
     <!-- main header -->
     <header id="header" id="ripples">
@@ -81,9 +81,13 @@
   <!-- main body -->
   <div id="body-create-menu">
     <div class="container-fluid">
-      <h6 class="title">Tạo menu cho bữa tiệc</h6>
       <div class="row">
-
+        <div class="col-md-6">
+          <h5 class="title text-center">Tạo menu cho bữa tiệc</h5>
+        </div>
+        
+      </div>
+      <div class="row">
         <div class="col-sm-7 self-create">
           <div class="form-select">
             <label for="sel1">Phục vụ cho : </label>
@@ -95,8 +99,27 @@
             </select>
           </div>
           <div class="btn-icon">
-            <button><i class="material-icons">playlist_add</i></button>
-            <button><i class="material-icons">shopping_cart</i></button>
+            <button class="add-to-cart"
+            data-toggle="modal"
+            data-target="#add-to-cart-success"
+            ><i class="material-icons">shopping_cart</i></button>
+            <button
+              data-toggle="dropdown"
+              data-target="#list-choice"
+            ><i class="material-icons">playlist_add</i></button>
+            <div class="dropdown-menu pr-4">
+              <ul>
+                <li>
+                  <a href="#"><i class="fas fa-file-export"></i> Lưu lại menu</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-shopping-cart"></i> Đặt mua thực phẩm </a>
+                </li>
+                <li>
+                  <a href="#"><i class="far fa-share-square"></i> Chia sẻ với bạn bè</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="list-menu">
@@ -105,11 +128,14 @@
               <div class="header-card-menu">
                 <div class="title-menu">
                   <i class='fas fa-utensil-spoon'></i>
-                  <span>Món khai vị</span>
+                  <span class="font-weight-bold">Món khai vị</span>
                 </div>
                 <div class="btn-icon">
                   <button><i class="material-icons">repeat</i></button>
-                  <button><i class="material-icons">shopping_cart</i></button>
+                  <button class="add-to-cart"
+                    data-toggle="modal"
+                    data-target="#add-to-cart-success"
+                  ><i class="material-icons">shopping_cart</i></button>
                 </div>
               </div>
               <div class="body-card-menu">
@@ -117,8 +143,8 @@
                   Bạn có thể tạo menu ngẫu nhiên hoặc chọn từ list món ăn
                 </div>
                 <button>
-                  Tạo ngẫu nhiên
-                  <i class="material-icons">library_books</i>
+                  Tạo ngẫu nhiên <i class="fas fa-pizza-slice"></i>
+                 
                 </button>
               </div>
             </div>
@@ -128,11 +154,14 @@
               <div class="header-card-menu">
                 <div class="title-menu">
                   <i class='fas fa-utensil-spoon'></i>
-                  <span>Món chính</span>
+                  <span class="font-weight-bold">Món chính</span>
                 </div>
                 <div class="btn-icon">
                   <button><i class="material-icons">repeat</i></button>
-                  <button><i class="material-icons">shopping_cart</i></button>
+                  <button class="add-to-cart"
+                    data-toggle="modal"
+                    data-target="#add-to-cart-success"
+                  ><i class="material-icons">shopping_cart</i></button>
                 </div>
               </div>
               <div class="body-card-menu">
@@ -140,8 +169,8 @@
                   Bạn có thể tạo menu ngẫu nhiên hoặc chọn từ list món ăn
                 </div>
                 <button>
-                  Tạo ngẫu nhiên
-                  <i class="material-icons">library_books</i>
+                  Tạo ngẫu nhiên <i class="fas fa-pizza-slice"></i>
+                  
                 </button>
               </div>
             </div>
@@ -151,11 +180,14 @@
               <div class="header-card-menu">
                 <div class="title-menu">
                   <i class='fas fa-utensil-spoon'></i>
-                  <span>Món</span>
+                  <span class="font-weight-bold">Đồ uống</span>
                 </div>
                 <div class="btn-icon">
                   <button><i class="material-icons">repeat</i></button>
-                  <button><i class="material-icons">shopping_cart</i></button>
+                  <button class="add-to-cart"
+                    data-toggle="modal"
+                    data-target="#add-to-cart-success"
+                  ><i class="material-icons">shopping_cart</i></button>
                 </div>
               </div>
               <div class="body-card-menu">
@@ -163,8 +195,7 @@
                   Bạn có thể tạo menu ngẫu nhiên hoặc chọn từ list món ăn
                 </div>
                 <button>
-                  Tạo ngẫu nhiên
-                  <i class="material-icons">library_books</i>
+                  Tạo ngẫu nhiên <i class="fas fa-pizza-slice"></i>
                 </button>
               </div>
             </div>
@@ -174,11 +205,14 @@
               <div class="header-card-menu">
                 <div class="title-menu">
                   <i class='fas fa-utensil-spoon'></i>
-                  <span>Món khai vị</span>
+                  <span class="font-weight-bold">Món tráng miệng</span>
                 </div>
                 <div class="btn-icon">
                   <button><i class="material-icons">repeat</i></button>
-                  <button><i class="material-icons">shopping_cart</i></button>
+                  <button class="add-to-cart"
+                    data-toggle="modal"
+                    data-target="#add-to-cart-success"
+                  ><i class="material-icons">shopping_cart</i></button>
                 </div>
               </div>
               <div class="body-card-menu">
@@ -186,42 +220,38 @@
                   Bạn có thể tạo menu ngẫu nhiên hoặc chọn từ list món ăn
                 </div>
                 <button>
-                  Tạo ngẫu nhiên
-                  <i class="material-icons">library_books</i>
+                  Tạo ngẫu nhiên <i class="fas fa-pizza-slice"></i>
                 </button>
               </div>
             </div>
             <!-- end-card -->
 
           </div>
-
           <div class="total-money">
             <div>Tổng tiền thực đơn cho 30 người :</div>
             <div class="money">0</div>
           </div>
 
-          <button class="order-now">
+          <a href="payment.html" class="order-now btn btn-success">
             Tiến hành đặt món
             <i class='far fa-arrow-alt-circle-right'></i>
-          </button>
+          </a>
         </div>
+        <!-- alternative-menu -->
         <div class="col-sm-5" id="alternative-menu">
-
           <div class="title">Thực đơn thay thế cho bạn</div>
-
           <div class="btn-group btn-title">
-            <button type="button" class="btn ">Danh sách món ăn</button>
-            <button type="button" class="btn active">Danh sách menu các món</button>
+            <button type="button" class="btn list-dish">Danh sách món ăn</button>
+            <button type="button" class="btn active list-dish-menu">Danh sách menu các món</button>
           </div>
-
-          <div class="btn-species">
-            <button type="button" class="active">Khai vị</button>
-            <button type="button">Món chính</button>
-            <button type="button">Tráng miệng</button>
-            <button type="button">Đồ uống</button>
+          <div class="btn-species mt-2">
+            <button type="button" class="active py-1">Khai vị</button>
+            <button type="button py-1">Món chính</button>
+            <button type="button py-1">Tráng miệng</button>
+            <button type="button py-1">Đồ uống</button>
           </div>
-
-          <div class="list-combo-alternative">
+          <!-- combo -->
+          <div class="list-combo-alternative list">
             <!-- card -->
             <div class="card-combo-alternative">
               <div class="header-card-alternative">
@@ -229,8 +259,12 @@
                   <i class='fas fa-utensil-spoon'></i>
                   <span>Combo món khai vị 1</span>
                 </div>
-                <div class="btn-icon">
-                  <button><i class="material-icons">add_box</i></button>
+                <div class="btn-icon add-to-menu">
+                  <button 
+                  data-toggle="modal"
+                  data-target="#add-to-menu"
+                  ><i class="material-icons">add_box</i>
+                </button>
                 </div>
               </div>
               <div class="media">
@@ -274,7 +308,8 @@
                   <span>Combo món khai vị 2</span>
                 </div>
                 <div class="btn-icon">
-                  <button><i class="material-icons">add_box</i></button>
+                        <button data-toggle="modal" data-target="#add-to-menu"><i class="material-icons">add_box</i>
+                        </button>
                 </div>
               </div>
               <div class="media">
@@ -318,7 +353,8 @@
                   <span>Combo món khai vị 3</span>
                 </div>
                 <div class="btn-icon">
-                  <button><i class="material-icons">add_box</i></button>
+                  <button data-toggle="modal" data-target="#add-to-menu"><i class="material-icons">add_box</i>
+                 </button>
                 </div>
               </div>
               <div class="media">
@@ -362,7 +398,8 @@
                   <span>Combo món khai vị 4</span>
                 </div>
                 <div class="btn-icon">
-                  <button><i class="material-icons">add_box</i></button>
+                        <button data-toggle="modal" data-target="#add-to-menu"><i class="material-icons">add_box</i>
+                        </button>
                 </div>
               </div>
               <div class="media">
@@ -370,7 +407,10 @@
                 <div class="media-body">
                   <h5 class="mt-0">Sườn xào chua ngọt</h5>
                   <div>
-                    <span class="price-old">230.000đ</span>
+                    <span class="price-old">
+                      250.000đ
+                      <span class="slash-letters"></span>
+                    </span>
                     <span class="price-new">120.000đ</span>
                   </div>
                 </div>
@@ -381,7 +421,8 @@
                   <h5 class="mt-0">Thịt chó mắn tôm</h5>
                   <div>
                     <span class="price-old">
-                      230.000đ
+                      250.000đ
+                      <span class="slash-letters"></span>
                     </span>
                     <span class="price-new">120.000đ</span>
                   </div>
@@ -395,22 +436,111 @@
             </div>
             <!-- end card -->
           </div>
-
-
-
+          <div class="list-dish-alternative list">
+            <div class="card-combo-alternative">
+              <div class="header-card-alternative">  
+              </div>
+              <div class="media">
+                <img class="mr-3" src="./img/suonsao.jpg" alt="image food">
+                <div class="media-body">
+                  <h5 class="mt-0">Sườn xào chua ngọt</h5>
+                  <div>
+                    <span class="price-old">
+                      250.000đ
+                      <span class="slash-letters"></span>
+                    </span>
+                    <span class="price-new">120.000đ</span>
+                  </div>
+                </div>
+                <div class="btn-icon">
+                  <button class="" data-toggle="modal" data-target="#add-to-menu"><i class="material-icons text-primary">add_box</i>
+                  </button>
+                </div>
+              </div>
+              <div class="media">
+                <img class="mr-3" src="./img/suonsao.jpg" alt="image food">
+                <div class="media-body">
+                  <h5 class="mt-0">Thịt chó mắn tôm</h5>
+                  <div>
+                    <span class="price-old">
+                      250.000đ
+                      <span class="slash-letters"></span>
+                    </span>
+                    <span class="price-new">120.000đ</span>
+                  </div>
+                </div>
+                <div class="btn-icon">
+                  <button class="" data-toggle="modal" data-target="#add-to-menu"><i class="material-icons text-primary">add_box</i>
+                  </button>
+                </div>
+              </div>
+              <div class="media">
+                <img class="mr-3" src="./img/suonsao.jpg" alt="image food">
+                <div class="media-body">
+                  <h5 class="mt-0">Thịt chó mắn tôm</h5>
+                  <div>
+                    <span class="price-old">
+                      250.000đ
+                      <span class="slash-letters"></span>
+                    </span>
+                    <span class="price-new">120.000đ</span>
+                  </div>
+                </div>
+                <div class="btn-icon">
+                  <button class="" data-toggle="modal" data-target="#add-to-menu"><i class="material-icons text-primary">add_box</i>
+                  </button>
+                </div>
+              </div>
+              <div class="media">
+                <img class="mr-3" src="./img/suonsao.jpg" alt="image food">
+                <div class="media-body">
+                  <h5 class="mt-0">Thịt chó mắn tôm</h5>
+                  <div>
+                    <span class="price-old">
+                      250.000đ
+                      <span class="slash-letters"></span>
+                    </span>
+                    <span class="price-new">120.000đ</span>
+                  </div>
+                </div>
+                <div class="btn-icon">
+                  <button class="" data-toggle="modal" data-target="#add-to-menu"><i class="material-icons text-primary">add_box</i>
+                  </button>
+                </div>
+              </div>
+              <div class="media">
+                <img class="mr-3" src="./img/suonsao.jpg" alt="image food">
+                <div class="media-body">
+                  <h5 class="mt-0">Thịt chó mắn tôm</h5>
+                  <div>
+                    <span class="price-old">
+                      250.000đ
+                      <span class="slash-letters"></span>
+                    </span>
+                    <span class="price-new">120.000đ</span>
+                  </div>
+                </div>
+                <div class="btn-icon">
+                  <button class="" data-toggle="modal" data-target="#add-to-menu"><i class="material-icons text-primary">add_box</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- other menu section -->
     <div class="menu-other">
       <div class="title">
-        <h4><i class='far fa-hand-point-up'></i> Combo menu tiệc nhiều người chọn nhất</h4>
+        <h3><i class='far fa-hand-point-up'></i> Combo menu tiệc nhiều người chọn nhất</h3>
       </div>
       <div class="list-menu-other">
 
         <!-- card -->
         <div class="card">
           <div class="img-card">
-            <img class="card-img-top" src="./img/party.jpg" alt="Card image cap">
+            <img class="card-img-top" src="./img/meal_1.jpg" alt="Card image cap">
             <i class='far fa-heart'></i>
             <p><i class='fas fa-shopping-cart'></i>Thêm vào giỏ hàng</p>
           </div>
@@ -438,18 +568,18 @@
                 </div>
               </div>
             </div>
-            <button>Đặt menu</button>
+            <a href="payment.html" class="btn btn-success mt-3 d-inline-block text-white">Đặt menu</a>
           </div>
         </div>
         <!-- card -->
         <div class="card">
           <div class="img-card">
-            <img class="card-img-top" src="./img/party.jpg" alt="Card image cap">
+            <img class="card-img-top" src="./img/meal_2.jpg" alt="Card image cap">
             <i class='far fa-heart'></i>
             <p><i class='fas fa-shopping-cart'></i>Thêm vào giỏ hàng</p>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Combo lẩu đuôi bò</h5>
+            <h5 class="card-title">Combo tiệc cho sinh nhật</h5>
             <div>
               <span class="icon-star">
                 <i class='fas fa-star'></i>
@@ -471,13 +601,13 @@
                 </div>
               </div>
             </div>
-            <button>Đặt menu</button>
+            <a href="payment.html" class="btn btn-success mt-3 d-inline-block text-white">Đặt menu</a>
           </div>
         </div>
         <!-- card -->
         <div class="card">
           <div class="img-card">
-            <img class="card-img-top" src="./img/party.jpg" alt="Card image cap">
+            <img class="card-img-top" src="./img/meal_1.jpg" alt="Card image cap">
             <i class='far fa-heart'></i>
             <p><i class='fas fa-shopping-cart'></i>Thêm vào giỏ hàng</p>
           </div>
@@ -504,13 +634,11 @@
                 </div>
               </div>
             </div>
-            <button>Đặt menu</button>
+            <a href="payment.html" class="btn btn-success mt-3 d-inline-block text-white">Đặt menu</a>
           </div>
         </div>
         <!-- next & prev -->
-       
       </div>
-     
       <script>
         var x = 0;
         var width_screen = screen.width;
@@ -534,6 +662,25 @@
       </script>
     </div>
   </div>
+  <!-- modal add to cart success -->
+    <div class="modal fade" id="add-to-cart-success">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title text-success">Bạn đã thêm thành công menu thực đơn vào giỏ hàng <i class="fas fa-check-circle"></i> </h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            Vui lòng kiểm tra giỏ hàng để tiến hành đặt món
+          </div>
+          <!-- Modal footer -->
+        </div>
+      </div>
+    </div>
     <!-- 	////////footer -->
     <footer>
       <div class="container">
@@ -627,6 +774,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="./js/header.js"></script>
+  <script src="./js/feast_create_menu.js"></script>
 </body>
 
 </html>

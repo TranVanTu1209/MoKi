@@ -1,5 +1,5 @@
 #foodMe {
-    padding: 50px 20px;
+    padding: 0px 20px;
     position: relative;
 }
 #foodMe .card-food{
@@ -97,6 +97,9 @@
 /* top 6 food */
 #top6-food h3 {
     padding: 20px 0px;
+}
+#top6-food .card {
+    margin-bottom: 2rem;
 }
 #top6-food img{
     width: 100%;

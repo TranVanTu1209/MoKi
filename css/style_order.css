@@ -130,7 +130,7 @@ a:hover {
 #meal-search main ul li:first-child #more-choice {
 	position: absolute;
 	width: 230px;
-	top: 45px;
+	top: 40px;
 	left: 0;
 	z-index: 1;
 }

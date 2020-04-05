@@ -114,3 +114,8 @@ footer ul a:hover {
 .view-all a {
 	font-size: 13px;
 }
+@media(max-width : 414px) {
+	footer {
+		text-align: center;
+	}
+}
