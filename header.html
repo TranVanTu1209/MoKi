@@ -4,35 +4,36 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/reponsive.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/reponsive.css">
 </head>
 <body>
-		<header id="header"  id="ripples">
+		<!-- top header -->
+	<header id="header" >
 		<div class="hotline">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6">              
+					<div class="col-xs-12 col-sm-12 col-md-6">
 						<ul class="pull-left follow">
-							<span style="color: #fff;font-size: 18px"><strong>follow us:</strong></span>
-							<li><a href="#0"><i class="fab fa-instagram"></i></a></li>           
-							<li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-						</ul>             
+							<span style="color: #fff;font-size: 18px"><strong>Liên kết Moki:</strong></span>
+							<li><a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https:/www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="https:/www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+						</ul>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6">
-						<ul class=" pull-right my-hotline">
-							<li><a href="#0"><i class="fas fa-phone-alt"></i><span>0975857238</span></a></li>           
-							<li><a href="#0"><i class="fas fa-envelope"></i><span>contact@moki.ai</span></a></li>
+						<ul class="pull-right my-hotline">
+							<li><a href="contact.html"><i class="fas fa-phone-alt"></i><span>0927151535</span></a></li>
+							<li><a href="contact.html"><i class="fas fa-envelope"></i><span>contact@moki.ai</span></a></li>
 							<li><a href="#0"><i class="fas fa-globe"></i>
 								<select name="">
 									<option value="">Vie</option>
 									<option value="">Eng</option>
 								</select>
-							</a></li> 
-						</ul>      
+							</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -44,45 +45,47 @@
 			<div class="container">
 				<nav class="nav-menu">
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 							<div class="logo" style="width: 150px ">
-								<img class="img-fluid" src="img/logo.jpg" alt="">
+								<a href="index.html"><img class="img-fluid"  src="img/logo.jpg" alt="Logo Moki"></a>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-							<div class="menu-mobile" >
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+							<div class="menu-mobile">
 								<div class="bar"></div>
 							</div>
 							<ul id="top-menu-nav">
 								<li class="nav-item">
-									<a href="" title="" class="nav-link active" data-text="giới thiệu">giới thiệu</a>
+									<a href="taothucdon.html" title="" class="nav-link " data-text="cơm VP">tạo thực đơn</a>
+								</li>
+
+								<li class="nav-item">
+									<a href="order_dish.html" title="" class="nav-link " data-text="món ăn">đặt món ăn</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" title="" class="nav-link " data-text="món ăn">món ăn</a>
+									<a href="order_food.html" title="" class="nav-link" data-text="thực phẩm">mua thực phẩm</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" title="" class="nav-link" data-text="thực phẩm">thực phẩm</a>
+									<a href="choose-comvp.html" title="" class="nav-link " data-text="cơm VP">cơm VP</a>
+								</li>
+
+								<li class="nav-item">
+									<a href="blog.html" title="" class="nav-link " data-text="cơm VP">blog</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" title="" class="nav-link " data-text="cơm VP">cơm VP</a>
+									<a href="intro.html" title="" class="nav-link" data-text="giới thiệu">giới thiệu</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" title="" class="nav-link " data-text="cơm VP">tạo thực đơn</a>
+									<a href="contact.html" title="" class="nav-link " data-text="cơm VP">liên hệ</a>
 								</li>
 								<li class="nav-item">
-									<a href="#" title="" class="nav-link " data-text="cơm VP">blog</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" title="" class="nav-link " data-text="cơm VP">liên hệ</a>
-								</li>
-								<li class="nav-item">
-									<a href="#" title="" class="login" data-text="cơm VP">login</a>
+									<a title="" class="login" data-text="cơm VP" id="btnmodal"  data-toggle="modal" data-target="#loginAndRegsite"> <i class="fas fa-user"></i> đăng nhập</a>
 								</li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 							<div class="cart">
-								<a href="#" title="">
+								<a href="cart.html" title="Giỏ hàng của bạn">
 									<i class="fas fa-cart-arrow-down"></i>
 									<span class="badge badge-secondary count">0</span>
 								</a>

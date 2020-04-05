@@ -143,7 +143,7 @@ header .nav-menu .active {
 header .nav-menu .login {
 	font-weight: bold;
 	background: #51931b;
-	padding: 6px 18px;
+	    padding: 11px 7px;
 	color: #fff;
 	border-radius: 40px;
 	cursor: pointer;
@@ -426,6 +426,7 @@ a:hover {
 }
 .search-product .food-menu {
 	display: none;
+	position: relative;
 }
 .search-product .food-menu:hover {
 	display: block;
@@ -436,22 +437,24 @@ a:hover {
 .search-product .toggle-menu:hover {
 	color: #ec0a00;
 }
-.search-product .toggle-menu:hover ~ .food-menu {
+
+	.search-product .toggle-menu:hover ~ .food-menu {
 	display: block;
 	animation: zoomInUp 0.4s;
 }
+
 .search-product .food .nav-menu {
 	list-style: none;
 	box-sizing: border-box;
 	background: #fff;
-	/* max-width: 129px;*/
+	max-width: 130px;
+	box-shadow: 0px 5px 10px #51931b;
 }
 
 .search-product .food ul .nav-item .nav-link {
 	color: #000;
-	border: 1px solid #51931b;
-	max-width: 127px;
 	position: relative;
+
 }
 .search-product .food ul .nav-item .nav-link:hover {
 	background: #51931b;
@@ -460,14 +463,14 @@ a:hover {
 }
 
 .search-product .food ul .nav-item-has-children {
-	position: relative;
+
 }
 .search-product .food ul .nav-item-has-children:hover .nav-link:before {
 	border-left: 20px dashed #51931b;
 	border-top: 20px solid transparent;
 	border-bottom: 20px solid transparent;
 	position: absolute;
-	right: -21px;
+	right: -20px;
 	content: "";
 	display: inline-block;
 	margin-top: -8px;
@@ -476,16 +479,21 @@ a:hover {
 .search-product .food ul .nav-item-has-children .sub-menu {
 	position: absolute;
 	z-index: 10;
+	box-shadow: 0px 5px 10px #51931b;
 	left: 146px;
 	background: #fff;
 	right: 0;
 	top: 0;
-	border: 1px solid blue;
+	border: 1px solid #51931b;
 	list-style: none;
 	display: none;
 }
+.search-product .food ul .nav-item-has-children .sub-menu:hover{
+	display:block;
+}
 .search-product .food ul .nav-item-has-children:hover .sub-menu {
 	display: inline-block;
+	height: auto;
 	animation: zoomInUp 0.4s ;
 }
 
@@ -536,6 +544,7 @@ a:hover {
 	color: #51931b;
 	font-weight: bold;
 	display: flex;
+	margin-top: 50px;
 	justify-content: space-between;
 }
 
@@ -778,6 +787,7 @@ h6 {
 }
 .banner-food .create-menu {
 	border: none;
+	padding: 0 15px;
 }
 
 /* /////////////////phan chung footer///////////////////////////////*/
@@ -884,7 +894,9 @@ footer ul {
 	list-style: none;
 }
 footer ul li {
-	margin-top: 15px;
+     margin-top: 15px; 
+     margin-left: 10px;
+    display: inline-block;
 }
 footer ul a {
 	color: rgb(248, 248, 248);
@@ -898,6 +910,7 @@ footer ul a:hover {
 }
 .view-all a {
 	font-size: 13px;
+	color:#ec0a00
 }
 
 #co-operate .owl-carousel .item {
@@ -910,4 +923,12 @@ footer ul a:hover {
 }
 #co-operate .owl-carousel button {
 	display: none;
+}
+
+.modal  .nav-link {
+    color: #495057;
+   
+}
+.modal .nav-link.active {
+    color: #51931b;
 }

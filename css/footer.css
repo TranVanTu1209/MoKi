@@ -1,49 +1,13 @@
+/** @format */
 
-/*   ===banner-food-===*/
-.banner-food {
-	margin: 30px 0;
+* {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
 }
-.banner-food .create-menu {
-	border: none;
+body {
+	background: #fafafa !important;
 }
-/* /////////////////phan chung footer///////////////////////////////*/
-/*   ========đối tac-==========*/
-.doi-tac .title {
-	text-align: center;
-	margin: 50px 0;
-}
-.doi-tac .cac-doi-tac div:focus {
-	outline: none;
-}
-.doi-tac .cac-doi-tac div {
-	display: flex;
-	align-self: center;
-}
-.doi-tac .title h3 {
-	font-size: 30px;
-	color: #51931b;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-.doi-tac {
-	text-align: center;
-	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 50px;
-}
-.doi-tac img {
-	margin-right: 60px;
-	margin-bottom: 30px;
-}
-.slick-prev:before,
-.slick-next:before {
-	color: white;
-	font-size: 14px !important;
-	padding: 5px !important;
-	border-radius: 50% !important;
-	background: red !important;
-}
-
 /*///////footer*/
 footer {
 	background: url("../image/bg-footer.jpeg");
@@ -52,6 +16,13 @@ footer {
 	padding-top: 40px;
 	position: relative;
 	color: rgb(248, 248, 248);
+}
+footer .row .col-lg-4 .contact-details{
+	font-size: small;
+}
+footer .row .col-lg-4 .position{
+	width	: 250px;
+	font-size: small !important;
 }
 footer:before {
 	width: 100%;
@@ -96,10 +67,11 @@ footer .title {
 }
 footer ul {
 	list-style: none;
-	padding-left: 0;
 }
 footer ul li {
-	margin-top: 15px;
+     margin-top: 15px; 
+     margin-left: 10px;
+    display: inline-block;
 }
 footer ul a {
 	color: rgb(248, 248, 248);
@@ -113,4 +85,25 @@ footer ul a:hover {
 }
 .view-all a {
 	font-size: 13px;
+	color:#ec0a00
+}
+
+#co-operate .owl-carousel .item {
+	margin: 0 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 200px;
+	height: 200px !important;
+}
+#co-operate .owl-carousel button {
+	display: none;
+}
+
+.modal  .nav-link {
+    color: #495057;
+   
+}
+.modal .nav-link.active {
+    color: #51931b;
 }
