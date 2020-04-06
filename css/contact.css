@@ -17,8 +17,13 @@ img{
 	color: #51931B;
 }
 .l-lh{
-	margin-top: -24px;
-	background-image: url("../img/banner1.jpeg");
+	/* margin-top: -24px; */
+	background: url("../img/food_10.jpg");
+	/* background-position: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh; */
 }
 .l-text-green{
 	color: #51931B;
