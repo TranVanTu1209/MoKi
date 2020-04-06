@@ -391,8 +391,17 @@ col,
 	top: 5px;
 	z-index: 2;
 	display: none;
-	width: 50px;
+	left: 50px;
+	width: 60px;
 	background-color: #51931b59;
+	border: none;
+	padding: 5px 15px;
+	border-radius: 30px;
+	background-color: #51931bd0;
+	color: #fff;
+}
+#clickshow:focus {
+	outline: none;
 }
 @media (min-width: 576px) {
 	.form-inline .form-control {
