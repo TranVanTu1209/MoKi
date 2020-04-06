@@ -91,6 +91,7 @@ header .menu-top {
 header .menu {
 	background: #fafafa;
 	padding-bottom: 20px;
+	border-bottom: 1px solid #51931ba9;
 }
 header .sticky {
 	position: fixed;
@@ -147,7 +148,7 @@ header .nav-menu .login {
 	border-radius: 40px;
 	cursor: pointer;
 	font-size: 12px !important;
-	transition:  all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 }
 header .nav-menu .login:hover {
 	background-color: #ec0a00;
@@ -442,7 +443,7 @@ a:hover {
 	color: #ec0a00;
 }
 
-	.search-product .toggle-menu:hover ~ .food-menu {
+.search-product .toggle-menu:hover ~ .food-menu {
 	display: block;
 	animation: zoomInUp 0.4s;
 }
@@ -458,14 +459,12 @@ a:hover {
 .search-product .food ul .nav-item .nav-link {
 	color: #000;
 	position: relative;
-
 }
 .search-product .food ul .nav-item .nav-link:hover {
 	background: #51931b;
 	color: #fff;
 	transition: all 0.4s;
 }
-
 
 .search-product .food ul .nav-item-has-children:hover .nav-link:before {
 	border-left: 20px dashed #51931b;
@@ -491,33 +490,32 @@ a:hover {
 	list-style: none;
 	display: none;
 }
-.search-product .food ul .nav-item-has-children .sub-menu:hover{
-	display:block;
+.search-product .food ul .nav-item-has-children .sub-menu:hover {
+	display: block;
 }
 .search-product .food ul .nav-item-has-children:hover .sub-menu {
 	display: inline-block;
 	height: auto;
-	animation: zoomInUp 0.4s ;
+	animation: zoomInUp 0.4s;
 }
 
 @keyframes zoomInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(.1) translateY(2000px);
-    transform: scale(.1) translateY(2000px);
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-  }
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.1) translateY(2000px);
+		transform: scale(0.1) translateY(2000px);
+		-webkit-animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in-out;
+	}
 
-  60% {
-    opacity: 1;
-    -webkit-transform: scale(.475) translateY(-60px);
-    transform: scale(.475) translateY(-60px);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
+	60% {
+		opacity: 1;
+		-webkit-transform: scale(0.475) translateY(-60px);
+		transform: scale(0.475) translateY(-60px);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+	}
 }
-
 
 .search-product .food ul .nav-item-children {
 	margin-bottom: 20px;
@@ -716,18 +714,18 @@ a:hover {
 	color: #ec0a00;
 }
 
-.food-new .danh-sach-food .cart-success{
-display: none;
+.food-new .danh-sach-food .cart-success {
+	display: none;
 }
-.food-new .danh-sach-food .display-notification{
+.food-new .danh-sach-food .display-notification {
 	display: block;
-	animation: scale-cart-success 0.2s ;
+	animation: scale-cart-success 0.2s;
 }
-@keyframes scale-cart-success{
-	0%{
+@keyframes scale-cart-success {
+	0% {
 		transform: scale(0.5);
 	}
-	100%{
+	100% {
 		transform: scale(1);
 	}
 }
@@ -845,11 +843,11 @@ footer {
 	position: relative;
 	color: rgb(248, 248, 248);
 }
-footer .row .col-lg-4 .contact-details{
+footer .row .col-lg-4 .contact-details {
 	font-size: small;
 }
-footer .row .col-lg-4 .position{
-	width	: 250px;
+footer .row .col-lg-4 .position {
+	width: 250px;
 	font-size: small !important;
 }
 footer:before {
@@ -910,9 +908,9 @@ footer .copyright {
 	font-size: small;
 }
 footer ul li {
-     margin-top: 15px; 
-     /* margin-left: 10px; */
-    /* display: inline-block; */
+	margin-top: 15px;
+	/* margin-left: 10px; */
+	/* display: inline-block; */
 }
 footer ul a {
 	color: rgb(248, 248, 248);
@@ -926,7 +924,7 @@ footer ul a:hover {
 }
 .view-all a {
 	font-size: 13px;
-	color:#ec0a00
+	color: #ec0a00;
 }
 
 #co-operate .owl-carousel .item {
@@ -941,10 +939,9 @@ footer ul a:hover {
 	display: none;
 }
 
-.modal  .nav-link {
-    color: #495057;
-   
+.modal .nav-link {
+	color: #495057;
 }
 .modal .nav-link.active {
-    color: #51931b;
+	color: #51931b;
 }
