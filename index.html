@@ -15,7 +15,8 @@
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 	<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+	href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
 	<link rel="stylesheet" href="css/reponsive.css">
 	<link rel="icon" href="icon.ico">
 	<title>Trang chủ</title>
@@ -36,7 +37,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6">
 						<ul class="pull-right my-hotline">
-							<li><a href="contact.html"><i class="fas fa-phone-alt"></i><span>0975857238</span></a></li>
+							<li><a href="contact.html"><i class="fas fa-phone-alt"></i><span>0927151535</span></a></li>
 							<li><a href="contact.html"><i class="fas fa-envelope"></i><span>contact@moki.ai</span></a></li>
 							<li><a href="#0"><i class="fas fa-globe"></i>
 								<select name="">
@@ -56,12 +57,12 @@
 			<div class="container">
 				<nav class="nav-menu">
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+						<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
 							<div class="logo" style="width: 150px ">
 								<a href="index.html"><img class="img-fluid"  src="img/logo.jpg" alt="Logo Moki"></a>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+						<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
 							<div class="menu-mobile">
 								<div class="bar"></div>
 							</div>
@@ -90,11 +91,11 @@
 									<a href="contact.html" title="" class="nav-link " data-text="cơm VP">liên hệ</a>
 								</li>
 								<li class="nav-item">
-									<a title="" class="login" data-text="cơm VP" id="btnmodal"  data-toggle="modal" data-target="#loginAndRegsite"> <i class="fas fa-user"></i> login</a>
+									<a title="" class="login" data-text="cơm VP" id="btnmodal"  data-toggle="modal" data-target="#loginAndRegsite"> <i class="fas fa-user"></i> đăng nhập</a>
 								</li>
 							</ul>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+						<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
 							<div class="cart">
 								<a href="cart.html" title="Giỏ hàng của bạn">
 									<i class="fas fa-cart-arrow-down"></i>
@@ -857,7 +858,7 @@
 		<!-- =========food=========== -->
 		<section style="overflow:hidden" class="food">
 			<div class="container">
-				<div class="food-new">
+				<div class="food-new" id="disk-new">
 					<div class="row">
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="title">
@@ -876,11 +877,12 @@
 						</div>
 						<div class="col-xs-9 col-sm-9 ol-md-9 col-lg-9">
 							<ul class="category-food">
+								<li><a href="order_dish.html">Tất cả</a></li>
 								<li><a href="order_dish.html">Món hầm</a></li>
 								<li ><a href="#0">Món xào</a></li>
 								<li><a href="order_dish.html">Món hấp</a></li>
 								<li><a href="order_dish.html">Món Kho</a></li>
-								<div class="menu-child"><a href="#0">xem thêm <span><i class="fas fa-angle-down"></i></span></a>
+								<li class="menu-child"><a href="#0">Xem thêm <span><i class="fas fa-angle-down"></i></span></a>
 									<ul>
 										<li><a href="order_dish.html">Món Rán</a></li>
 										<li><a href="order_dish.html">Món Chiên</a></li>
@@ -890,9 +892,18 @@
 										<li><a href="order_dish.html">Món Nướng</a></li>
 										<li><a href="order_dish.html">Món Gỏi</a></li>
 									</ul>
-								</div>
+								</li>
 							</ul>
 							<div class="danh-sach-food">
+
+								<div class="cart-success notification bg-success text-white rounded">
+									<p class="text-center mb-0 p-2">
+										Bạn vừa thêm món
+										<span class="food-type font-weight-bold">Rau củ Nộm</span>
+										vào giỏ hàng <i class="fas fa-check-circle"></i>
+									</p>
+								</div>
+
 								<div class="slick-product row">
 									<div class="product">
 										<div class="thumbnail" style="position: relative;">
@@ -908,12 +919,11 @@
 												</div>
 												<div class="add-cart">
 													<a href="" class="cart">
-														<i class="fas fa-cart-arrow-down"></i>
+														<i class="fas fa-cart-plus"></i>
 														<span>Add To Cart</span>
 													</a>
 												</div>
 											</div>
-
 											<div class="caption">
 												<a href="dish_detail.html"><h6 style="margin-bottom: 30px;">Rau Củ Nộm</h6></a>
 												<div class="price-product" style="margin-bottom: 10px">
@@ -1139,7 +1149,7 @@
 					</div>
 				</div>
 				<!-- <---banchay--------- -->
-				<div class="food-new">
+				<div class="food-new" id="disk-selling">
 					<div class="row">
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="title">
@@ -1158,11 +1168,12 @@
 						</div>
 						<div class="col-xs-9 col-sm-9 ol-md-9 col-lg-9">
 							<ul class="category-food">
+								<li><a href="order_dish.html">Tất cả</a></li>
 								<li><a href="order_dish.html">Món hầm</a></li>
-								<li ><a href="#0">Món xào</a></li>
+								<li ><a href="order_dish.html">Món xào</a></li>
 								<li><a href="order_dish.html">Món hấp</a></li>
 								<li><a href="order_dish.html">Món Kho</a></li>
-								<div class="menu-child"><a href="#0">xem thêm <span><i class="fas fa-angle-down"></i></span></a>
+								<li class="menu-child"><a href="#0">Xem thêm <span><i class="fas fa-angle-down"></i></span></a>
 									<ul>
 										<li><a href="order_dish.html">Món Rán</a></li>
 										<li><a href="order_dish.html">Món Chiên</a></li>
@@ -1172,9 +1183,18 @@
 										<li><a href="order_dish.html">Món Nướng</a></li>
 										<li><a href="order_dish.html">Món Gỏi</a></li>
 									</ul>
-								</div>
+								</li>
 							</ul>
 							<div class="danh-sach-food">
+
+								<div class="cart-success notification bg-success text-white rounded">
+									<p class="text-center mb-0 p-2">
+										Bạn vừa thêm món
+										<span class="food-type font-weight-bold">Rau củ Nộm</span>
+										vào giỏ hàng <i class="fas fa-check-circle"></i>
+									</p>
+								</div>
+
 								<div class="slick-product row">
 									<div class="product">
 										<div class="thumbnail" style="position: relative;">
@@ -1421,7 +1441,7 @@
 					</div>
 				</div>
 				<!-- 	<==============ua thich====== -->
-				<div class="food-new">
+				<div class="food-new" id="disk-favorite">
 					<div class="row">
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="title">
@@ -1440,11 +1460,12 @@
 						</div>
 						<div class="col-xs-9 col-sm-9 ol-md-9 col-lg-9">
 							<ul class="category-food">
+								<li><a href="order_dish.html">Tất cả</a></li>
 								<li><a href="order_dish.html">Món hầm</a></li>
 								<li ><a href="#0">Món xào</a></li>
 								<li><a href="order_dish.html">Món hấp</a></li>
 								<li><a href="order_dish.html">Món Kho</a></li>
-								<div class="menu-child"><a href="#0">xem thêm <span><i class="fas fa-angle-down"></i></span></a>
+								<li class="menu-child"><a href="#0">Xem thêm <span><i class="fas fa-angle-down"></i></span></a>
 									<ul>
 										<li><a href="order_dish.html">Món Rán</a></li>
 										<li><a href="order_dish.html">Món Chiên</a></li>
@@ -1454,9 +1475,18 @@
 										<li><a href="order_dish.html">Món Nướng</a></li>
 										<li><a href="order_dish.html">Món Gỏi</a></li>
 									</ul>
-								</div>
+								</li>
 							</ul>
 							<div class="danh-sach-food">
+
+								<div class="cart-success notification bg-success text-white rounded">
+									<p class="text-center mb-0 p-2">
+										Bạn vừa thêm món
+										<span class="food-type font-weight-bold">Rau củ Nộm</span>
+										vào giỏ hàng <i class="fas fa-check-circle"></i>
+									</p>
+								</div>
+
 								<div class="slick-product row">
 									<div class="product">
 										<div class="thumbnail" style="position: relative;">
@@ -1707,29 +1737,23 @@
 		<!-- =================banner san pham============ -->
 		<section style="overflow:hidden" class="banner-food" style="overflow: hidden;">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-4 col-sm-4 col-md-6  col-lg-4">
-						​<div class="create-menu">
-							<img src="img/banner1.jpeg" class="img-fluid">
-						</div>
+				<div class="slick-banner-food">
+					​<div class="create-menu">
+						<img src="img/banner1.jpeg" class="img-fluid">
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-6  col-lg-4">
-						​<div class="create-menu">
-							<img src="img/banner2.jpeg" class="img-fluid">
-						</div>
+					​<div class="create-menu">
+						<img src="img/banner2.jpeg" class="img-fluid">
 					</div>
-					<div class="col-xs-4 col-sm-4 col-md-6  col-lg-4">
-						​<div class="create-menu">
-							<img src="img/banner3.jpeg" class="img-fluid">
-						</div>
-					</div>
-				</div>
+					​<div class="create-menu">
+						<img src="img/banner3.jpeg" class="img-fluid">
+					</div>	
+				</div>			
 			</div>
 		</section>
 		<!-- 	<==========thực pham========= -->
 		<section style="overflow:hidden" class="thucpham food">
 			<div class="container">
-				<div class="food-new">
+				<div class="food-new" id="food-new">
 					<div class="row">
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="title">
@@ -1748,11 +1772,12 @@
 						</div>
 						<div class="col-xs-9 col-sm-9 ol-md-9 col-lg-9">
 							<ul class="category-food">
-								<li><a href="order_food.html">ỐC</a></li>
+								<li><a href="order_food.html">Tất cả</a></li>
+								<li><a href="order_food.html">Ốc</a></li>
 								<li ><a href="order_food.html">Mực</a></li>
 								<li><a href="order_food.html">Trứng</a></li>
 								<li><a href="order_food.html">Quả</a></li>
-								<li class="menu-child"><a href="#0">xem thêm <span><i class="fas fa-angle-down"></i></span></a>
+								<li class="menu-child"><a href="#0">Xem thêm <span><i class="fas fa-angle-down"></i></span></a>
 									<ul>
 										<li><a href="order_food.html">Pho Mai</a></li>
 										<li><a href="order_food.html">TP Từ Đậu</a></li>
@@ -1761,6 +1786,15 @@
 								</li>
 							</ul>
 							<div class="danh-sach-food">
+
+								<div class="cart-success notification bg-success text-white rounded">
+									<p class="text-center mb-0 p-2">
+										Bạn vừa thêm thực phẩm
+										<span class="food-type font-weight-bold">Hành Tím</span>
+										vào giỏ hàng <i class="fas fa-check-circle"></i>
+									</p>
+								</div>
+
 								<div class="slick-product row">
 									<div class="product">
 										<div class="thumbnail" style="position: relative;">
@@ -1956,7 +1990,7 @@
 					</div>
 				</div>
 				<!-- <=============THUC PHAM BÁN CHẠY-================ -->
-			<div class="food-new">
+				<div class="food-new" id="food-selling">
 					<div class="row">
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
 							<div class="title">
@@ -1975,11 +2009,12 @@
 						</div>
 						<div class="col-xs-9 col-sm-9 ol-md-9 col-lg-9">
 							<ul class="category-food">
+								<li><a href="order_food.html">Tất cả</a></li>
 								<li><a href="order_food.html">ỐC</a></li>
 								<li ><a href="order_food.html">Mực</a></li>
 								<li><a href="order_food.html">Trứng</a></li>
 								<li><a href="order_food.html">Quả</a></li>
-								<li class="menu-child"><a href="#0">xem thêm <span><i class="fas fa-angle-down"></i></span></a>
+								<li class="menu-child"><a href="#0">Xem thêm <span><i class="fas fa-angle-down"></i></span></a>
 									<ul>
 										<li><a href="order_food.html">Pho Mai</a></li>
 										<li><a href="order_food.html">TP Từ Đậu</a></li>
@@ -1988,6 +2023,15 @@
 								</li>
 							</ul>
 							<div class="danh-sach-food">
+
+								<div class="cart-success notification bg-success text-white rounded">
+									<p class="text-center mb-0 p-2">
+										Bạn vừa thêm thực phẩm
+										<span class="food-type font-weight-bold">Hành Tím</span>
+										vào giỏ hàng <i class="fas fa-check-circle"></i>
+									</p>
+								</div>
+
 								<div class="slick-product row">
 									<div class="product">
 										<div class="thumbnail" style="position: relative;">
@@ -2190,289 +2234,294 @@
 		<div id="co-operate" class="py-5">
 			<div class="container">
 				<div class="title text-center">
-							<h3 class="font-weight-bold py-3 text-uppercase text-success">
-								Đối tác của moki <i class="fas fa-handshake"></i>
-								
-							</h3>
-						</div>
-						<!-- hot dished owl carousel -->
-						<div class="carousel slide py-3" data-ride="carousel">
-							<!-- The slideshow -->
-							<div class="owl-carousel owl-theme">
-								<!-- dishes 1 -->
-								<div class="item">
-									<div class="card">
-											<img class="" src="./img/vinmart.jpg" alt="Đối tác Moki" />
-									
-									</div>
-								</div>
-								<!-- dishes 2-->
-								<div class="item">
-									<div class="card">
-											<img class="" src="./img/vingroup.png" alt="Đối tác Moki" />
-									
-									</div>
-								</div>
-								<!-- dishes 3-->
-								<div class="item">
-									<div class="card">
-											<img class="" src="./img/logo-momo.jpg" alt="Đối tác Moki" />
-									
-									</div>
-								</div>
-								<!-- dishes 4-->
-								<div class="item">
-									<div class="card">
-											<img class="" src="./img/amazone.png" alt="Đối tác Moki" />
-									
-									</div>
-								</div>
-								<!-- dishes 5-->
-								<div class="item">
-									<div class="card">
-											<img class="" src="./img/vinamilk.png" alt="Đối tác Moki" />
-									
-									</div>
-								</div>
-								<!-- dishes 5-->
-								<div class="item">
-									<div class="card">
-											<img class="" src="./img/alibaba.png" alt="Đối tác Moki" />
-								
-									</div>
-								</div>
-				
-								<!-- end -->
+					<h3 class="font-weight-bold py-3 text-uppercase text-success">
+						Đối tác của moki <!-- <i class="fas fa-handshake"></i> -->
+
+					</h3>
+				</div>
+				<!-- hot dished owl carousel -->
+				<div class="carousel slide py-3" data-ride="carousel">
+					<!-- The slideshow -->
+					<div class="owl-carousel owl-theme">
+						<!-- dishes 1 -->
+						<div class="item">
+							<div class="card">
+								<img class="" src="./img/vinmart.jpg" alt="Đối tác Moki" />
+
 							</div>
 						</div>
+						<!-- dishes 2-->
+						<div class="item">
+							<div class="card">
+								<img class="" src="./img/vingroup.png" alt="Đối tác Moki" />
+
+							</div>
+						</div>
+						<!-- dishes 3-->
+						<div class="item">
+							<div class="card">
+								<img class="" src="./img/logo-momo.jpg" alt="Đối tác Moki" />
+
+							</div>
+						</div>
+						<!-- dishes 4-->
+						<div class="item">
+							<div class="card">
+								<img class="" src="./img/amazone.png" alt="Đối tác Moki" />
+
+							</div>
+						</div>
+						<!-- dishes 5-->
+						<div class="item">
+							<div class="card">
+								<img class="" src="./img/vinamilk.png" alt="Đối tác Moki" />
+
+							</div>
+						</div>
+						<!-- dishes 5-->
+						<div class="item">
+							<div class="card">
+								<img class="" src="./img/alibaba.png" alt="Đối tác Moki" />
+								
+							</div>
+						</div>
+
 						<!-- end -->
+					</div>
+				</div>
+				<!-- end -->
 			</div>
 		</div>
 		<!-- 	////////footer -->
 		<footer>
 			<div class="container">
 				<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<div class="contact">
-						<h5 style="color: #fff font-weight-bold">LIÊN HỆ</h5>
-					</div>
-					<div class="contact-details">
-						<p class="position">
-							<i class="fas fa-map-marker-alt"></i> Tòa CT2 Constrexim Thái Hà, Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội
-						</p>
-						<p>
-							<a href="contact.html" class="text-white"><i class="fas fa-mobile-alt"></i> 0927151535 </a>
-						</p>
-						<p>
-							<a href="contact.html" class="text-white"><i class="fas fa-envelope"></i> contact@moki.ai</a>
-						</p>
-						<p>
-							<ul class="">
-								<li  class="small">Liên kết Moki</li>
-								<li><a href="#0"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="#0"><i class="fab fa-facebook"></i></a></li>
-								<li><a href="#0"><i class="fab fa-twitter"></i></a></li>
-							</ul>
-						</p>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="contact">
+							<h5 style="color: #fff font-weight-bold">LIÊN HỆ</h5>
+						</div>
+						<div class="contact-details">
+							<p class="position">
+								<i class="fas fa-map-marker-alt"></i> Tòa CT2 Constrexim Thái Hà, Phạm Văn Đồng, Bắc Từ Liêm, Hà Nội
+							</p>
+							<p>
+								<a href="contact.html" class="text-white"><i class="fas fa-mobile-alt"></i> 0927151535 </a>
+							</p>
+							<p>
+								<a href="contact.html" class="text-white"><i class="fas fa-envelope"></i> contact@moki.ai</a>
+							</p>
+							<p>
+								<ul class="follow-footer">
+									<li style="color: #fff;font-size: 12px"><strong>Liên kết Moki:</strong></span>
+										<li><a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https:/www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+										<li><a href="https:/www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+									</ul>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="mon-an">
+								<div class="title">
+									món ăn
+								</div>
+								<div class="content">
+									<ul>
+										<li><a href="#0">Món ăn theo bữa</a></li>
+										<li><a href="#0">Món ăn chay</a></li>
+										<li><a href="#0">Món tiệc, cỗ</a></li>
+										<li><a href="#0">Món trẻ con</a></li>
+										<div class="view-all"><a href="">Xem tất cả</a></div>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="thuc-pham">
+								<div class="title">
+									thực phẩm
+								</div>
+								<div class="content">
+									<ul>
+										<li><a href="#0">Rau xanh</a></li>
+										<li><a href="#0">Củ quả</a></li>
+										<li><a href="#0">Gia cầm</a></li>
+										<li><a href="#0">Hải sản</a></li>
+										<div class="view-all"><a href="">Xem tất cả</a></div>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+							<div class="share thuc-don">
+								<div class="title">
+									chia sẻ thực đơn
+								</div>
+								<div class="content">
+									<ul>
+										<li><a href="#0">Thực đơn ăn sang</a></li>
+										<li><a href="#0">Thực đơn tiệc</a></li>
+										<li><a href="#0">Thực đơn ăn trưa</a></li>
+										<li><a href="#0">Thực đơn ăn tối`</a></li>
+										<div class="view-all"><a href="">Xem tất cả</a></div>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<div class="mon-an">
-							<div class="title">
-								món ăn
-							</div>
-							<div class="content">
-								<ul>
-									<li><a href="#0">Món ăn theo bữa</a></li>
-									<li><a href="#0">Món ăn chay</a></li>
-									<li><a href="#0">Món tiệc, cỗ</a></li>
-									<li><a href="#0">Món trẻ con</a></li>
-									<div class="view-all"><a href="">Xem tất cả</a></div>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-						<div class="thuc-pham">
-							<div class="title">
-								thực phẩm
-							</div>
-							<div class="content">
-								<ul>
-									<li><a href="#0">Rau xanh</a></li>
-									<li><a href="#0">Củ quả</a></li>
-									<li><a href="#0">Gia cầm</a></li>
-									<li><a href="#0">Hải sản</a></li>
-									<div class="view-all"><a href="">Xem tất cả</a></div>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
-						<div class="share thuc-don">
-							<div class="title">
-								chia sẻ thực đơn
-							</div>
-							<div class="content">
-								<ul>
-									<li><a href="#0">Thực đơn ăn sang</a></li>
-									<li><a href="#0">Thực đơn tiệc</a></li>
-									<li><a href="#0">Thực đơn ăn trưa</a></li>
-									<li><a href="#0">Thực đơn ăn tối`</a></li>
-									<div class="view-all"><a href="">Xem tất cả</a></div>
-								</ul>
-							</div>
-						</div>
-					</div>
+				<hr style="border-top: 1px solid #fff !important">
+				<div class="copyright text-white" style="text-align: center;padding:20px 0;">
+					<a href="http://web88.vn/" class="text-white">Copyright 2020 &copy; by Web88.vn. All rights reserved</a>
 				</div>
-			</div>
-			<hr style="border-top: 1px solid #fff !important">
-			<div class="copyright text-white" style="text-align: center;padding:20px 0;">
-				Copyright &copy; by  All Rights Reserved
-			</div>
-		</footer>
-		<!-- sign in modal -->
-<div class="modal fade" id="loginAndRegsite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog cascading-modal" role="document">
+			</footer>
+			<!-- sign in modal -->
+			<div class="modal fade" id="loginAndRegsite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog cascading-modal" role="document">
+
+					<div class="modal-content">
+
+
+						<div class="modal-c-tabs">
 			
-			<div class="modal-content">
+								<div class="close-modal" style="position: absolute;top: 1px;right:0">
+						<button type="button" class="btn btn-danger waves-effect ml-auto" data-dismiss="modal">X</button>
+					</div>			
+							<ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3 " role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+									Đăng nhập</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#panel8" role="tab" id="tabreg"><i
+										class="fas fa-user-plus mr-1 "></i>
+									Đăng ký</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+									<div class="modal-body mb-1">
+										<form action="" name="regsite" id="regsite" method="POST">
+											<div class="md-form form-sm mb-5">
+												<label data-error="wrong" data-success="right" for="phone">Số Điện Thoại / Tên tài khoản</label>
 
+												<input type="number" id="modalLRInput10" class="form-control form-control-sm validate" name="phone"
+												placeholder="+84123456789">
 
-				<div class="modal-c-tabs">
-
-
-					<ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
-							Đăng nhập</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#panel8" role="tab" id="tabreg"><i
-								class="fas fa-user-plus mr-1 "></i>
-							Đăng ký</a>
-						</li>
-					</ul>
-					<div class="tab-content">
-						<div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-							<div class="modal-body mb-1">
-								<form action="" name="regsite" id="regsite" method="POST">
-									<div class="md-form form-sm mb-5">
-										<label data-error="wrong" data-success="right" for="phone">Số Điện Thoại / Tên tài khoản</label>
-
-										<input type="number" id="modalLRInput10" class="form-control form-control-sm validate" name="phone"
-										placeholder="+84123456789">
-
-									</div>
-
-									<div class="md-form form-sm mb-4">
-										<label data-error="wrong" data-success="right" for="password">Your password</label>
-
-										<input type="password" id="password" class="form-control form-control-sm validate" name="password"
-										placeholder="******">
-
-									</div>
-									<div class="text-center mt-2">
-										<button class="btn btn-info">Đăng nhập <i class="fas fa-sign-in ml-1"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="panel8" role="tabpanel" id="formreg">
-							<div class="modal-body">
-								<form action="" name="regsite" id="regsite" method="POST">
-									<div class="md-form form-sm ">
-										<div class="form-row">
-											<div class="form-group col-md-6 col-xl-6">
-												<label data-error="wrong" data-success="right" for="rgPhone">Số Điện Thoại / Tên tài khảon</label>
-												<input type="number" id="modalLRInput12" class="form-control form-control-sm validate"
-												name="rgPhone" placeholder="+84123456789/NguyenVanA">
 											</div>
-											<div class="form-group col-md-6 col-xl-6">
-												<label data-error="wrong" data-success="right" for="rgPhone">Email</label>
-												<input type="email" id="modalLRInput12" class="form-control form-control-sm validate"
-												name="rgPhone" placeholder="abc@domain.com">
-											</div>
-										</div>
 
-									</div>
-									<div class="md-form form-sm">
-										<label data-error="wrong" data-success="right" for="rgPassword">Mật Khẩu</label>
+											<div class="md-form form-sm mb-4">
+												<label data-error="wrong" data-success="right" for="password">Your password</label>
 
-										<input type="rgPassword" id="modalLRInput13" class="form-control form-control-sm validate"
-										name="rgPassword">
-									</div>
-									<div class="md-form form-sm mb-2">
-										<label data-error="wrong" data-success="right" for="rgRpassword">Nhập lại mật khẩu</label>
-										<input type="rgRpassword" id="modalLRInput14" class="form-control form-control-sm validate"
-										name="rgRpassword">
-									</div>
-									<p class="my-2">Bệnh Lý</p>
-									<select name="benhly" id="benhly" class="form-control" multiple="multiple" style="display: none;"
-									name="benhly">
-									<option value="AL">Tiểu đường</option>
-									<option value="AK">Cao huyết áp</option>
-									<option value="AZ">Trĩ</option>
-									<option value="AR">Béo phì</option>
-									<option selected value="CA">gầy</option>
-								</select>
-								<p class="my-2">Dị ứng</p>
-								<select name="diung" id="diung" class="form-control" multiple="multiple" style="display: none;"
-								name="benhly">
-								<option value="AL">Hoa đào</option>
-								<option value="AK">Hoa mai</option>
-								<option value="AZ">Hoa cúc</option>
-								<option value="AR">hoa hồng</option>
-								<option selected value="CA">gầy</option>
-							</select>
-							<p class="my-2">Thành viên trong gia đình</p>
+												<input type="password" id="password" class="form-control form-control-sm validate" name="password"
+												placeholder="******">
 
-							<div class="row">
-								<div class=" col-4 col-sm-4 col-md-4 col-xl-4 col-lg-4 col-xs-4 ">
-									<div class="input-group  text-center">
-										<div class="input-group ">
-											<div class="input-group-prepend">
-												<span class="input-group-text btn btn-warning tru">-&nbsp;</span>
 											</div>
-											<input type="text" class="form-control numTV text-center" value="0" name="treem">
-											<div class="input-group-append">
-												<span class="input-group-text btn btn-warning cong">+</span>
+											<div class="text-center mt-2">
+												<button class="btn btn-success">Đăng nhập <i class="fas fa-sign-in ml-1"></i></button>
 											</div>
-										</div>
+										</form>
 									</div>
 								</div>
+								<div class="tab-pane fade" id="panel8" role="tabpanel" id="formreg">
+									<div class="modal-body">
+										<form action="" name="regsite" id="regsite" method="POST">
+											<div class="md-form form-sm ">
+												<div class="form-row">
+													<div class="form-group col-md-6 col-xl-6">
+														<label data-error="wrong" data-success="right" for="rgPhone">Số Điện Thoại / Tên tài khoản</label>
+														<input type="number" id="modalLRInput12" class="form-control form-control-sm validate"
+														name="rgPhone" placeholder="NguyenVanA">
+													</div>
+													<div class="form-group col-md-6 col-xl-6">
+														<label data-error="wrong" data-success="right" for="rgPhone">Email</label>
+														<input type="email" id="modalLRInput12" class="form-control form-control-sm validate"
+														name="rgPhone" placeholder="contact@moki.com.vn">
+													</div>
+												</div>
+
+											</div>
+											<div class="md-form form-sm">
+												<label data-error="wrong" data-success="right" for="rgPassword">Mật Khẩu</label>
+
+												<input type="rgPassword" id="modalLRInput13" class="form-control form-control-sm validate"
+												name="rgPassword">
+											</div>
+											<div class="md-form form-sm mb-2 mt-2">
+												<label data-error="wrong" data-success="right" for="rgRpassword">Nhập lại mật khẩu</label>
+												<input type="rgRpassword" id="modalLRInput14" class="form-control form-control-sm validate"
+												name="rgRpassword">
+											</div>
+											<p class="my-2">Bệnh Lý</p>
+											<select name="benhly" id="benhly" class="form-control " multiple="multiple" style=""
+											name="benhly">
+											<option value="1">Tiểu đường</option>
+											<option value="2">Viêm gan</option>
+											<option value="3">Máu nhiễm mỡ</option>
+											<option value="4">Dạ dày</option>
+											<option value="5">Cao huyết áp</option>
+											<option value="6">Trĩ</option>
+											<option value="7">Béo phì</option>
+											<option selected value="8">gầy</option>
+										</select>
+										<p class="my-2">Dị ứng</p>
+										<select name="diung" id="diung" class="form-control" multiple="multiple mdb-select md-form" style=""
+										name="benhly">
+										<option value="AL">Hoa đào</option>
+										<option value="AK">Hoa mai</option>
+										<option value="AZ">Hoa cúc</option>
+										<option value="AR">hoa hồng</option>
+										<option selected value="CA">gầy</option>
+									</select>
+									<p class="my-2">Thành viên trong gia đình</p>
+
+									<div class="row">
+										<div class=" col-5 col-sm-5 col-md-4 col-xl-4 col-lg-4 col-xs-5 ">
+											<div class="input-group  text-center">
+												<div class="input-group ">
+													<div class="input-group-prepend">
+														<span class="input-group-text btn btn-warning tru" onclick="sub()">-&nbsp;</span>
+													</div>
+													<input type="text" id="quantity" class="form-control numTV text-center" value="0" name="treem">
+													<div class="input-group-append">
+														<span class="input-group-text btn btn-warning cong" onclick="add()">+</span>
+													</div>
+												</div>
+											</div>
+										</div>
 
 
-							</div>
+									</div>
+								</div>
+								<div class="text-center form-sm mb-4">
+									<button class="btn btn-success" type="submit">Đăng Ký <i class="fas fa-sign-in ml-1"></i></button>
+								</div>
+							</form>
 						</div>
-						<div class="text-center form-sm ">
-							<button class="btn btn-info" type="submit">Đăng Ký <i class="fas fa-sign-in ml-1"></i></button>
-						</div>
-					</form>
+					</div>
 				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-danger waves-effect ml-auto" data-dismiss="modal">Đóng</button>
 			</div>
 		</div>
 	</div>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+	integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+	integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/header.js"></script>
-<script type="text/javascript" src="js/footer.js"></script>
-<script src="./js/dishes_food_owl_carousel.js"></script>
+	<script src="js/BsMultiSelect.min.js"></script>
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/footer.js"></script>
+	<script src="./js/dishes_food_owl_carousel.js"></script>
+	<script type="text/javascript" src="js/add-_sub_number.js"></script>
 </body>
 
 </html>

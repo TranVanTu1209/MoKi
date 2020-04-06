@@ -20,3 +20,10 @@ $(document).ready(function() {
    });
  
 });
+
+  $(function(){
+
+  $("#benhly").bsMultiSelect();
+   $("#diung").bsMultiSelect();
+
+});

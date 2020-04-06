@@ -1,5 +1,14 @@
 /** @format */
 
+* {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fafafa !important;
+}
+
 header .hotline {
 	padding-top: 10px;
 	background: #51931b;
@@ -66,6 +75,7 @@ header .hotline .my-hotline li select {
 	color: #fff;
 	font-weight: bold;
 }
+
 header .hotline .my-hotline li select:focus {
 	outline: none;
 }
@@ -78,6 +88,17 @@ header .hotline .my-hotline li select option {
 header .menu-top {
 	background: rgb(248, 248, 248);
 }
+header .menu {
+	background: #fafafa;
+	padding-bottom: 20px;
+}
+header .sticky {
+	position: fixed;
+	top: 0;
+	transition: all 1.5s;
+	z-index: 1000;
+	width: 100%;
+}
 header .nav-menu {
 	height: 5rem;
 	width: 100%;
@@ -86,11 +107,18 @@ header .nav-menu {
 	/* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2); */
 }
 header .nav-menu .logo {
-	margin-top: -37px;
 	margin-left: -10px;
+	width: 150px;
+}
+header .nav-menu .logo img {
+	width: 150px;
+	object-fit: cover;
+
+	height: 100px;
 }
 header .nav-menu ul {
 	display: flex;
+	line-height: 99px;
 	justify-content: space-evenly;
 	list-style: none;
 	margin-right: -20px;
@@ -115,12 +143,14 @@ header .nav-menu .active {
 header .nav-menu .login {
 	font-weight: bold;
 	background: #51931b;
-	padding: 6px 18px;
+	    padding: 11px 7px;
 	color: #fff;
 	border-radius: 40px;
+	cursor: pointer;
 }
 header .nav-menu .cart {
 	position: relative;
+	margin-top: 10px;
 }
 header .nav-menu .cart i {
 	font-size: 30px;
@@ -136,13 +166,4 @@ header .nav-menu .cart .count {
 	border-radius: 50%;
 	padding: 0.25em 0.5em;
 }
-@media (max-width: 767px) {
-	header .logo img {
-		/* height: 100px; */
-		position: relative;
-		top: -37px;
-	}
-	header .col-xs-12.col-sm-12.col-md-2.col-lg-2 {
-		height: 0;
-	}
-}
+
