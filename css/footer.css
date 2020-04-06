@@ -1,5 +1,5 @@
 /** @format */
-
+/* 
 * {
 	font-family: "Open Sans", sans-serif;
 	margin: 0;
@@ -7,9 +7,9 @@
 }
 body {
 	background: #fafafa !important;
-}
+} */
 /*///////footer*/
-footer {
+/* footer {
 	background: url("../image/bg-footer.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -106,4 +106,4 @@ footer ul a:hover {
 }
 .modal .nav-link.active {
     color: #51931b;
-}
+} */
