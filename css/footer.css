@@ -1,15 +1,8 @@
 /** @format */
-/* 
-* {
-	font-family: "Open Sans", sans-serif;
-	margin: 0;
-	padding: 0;
-}
-body {
-	background: #fafafa !important;
-} */
-/*///////footer*/
-/* footer {
+
+
+
+footer {
 	background: url("../image/bg-footer.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -34,7 +27,6 @@ footer:before {
 	content: "";
 }
 footer .follow li {
-	display: inline-block;
 	margin: 0 3px;
 }
 footer .follow li a {
@@ -45,7 +37,6 @@ footer .follow li a {
 	background: #fff;
 	border: 1px solid #fff;
 	text-align: center;
-	display: inline-block;
 	font-size: 14px;
 	transition: all 0.5s;
 }
@@ -67,11 +58,10 @@ footer .title {
 }
 footer ul {
 	list-style: none;
+	padding-left: 0;
 }
 footer ul li {
-     margin-top: 15px; 
-     margin-left: 10px;
-    display: inline-block;
+  margin-top: 15px; 
 }
 footer ul a {
 	color: rgb(248, 248, 248);
@@ -79,6 +69,7 @@ footer ul a {
 }
 footer ul a:hover {
 	color: #51931b;
+	text-decoration: none;
 }
 .view-all {
 	margin-top: 10px;
@@ -106,4 +97,17 @@ footer ul a:hover {
 }
 .modal .nav-link.active {
     color: #51931b;
-} */
+}
+footer {
+	position: relative;
+}
+footer .copyright {
+	position: absolute;
+	z-index: 3;
+	background-color: #222;
+	display: block !important;
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
+	font-size: small;
+}

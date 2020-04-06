@@ -1,14 +1,5 @@
 /** @format */
 
-* {
-	font-family: "Open Sans", sans-serif;
-	margin: 0;
-	padding: 0;
-}
-body {
-	background: #fafafa !important;
-}
-
 header .hotline {
 	padding-top: 10px;
 	background: #51931b;
@@ -140,13 +131,20 @@ header .nav-menu .nav-link:hover {
 header .nav-menu .active {
 	color: #51931b;
 }
+
 header .nav-menu .login {
 	font-weight: bold;
 	background: #51931b;
-	    padding: 11px 7px;
+	padding: 5px 10px;
 	color: #fff;
 	border-radius: 40px;
 	cursor: pointer;
+	font-size: 12px !important;
+	transition:  all 0.4s ease-in-out;
+}
+header .nav-menu .login:hover {
+	background-color: #ec0a00;
+	color: #fff;
 }
 header .nav-menu .cart {
 	position: relative;

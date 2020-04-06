@@ -113,7 +113,6 @@ header .nav-menu .logo {
 header .nav-menu .logo img {
 	width: 150px;
 	object-fit: cover;
-
 	height: 100px;
 }
 header .nav-menu ul {
@@ -143,10 +142,15 @@ header .nav-menu .active {
 header .nav-menu .login {
 	font-weight: bold;
 	background: #51931b;
-	    padding: 11px 7px;
+	padding: 5px 10px;
 	color: #fff;
 	border-radius: 40px;
 	cursor: pointer;
+	font-size: 12px !important;
+	transition:  all 0.4s ease-in-out;
+}
+header .nav-menu .login:hover {
+	background-color: #ec0a00;
 }
 header .nav-menu .cart {
 	position: relative;
@@ -462,9 +466,7 @@ a:hover {
 	transition: all 0.4s;
 }
 
-.search-product .food ul .nav-item-has-children {
 
-}
 .search-product .food ul .nav-item-has-children:hover .nav-link:before {
 	border-left: 20px dashed #51931b;
 	border-top: 20px solid transparent;
@@ -497,7 +499,7 @@ a:hover {
 	animation: zoomInUp 0.4s ;
 }
 
-@-webkit-keyframes zoomInUp {
+@keyframes zoomInUp {
   0% {
     opacity: 0;
     -webkit-transform: scale(.1) translateY(2000px);
@@ -859,7 +861,7 @@ footer:before {
 	content: "";
 }
 footer .follow li {
-	display: inline-block;
+	/* display: inline-block; */
 	margin: 0 3px;
 }
 footer .follow li a {
@@ -870,7 +872,7 @@ footer .follow li a {
 	background: #fff;
 	border: 1px solid #fff;
 	text-align: center;
-	display: inline-block;
+	/* display: inline-block; */
 	font-size: 14px;
 	transition: all 0.5s;
 }
@@ -893,10 +895,23 @@ footer .title {
 footer ul {
 	list-style: none;
 }
+footer {
+	position: relative;
+}
+footer .copyright {
+	position: absolute;
+	z-index: 3;
+	background-color: #222;
+	display: block !important;
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
+	font-size: small;
+}
 footer ul li {
      margin-top: 15px; 
-     margin-left: 10px;
-    display: inline-block;
+     /* margin-left: 10px; */
+    /* display: inline-block; */
 }
 footer ul a {
 	color: rgb(248, 248, 248);

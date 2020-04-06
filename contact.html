@@ -55,9 +55,11 @@
 										<li class="nav-item">
 											<a href="contact.html" title="" class="nav-link active" data-text="cơm VP">liên hệ</a>
 										</li>
-										<li class="nav-item">
-											<a href="login.html" title="" class="login" data-text="cơm VP"> <i class="fas fa-user"></i> login</a>
-										</li>
+									<li class="nav-item">
+										<a title="" class="login" data-text="cơm VP" id="btnmodal" data-toggle="modal" data-target="#loginAndRegsite">đăng
+											nhập
+										</a>
+									</li>
 									</ul>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
@@ -201,6 +203,133 @@
 				Copyright &copy; All Rights Reserved
 			</div>
 		</footer>
+			<div class="modal fade" id="loginAndRegsite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog cascading-modal" role="document">
+			
+					<div class="modal-content">
+			
+			
+						<div class="modal-c-tabs">
+			
+							<div class="close-modal" style="position: absolute;top: 1px;right:0">
+								<button type="button" class="btn btn-danger waves-effect ml-auto" data-dismiss="modal">X</button>
+							</div>
+							<ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3 " role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fas fa-user mr-1"></i>
+										Đăng nhập</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="tab" href="#panel8" role="tab" id="tabreg"><i
+											class="fas fa-user-plus mr-1 "></i>
+										Đăng ký</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+									<div class="modal-body mb-1">
+										<form action="" name="regsite" id="regsite" method="POST">
+											<div class="md-form form-sm mb-5">
+												<label data-error="wrong" data-success="right" for="phone">Số Điện Thoại / Tên tài khoản</label>
+			
+												<input type="number" id="modalLRInput10" class="form-control form-control-sm validate" name="phone"
+													placeholder="+84123456789">
+			
+											</div>
+			
+											<div class="md-form form-sm mb-4">
+												<label data-error="wrong" data-success="right" for="password">Your password</label>
+			
+												<input type="password" id="password" class="form-control form-control-sm validate" name="password"
+													placeholder="******">
+			
+											</div>
+											<div class="text-center mt-2">
+												<button class="btn btn-success">Đăng nhập <i class="fas fa-sign-in ml-1"></i></button>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="panel8" role="tabpanel" id="formreg">
+									<div class="modal-body">
+										<form action="" name="regsite" id="regsite" method="POST">
+											<div class="md-form form-sm ">
+												<div class="form-row">
+													<div class="form-group col-md-6 col-xl-6">
+														<label data-error="wrong" data-success="right" for="rgPhone">Số Điện Thoại / Tên tài khoản</label>
+														<input type="number" id="modalLRInput12" class="form-control form-control-sm validate"
+															name="rgPhone" placeholder="NguyenVanA">
+													</div>
+													<div class="form-group col-md-6 col-xl-6">
+														<label data-error="wrong" data-success="right" for="rgPhone">Email</label>
+														<input type="email" id="modalLRInput12" class="form-control form-control-sm validate"
+															name="rgPhone" placeholder="contact@moki.com.vn">
+													</div>
+												</div>
+			
+											</div>
+											<div class="md-form form-sm">
+												<label data-error="wrong" data-success="right" for="rgPassword">Mật Khẩu</label>
+			
+												<input type="rgPassword" id="modalLRInput13" class="form-control form-control-sm validate"
+													name="rgPassword">
+											</div>
+											<div class="md-form form-sm mb-2 mt-2">
+												<label data-error="wrong" data-success="right" for="rgRpassword">Nhập lại mật khẩu</label>
+												<input type="rgRpassword" id="modalLRInput14" class="form-control form-control-sm validate"
+													name="rgRpassword">
+											</div>
+											<p class="my-2">Bệnh Lý</p>
+											<select name="benhly" id="benhly" class="form-control " multiple="multiple" style="" name="benhly">
+												<option value="1">Tiểu đường</option>
+												<option value="2">Viêm gan</option>
+												<option value="3">Máu nhiễm mỡ</option>
+												<option value="4">Dạ dày</option>
+												<option value="5">Cao huyết áp</option>
+												<option value="6">Trĩ</option>
+												<option value="7">Béo phì</option>
+												<option selected value="8">gầy</option>
+											</select>
+											<p class="my-2">Dị ứng</p>
+											<select name="diung" id="diung" class="form-control" multiple="multiple mdb-select md-form" style=""
+												name="benhly">
+												<option value="AL">Hoa đào</option>
+												<option value="AK">Hoa mai</option>
+												<option value="AZ">Hoa cúc</option>
+												<option value="AR">hoa hồng</option>
+												<option selected value="CA">gầy</option>
+											</select>
+											<p class="my-2">Thành viên trong gia đình</p>
+			
+											<div class="row">
+												<div class=" col-5 col-sm-5 col-md-4 col-xl-4 col-lg-4 col-xs-5 ">
+													<div class="input-group  text-center">
+														<div class="input-group ">
+															<div class="input-group-prepend">
+																<span class="input-group-text btn btn-warning tru" onclick="sub()">-&nbsp;</span>
+															</div>
+															<input type="text" id="quantity" class="form-control numTV text-center" value="0" name="treem">
+															<div class="input-group-append">
+																<span class="input-group-text btn btn-warning cong" onclick="add()">+</span>
+															</div>
+														</div>
+													</div>
+												</div>
+			
+			
+											</div>
+									</div>
+									<div class="text-center form-sm mb-4">
+										<button class="btn btn-success" type="submit">Đăng Ký <i class="fas fa-sign-in ml-1"></i></button>
+									</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -209,6 +338,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 				<script src="./js/header.js"></script>
+						<script src="js/BsMultiSelect.min.js"></script>
 
 </body>
 </html>
