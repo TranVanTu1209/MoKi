@@ -935,7 +935,9 @@ footer ul a:hover {
 	justify-content: center;
 	max-width: 210px;
 	height: 190px;
-	background-color: #eee;
+	background-color: #fff;
+	border: 0.5px solid #ddd;
+	border-radius: 3px;
 }
 #co-operate .owl-carousel button {
 	display: none;

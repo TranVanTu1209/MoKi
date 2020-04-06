@@ -138,10 +138,18 @@ img {
 }
 .l-slide button {
 	position: absolute;
-	top: 50%;
-	background: none;
+	top: 36%;
+	background-color: #07070750;
+	font-size: 18px;
+	right: 20%;
 	border: none;
-	font-size: 20px;
+	color: #f1f1f1;
+	transition: all 0.4s ease;
+	border-radius: 3px;
+	/* width: 100%; */
+}
+.l-slide button:hover {
+	background-color: #51931b;
 }
 .l-btn-right {
 	right: 0;

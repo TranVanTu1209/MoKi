@@ -1,6 +1,6 @@
 /** @format */
 body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
 }
 #body-create-menu {
 	background-color: #fbfbfb;
