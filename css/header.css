@@ -79,6 +79,9 @@ header .hotline .my-hotline li select option {
 header .menu-top {
 	background: rgb(248, 248, 248);
 }
+header .menu-mobile {
+	cursor: pointer;
+}
 header .menu {
 	background: #fafafa;
 	padding-bottom: 20px;

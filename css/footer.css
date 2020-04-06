@@ -1,7 +1,5 @@
 /** @format */
 
-
-
 footer {
 	background: url("../image/bg-footer.jpeg");
 	background-size: cover;
@@ -10,11 +8,11 @@ footer {
 	position: relative;
 	color: rgb(248, 248, 248);
 }
-footer .row .col-lg-4 .contact-details{
+footer .row .col-lg-4 .contact-details {
 	font-size: small;
 }
-footer .row .col-lg-4 .position{
-	width	: 250px;
+footer .row .col-lg-4 .position {
+	width: 250px;
 	font-size: small !important;
 }
 footer:before {
@@ -61,7 +59,7 @@ footer ul {
 	padding-left: 0;
 }
 footer ul li {
-  margin-top: 15px; 
+	margin-top: 15px;
 }
 footer ul a {
 	color: rgb(248, 248, 248);
@@ -76,7 +74,7 @@ footer ul a:hover {
 }
 .view-all a {
 	font-size: 13px;
-	color:#ec0a00
+	color: #ec0a00;
 }
 
 #co-operate .owl-carousel .item {
@@ -91,12 +89,11 @@ footer ul a:hover {
 	display: none;
 }
 
-.modal  .nav-link {
-    color: #495057;
-   
+.modal .nav-link {
+	color: #495057;
 }
 .modal .nav-link.active {
-    color: #51931b;
+	color: #51931b;
 }
 footer {
 	position: relative;
@@ -110,4 +107,14 @@ footer .copyright {
 	padding: 1rem;
 	width: 100%;
 	font-size: small;
+}
+#co-operate .owl-carousel .item {
+	margin: 0 0.5rem;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem;
+	justify-content: center;
+	max-width: 210px;
+	height: 190px;
+	background-color: #eee;
 }
