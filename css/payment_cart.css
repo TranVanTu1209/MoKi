@@ -310,6 +310,12 @@ body {
 .apply-code-notification.show {
 	transform: scale(1);
 }
+#payment-success-notification .box-notification {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @media all and (max-width: 767px) {
 	.content .your-order {
 		margin-top: 50px;

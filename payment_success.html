@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Thanh toán Moki</title>
+		<title>Thanh toán thành công</title>
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link
@@ -26,9 +26,9 @@
 				<link rel="icon" href="icon.ico" />
 	</head>
 	<body>
-			<header id="header" id="ripples" class="payment-header">
-				<!-- 	============menu==================== -->
-				<div class="menu">
+		<header id="header" id="ripples" class="payment-header">
+			<!-- 	============menu==================== -->
+		<div class="menu">
 					<div class="overlay"></div>
 					<div class="container">
 						<nav class="nav-menu">
@@ -81,251 +81,38 @@
 									</div>
 						</nav>
 					</div>
-				</div>
-				</div>
-			
-				</div>
-				<!-- =============hết menu============================= -->
-			</header>
-		<div class="content payment-section pb-5">
-			<img
-				class="img-header"
-				src="./img/banner_payment.jpg"
-			/>
-			<div class="container">
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item">
-							<a href="index.html" class="font-weight-bold">Trang chủ</a>
-						</li>
-						<li class="breadcrumb-item">
-							<a href="cart.html" class="font-weight-bold">Cart</a>
-						</li>
-						<li class="breadcrumb-item active" aria-current="page">
-							Thanh toán
-						</li>
-					</ol>
-				</nav>
+			</div>
+			</div>
+		</div><!-- =============hết menu============================= -->
+		</header>
+		<div id="payment-success-notification" class="py-4">
+			<div class="container py-4">
 				<div class="row">
-					<div class="col-lg-6 col-md-6">
-						<form class="pb-5">
-							<div class="title-text">
-								<h3>
-									Thông tin người nhận
-								</h3>
-								<p class="small text-danger note">*Nếu đặt hàng cho người khác</p>
-								<div class="row">
-									<div class="col-lg-6 col-md-6">
-										<input type="text" name="" placeholder="Họ tên" />
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<input type="text" name="" placeholder="Số điện thoại" />
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<div class="custom-select">
-											<select>
-												<option value="0">Tỉnh, Thành phố</option>
-												<option value="1">Hà Nội</option>
-												<option value="2">Lai Châu</option>
-												<option value="3">Hòa Bình</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<div class="custom-select">
-											<select>
-												<option value="0">Quận, huyện</option>
-												<option value="1">Ba Đình</option>
-												<option value="2">Đống Đa</option>
-												<option value="3">Cầu Giấy</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-lg-12 col-md-12">
-										<input type="text" name="" placeholder="Địa chỉ chi tiết" />
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<label for="">Ngày nhận</label>
-										<input type="date" name="" placeholder="Ngày nhận" />
-									</div>
-									<div class="col-lg-6 col-md-6">
-										<label for="">Giờ nhận</label>
-										<input type="time" name="" placeholder="Giờ nhận" />
-									</div>
-									<div class="col-lg-12 col-md-12">
-										<input
-											class="note"
-											type="text"
-											name=""
-											placeholder="Thêm ghi chú"
-										/>
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-									<input type="submit" class="btn btn-danger font-weight-bold float-right">
-							</div>
-						
-						</form>
-						<h3 class="choose-payments">Chọn hình thức thanh toán</h3>
-						<div class="envelop">
-							<div class="item">
-									<a href="#" type="button"
-									class=""
-									data-toggle="modal"
-									data-target="#paymentModal">
-										<img src="img/logo-momo.jpg" />
-										<div class="text text-white"><p>Ví điện tử MOMO</p></div>
-									</a>
-								<div
-									class="modal fade"
-									id="paymentModal"
-									tabindex="-1"
-									role="dialog"
-									aria-labelledby="exampleModalLabel"
-									aria-hidden="true"
-								>
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h5 class="modal-title" id="exampleModalLabel">
-													Thanh toán bằng Ví MOMO
-												</h5>
-												<button
-													type="button"
-													class="close"
-													data-dismiss="modal"
-													aria-label="Close"
-												>
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												<input
-													type="text"
-													name=""
-													placeholder="Số điện thoại đăng ký Ví MOMO"
-												/>
-												<p>Nhận mã xác thực thanh toán từ hệ thống</p>
-												<input
-													type="text"
-													name=""
-													placeholder="Nhập mã xác nhận"
-												/>
-												<a href="#" title
-													>Nhận lại mã
-													<i class="fa fa-spinner" aria-hidden="true"></i
-												></a>
-											</div>
-											<div class="modal-footer">
-												<button
-													type="button"
-													class="btn btn-secondary"
-													data-dismiss="modal"
-												>
-													Đổi hình thức thanh toán
-												</button>
-												<button type="button" class="btn btn-primary">
-													Tiếp tục
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-									<a href="#" type="button" class="" data-toggle="modal" data-target="#paymentModal">
-										<img src="img/cod_driver.jpg" />
-										<div class="text text-white">
-											<p>Thanh toán khi nhận hàng</p>
-										</div>
-									</a>
-							
-							</div>
-							<div class="item">
-										<a href="#" type="button" class="" data-toggle="modal" data-target="#paymentModal">
-											<img src="img/credit_card.png" />
-											<div class="text text-white">
-												<p>Thanh toán bằng thẻ</p>
-											</div>
-										</a>							
-							</div>
+					<div class="col-md-6 text-center box-notification">
+						<div class="inner">
+								<h1 class="text-success">Thanh toán thành công <i class="fas fa-check-circle"></i></h1>
+								<p class="lead">
+									Đơn hàng sẽ được giao đến cho quý khách sớm nhất
+								</p>
+								<a href="order_dish.html" class="btn btn-secondary">Tiếp tục đặt món </a>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="title-text your-order">
-							<h3>Đơn hàng của bạn</h3>
-						</div>
-						<table class="table">
-							<thead>
-								<tr>
-									<th scope="col">Món ăn</th>
-									<th scope="col">Đơn giá</th>
-									<th scope="col">Số lượng</th>
-									<th scope="col">Thành tiền</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">
-										<img src="img/cart.jpg" />
-										<p class="font-weight-bold">Piza Ý</p>
-									</th>
-									<td>250000 đ</td>
-									<td>
-										<input type="number" name="" id="" class="form-control w-50" value="1">
-									</td>
-									<td>500000 đ</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										<img src="img/feast_1.jpg" />
-										<p class="font-weight-bold">Bún bò</p>
-									</th>
-									<td>250000 đ</td>
-									<td>
-										<input type="number" name="" id="" class="form-control w-50" value="1">
-									</td>
-									<td>500000 đ</td>
-								</tr>
-							</tbody>
-						</table>
-						<div class="related-info">
-							<div class="text-left"><p>Phí ship</p></div>
-							<div class="text-right"><p>30000 đ</p></div>
-						</div>
-						<div class="related-info">
-							<div class="text-left">
-								<input type="text" name="" placeholder="Mã giảm giá" />
+					<div class="col-md-2"></div>
+					<div class="col-md-4">
+						<h5 class="text-center font-weight-bold">
+							Đơn hàng của bạn
+						</h5>
+						<div class="card">
+							<img src="./img/meal_3.jpg" alt="Món ăn chi tiết Moki" class="card-img-top">
+							<div class="card-body">
+								<h3 class="card-title">
+									Món chim xào xả ớt
+								</h3>
+								<p class="text-success">
+									Bạn được giảm <span class="money">45.265đ</span>
+								</p>
+								<p class="large text-danger font-weight-bold">210.365đ</p>
 							</div>
-							<div class="text-right">
-								<button type="submit">Sử dụng mã</button>
-							</div>
-						</div>
-						<div class="related-info">
-							<div class="text-left"><p>Thuế VAT</p></div>
-							<div class="text-right"><p>0 đ</p></div>
-						</div>
-						<div class="related-info">
-							<div class="text-left"><p>Tổng giá trị đơn</p></div>
-							<div class="text-right"><p>1.500.000 đ</p></div>
-						</div>
-						<div class="receiver">
-							<p class="accepter">Người nhận: <span>Trần Văn Tú</span></p>
-							<p>
-								Địa chỉ người nhận<span>
-									Ngõ 1 Phạm Văn Đồng Cầu Giấy Hà Nội</span
-								>
-							</p>
-							<p>Số điện thoại: 098765424</p>
-							<div class="final">
-								<p>Tổng tiền: <span class="sumpay">1.280.000 đ</span></p>
-								<p>Hình thức thanh toán: <span>Ví Momo</span></p>
-							</div>
-							<div class="pay">
-								<a href="payment_success.html" title >Thanh Toán</a>
-							</div>
-							<a href="#" title class="cancel">Hủy</a>
 						</div>
 					</div>
 				</div>
