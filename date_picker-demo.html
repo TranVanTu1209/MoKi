@@ -1,0 +1,313 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Date picker Demo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/taotdstyle.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css"
+    integrity="sha256-AjyoyaRtnGVTywKH/Isxxu5PXI0s4CcE0BzPAX83Ppc=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="icon" href="icon.ico" />
+</head>
+<body>
+  <header class="container-fluid">
+    <button id="clickshow">
+      <i class="fas fa-arrow-right"></i>
+    </button>
+    <div class="modal fade" id="timkiemsettp" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+      aria-hidden="true">
+      <div class="thucandinhkymd modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalScrollableTitle">Tìm kiếm
+            </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div style="margin:0px auto" class="col-12 col-sm-12 col-md-12 col-lg-8">
+              <button id="main_search_monan_btns" type="button" style="margin-left: 10px;"
+                class="btn main_right_list_btn_list main_right_btn_active">Món
+                ăn</button>
+              <button id="main_search_setmenu_btns" type="button" class="btn main_right_list_btn_list">Set
+                menu</button>
+
+              <div id="main_search_monans" class="main_right_search_list show">
+                <div class="main_right_bua_search">
+                  <form style="margin: 0px;" class="form-inline row">
+                    <div style="padding: 0px;" class="col-7">
+                      <input class="form-control" type="search" placeholder="tìm kiếm món ăn" aria-label="Search">
+
+                    </div>
+                    <div style="padding: 0px;" class="col-5">
+                      <button style="width:100%; padding: auto;" class="btn btn-outline-success" type="submit">Tìm
+                        kiếm</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-7 col-sm-7 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                          <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
+                            <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div data-toggle="modal" data-target="#chitietmonan" class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                          <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
+                            <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                          <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
+                            <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                          <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
+                            <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                          <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
+                            <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="main_search_setmenus" class="main_right_search_list">
+                <div class="main_right_bua_search">
+                  <form style="margin: 0px;" class="form-inline row">
+                    <div style="padding: 0px;" class="col-7">
+                      <input class="form-control" type="search" placeholder="tìm set món ăn" aria-label="Search">
+
+                    </div>
+                    <div style="padding: 0px;" class="col-5">
+                      <button style="width:100%;" class="btn btn-outline-success" type="submit">Tìm
+                        kiếm</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="row">
+                  <div class="col-9 col-sm-9 col-md-9">
+                    <h4>set 2 món</h4>
+                  </div>
+                  <div class="main_right_search_icon_clone col-2 col-sm-2 col-md-2">
+                    <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2  text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-9 col-sm-9 col-md-9">
+                    <h4>set 2 món</h4>
+                  </div>
+                  <div class="main_right_search_icon_clone col-2 col-sm-2 col-md-2">
+                    <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-9 col-sm-9 col-md-9">
+                    <h4>set 1 món</h4>
+                  </div>
+                  <div class="main_right_search_icon_clone col-2 col-sm-2 col-md-2">
+                    <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                  </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row no-gutters">
+                    <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
+                      <img src="img/shrimp.jpg" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                      <div class="">
+                        <div class="row">
+                          <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
+                            <h5 class="card-title">Dưa leo</h5>
+                            <p class="card-text">220 kCal</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+            <button type="button" class="btn btn-danger">Xác nhận</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+  <script src="js/taotdscript.js"></script>
+</body>
+
+</html>
