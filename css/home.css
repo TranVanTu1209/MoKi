@@ -931,14 +931,15 @@ footer ul a:hover {
 	margin: 0 0.5rem;
 	display: flex;
 	align-items: center;
+	padding: 0 1rem;
 	justify-content: center;
-	max-width: 200px;
-	height: 200px !important;
+	max-width: 210px;
+	height: 190px;
+	background-color: #eee;
 }
 #co-operate .owl-carousel button {
 	display: none;
 }
-
 .modal .nav-link {
 	color: #495057;
 }
