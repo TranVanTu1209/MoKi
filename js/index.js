@@ -32,8 +32,9 @@
 
 
  $('.slick-product').slick({
-  infinite: true,
+ autoplay: true,
   slidesToShow: 3,
+   speed: 700,
   prevArrow: '<a type="button" class="left carousel-control"><i class="fa fa-angle-left"></i></a>',
   nextArrow: '<a type="button" class="right carousel-control"><i class="fa fa-angle-right"></i></a>',
 
@@ -41,22 +42,19 @@
   {
     breakpoint: 1024,
     settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToShow: 2
     }
   },
   {
-    breakpoint: 600,
+    breakpoint: 764,
     settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToShow: 1
     }
   },
   {
     breakpoint: 480,
     settings: {
-      slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToShow: 1
     }
   }
     // You can unslick at a given breakpoint now by adding:
