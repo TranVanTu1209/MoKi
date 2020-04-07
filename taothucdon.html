@@ -29,6 +29,11 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css"
+		/>
+
 		<link rel="icon" href="icon.ico" />
 	</head>
 
@@ -306,9 +311,7 @@
 															alt="Món ăn Moki"
 														/>
 														<div>
-															<h5
-																class="font-weight-bold name"
-															>
+															<h5 class="font-weight-bold name">
 																Combo bánh mì + sữa đậu
 															</h5>
 															<div class="price">
@@ -379,9 +382,7 @@
 															alt="Món ăn Moki"
 														/>
 														<div>
-															<h5
-																class="font-weight-bold name"
-															>
+															<h5 class="font-weight-bold name">
 																Combo thịt gà rang + Dưa muối
 															</h5>
 															<div class="price">
@@ -441,16 +442,6 @@
 									<!-- end -->
 								</div>
 							</div>
-						</div>
-						<div class="modal-footer">
-							<button
-								type="button"
-								class="btn btn-secondary"
-								data-dismiss="modal"
-							>
-								Hủy
-							</button>
-							<button type="button" class="btn btn-danger">Xác nhận</button>
 						</div>
 					</div>
 				</div>
@@ -557,7 +548,7 @@
 										>
 											Hôm nay
 										</button>
-										<button type="button" class="btn main_right_list_btn_list">
+										<button type="button" class="btn main_right_list_btn_list datepicker">
 											<i class="far fa-calendar-check"></i>
 										</button>
 										<button type="button" class="btn main_right_list_btn_list">
@@ -731,35 +722,38 @@
 							</div>
 							<div class="col-12 col-sm-12 col-md-7">
 								<div class="chitietmonan_nl">
-										<!--menu dish 2 -->
-										<div class="dish card mb-2 p-1">
-											<div class="no-gutters">
-												<div class="">
-													<div class="info row">
-														<div class="main-info col-sm-10 d-flex align-items-center">
-															<img src="img/food_4.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
-															<div>
-																<h5 class="font-weight-bold name">
-																	Cá lọc lấy thịt
-																</h5>
-																<p class="amount">
-																	200g
-																</p>
-																<div class="price">
-																	Giá gợi ý tại moki
-																	<span class="money text-danger font-weight-bold">84.66đ</span>
-
-																</div>
+									<!--menu dish 2 -->
+									<div class="dish card mb-2 p-1">
+										<div class="no-gutters">
+											<div class="">
+												<div class="info row">
+													<div
+														class="main-info col-sm-10 d-flex align-items-center"
+													>
+														<img
+															src="img/food_4.jpg"
+															class="mr-3 w-25"
+															alt="Món ăn Moki"
+														/>
+														<div>
+															<h5 class="font-weight-bold name">
+																Cá lọc lấy thịt
+															</h5>
+															<p class="amount mb-0">
+																200g
+															</p>
+															<div class="price">
+																Giá gợi ý tại moki
+																<span class="money text-danger font-weight-bold"
+																	>84.66đ</span
+																>
 															</div>
 														</div>
-														
 													</div>
 												</div>
 											</div>
-										
-											
 										</div>
-								
+									</div>
 								</div>
 							</div>
 						</div>
@@ -832,21 +826,24 @@
 						</div>
 					</div>
 					<div class="modal-footer">
-						<a href="payment.html"
+						<a
+							href="payment.html"
 							target="_blank"
 							type="button"
 							style="margin-left: 10px;"
 							class="main_right_list_btn_list btn main_right_btn_active"
 						>
 							Đặt mua nguyên liệu
-					</a>
-						<a href="payment.html" target="_blank"
+						</a>
+						<a
+							href="payment.html"
+							target="_blank"
 							type="button"
 							style="margin-left: 10px;"
 							class="main_right_list_btn_list btn main_right_btn_active"
 						>
 							Đặt món
-				</a>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -874,6 +871,8 @@
 			integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM="
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"></script>
+		<script src="./js/create_menu_datepciker.js"></script>
 		<script src="js/taotdscript.js"></script>
 		<script src="./js/collapse_meal_choice_create_menu.js"></script>
 	</body>
