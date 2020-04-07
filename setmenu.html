@@ -592,7 +592,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
+      </div>
+      <!-- chinh sua -->
       <div class="modal fade" id="chinhsuabuan" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="thucandinhkymd modal-dialog modal-dialog-scrollable" role="document">
@@ -653,6 +654,7 @@
           </div>
         </div>
       </div>
+      <!-- lua chon tan suat bua an -->
       <div class="modal fade" id="thucandinhkymd" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="thucandinhkymd modal-dialog modal-dialog-scrollable" role="document">
@@ -694,6 +696,7 @@
           </div>
         </div>
       </div>
+      <!-- them mon an -->
       <div class="modal fade" id="addthucphammd" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="addthucphammd modal-dialog modal-dialog-scrollable" role="document">
@@ -761,6 +764,7 @@
           </div>
         </div>
       </div>
+      <!-- chi tiet mon an -->
       <div class="modal fade" id="chitietmonan" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="chitietmonanmd modal-dialog modal-dialog-scrollable" role="document">
@@ -1003,6 +1007,7 @@
           </div>
         </div>
       </div>
+      <!-- chinh sua mon an theo ys minh -->
       <div class="modal fade" id="chinhsuabuan_chinhsua" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="chinhsuabuan_chinhsuamd modal-dialog modal-dialog-scrollable" role="document">
@@ -1256,7 +1261,7 @@
                     </div>
                     <div class="width-100 text-center">
                       <button type="button" data-toggle="modal" data-target="#chitietmonan_chinhsua_add" class=" main_right_list_btn_list btn
-                                                main_right_btn_active">Thêm</button>
+                        main_right_btn_active">Thêm</button>
                     </div>
                   </div>
                 </div>
@@ -1314,6 +1319,7 @@
           </div>
         </div>
       </div>
+      <!-- cai dat bua an -->
       <div class="modal fade" id="chitietmonan_chinhsua_add" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="chitietmonan_chinhsua_add modal-dialog modal-dialog-scrollable" role="document">
@@ -1452,23 +1458,25 @@
           </div>
         </div>
       </div>
+      <!-- dat ten ,tao bua an -->
       <div class="modal fade" id="addthucdon" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
         aria-hidden="true">
         <div class="thucandinhkymd modal-dialog modal-dialog-scrollable" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-center" id="exampleModalScrollableTitle">Tiêu đề bữa ăn
+              <h5 class="modal-title text-center" id="exampleModalScrollableTitle"> Tạo thực đơn cho gia đình bạn
+
               </h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body pt-3">
               <form>
                 <div class="form-group row">
-                  <label for="ipnametd" class="col-sm-6 col-form-label">Tên thưc đơn</label>
+                  <label for="ipnametd" class="col-sm-6 col-form-label">Tên thực đơn</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" placeholder="Bữa sáng" id="ipnametd">
+                    <input type="text" class="form-control" placeholder="Thực đơn cho người già" id="ipnametd">
                   </div>
                 </div>
               </form>
@@ -1477,7 +1485,7 @@
             <div class="modal-footer">
 
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-              <button type="button" class="btn btn-danger">Xác nhận</button>
+              <button type="button" class="btn btn-danger">Tạo thực đơn</button>
             </div>
           </div>
         </div>
@@ -1528,7 +1536,7 @@
         <!-- menu right -->
         <div class="main_right">
           <div class="main_right_list_btn">
-            <p>Kế hoạch thực đơn, Tháng 4 2020</p>
+            <h5 class="font-weight-bold">Kế hoạch thực đơn, Tháng 4 2020</h5>
             <nav class=" navbar_main_right_list navbar navbar-expand-lg navbar-light">
               <button class="navbar-toggler" id="navbar_main_right_list_btn" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -1541,14 +1549,13 @@
                     <button type="button" class="btn main_right_list_btn_list main_right_btn_active loaitd">
                       Cả nhà
                     </button>
-                    <button type="button" data-toggle="modal" data-target="#addthucdon"
-                      class="btn main_right_list_btn_list loaitd">
-                      Thêm <i class="fas fa-plus-circle"></i>
-                    </button>
+                      <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#addthucdon">
+                        Thêm <i class="fas fa-plus-circle"></i>
+                      </button>
                   </div>
                   <br />
                   <div style="float: right;" class="create">
-                    <button type="button" class="btn main_right_list_btn_list">
+                    <button type="button" class="btn main_right_list_btn_list owl-prev">
                       <i class="fas fa-backward"></i>
                     </button>
                     <button type="button" class="btn main_right_btn_active clickday">
@@ -1556,6 +1563,9 @@
                     </button>
                     <button type="button" class="btn main_right_list_btn_list datepicker">
                       <i class="far fa-calendar-check"></i>
+                    </button>
+                    <button type="button" class="btn main_right_list_btn_list owl-next">
+                      <i class="fas fa-forward"></i>
                     </button>
                     <button type="button" id="btn_td_ngay"
                       class="btn main_right_list_btn_list main_right_btn_active clickday">
@@ -1635,65 +1645,12 @@
                       </div>
                     </div>
                     <div class="card mb-3" style="max-width: 540px;">
-                      <div class="row no-gutters">
-                        <div data-toggle="modal" data-target="#chitietmonan" class="col-md-4 text-center">
-                          <img src="img/shrimp.jpg" class="card-img h-100" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body card-body-icon">
-                            <div class="row">
-                              <div data-toggle="modal" data-target="#chitietmonan" class="col-5 col-sm-5 col-md-5">
-                                <h5 class="card-title">Cá xào tỏi tây</h5>
-                                <p class="card-text">220 kCal</p>
-                              </div>
-                              <div class="main_right_bua_list_icon col-7 col-sm-7 col-md-7">
-                                <div class="">
-                                  <button class="main_right_bua_title_btn btn" type="button">
-                                    <i class="fas fa-thumbs-up"></i>
-                                  </button>
-                                  <button class="main_right_bua_title_btn btn" type="button">
-                                    <i class="fas fa-thumbs-down"></i>
-                                  </button>
-                                  <button class="main_right_bua_title_btn btn" type="button">
-                                    <i class="fas fa-sync-alt"></i>
-                                  </button>
-                                  <button class="main_right_bua_title_btn btn" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-bars"></i>
-                                  </button>
-                                  <div class="dropdown-menu main_right_day_menu_list"
-                                    aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#"><i class="far fa-star"></i>
-                                      Thêm yêu thích</a>
-                                    <a class="dropdown-item" data-toggle="modal" data-target="#thucandinhkymd"
-                                      href="#"><i class="far fa-calendar"></i> Đặt thức ăn
-                                      định kỳ</a>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Loại bỏ từ bữa
-                                      ăn này</a>
-                                    <hr>
-                                    <p class="text-center">Đánh giá thực phẩm này
-                                    </p>
-                                    <div class="text-center">
-                                      <button class="main_right_list_btn_list btn" type="button">
-                                        <i class="fas fa-thumbs-up"></i>
-                                      </button>
-                                      <button class="main_right_list_btn_list btn" type="button">
-                                        <i class="fas fa-thumbs-down"></i>
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      
                     </div>
                     <div class="card mb-3" style="max-width: 540px;">
                       <div class="row no-gutters">
                         <div data-toggle="modal" data-target="#chitietmonan" class="col-md-4 text-center">
-                          <img src="img/shrimp.jpg" class="card-img h-100" alt="...">
+                          <img src="img/meal_1.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body card-body-icon">
@@ -2052,22 +2009,21 @@
                   </div>
                 </div>
                 <!-- tìm kiếm -->
-                <div class="main_right_search col-12 col-sm-12 col-md-4 col-lg">
+                <div class="main_right_searchcol-sm-12 col-md-6">
                   <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                       <button id="main_search_monan_btn" type="button" style="margin-left: 10px;"
                         class="btn main_right_list_btn_list main_right_btn_active">Món
                         ăn</button>
-                      <button id="main_search_setmenu_btn" type="button" class="btn main_right_list_btn_list">Set
-                        menu</button>
-
+                      <button id="main_search_setmenu_btn" type="button" 
+                      class="btn main_right_list_btn_list">Menu các món</button>
+                      <!-- list mon an -->
                       <div id="main_search_monan" class="main_right_search_list show">
                         <div class="main_right_bua_search">
                           <form class="form-inline row">
                             <div style="padding: 0px;" class="col-7">
-                              <input class="form-control" type="search" placeholder="tìm kiếm món ăn"
+                              <input class="form-control" type="search" placeholder="Món ăn"
                                 aria-label="Search">
-
                             </div>
                             <div style="padding: 0px;" class="col-5">
                               <button style="width:100%;" class="btn btn-outline-success" type="submit">Tìm
@@ -2075,112 +2031,63 @@
                             </div>
                           </form>
                         </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
+                          <!-- dish 1 -->
+                          <div class="dish card mb-2 p-1">
+                            <div class="no-gutters">
                               <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
+                                <div class="info row">
+                                  <div class="main-info col-sm-10 d-flex align-items-center">
+                                    <img src="img/food_1.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
+                                    <div>
+                                      <h5 class="font-weight-bold name" data-toggle="modal" data-target="#chitietmonan">
+                                        Sườn sào chua ngọt
+                                      </h5>
+                                      <h4 class="price font-weight-bold">
+                                        31.133đ
+                                      </h4>
+                                    </div>
                                   </div>
-                                  <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
-                                    <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
+                                  <div class="add col-sm-2">
+                                    <button data-target="#add-meal-1" data-toggle="collapse" class="btn btn-success mt-2">
+                                      <i class="fas fa-plus-circle"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="collapse" id="add-meal-1">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-sm-5 form-group">
+                                    <label for="">Thêm vào bữa</label>
+                                    <select name="" id="" class="form-control">
+                                      <option value="breakfast">Bữa sáng</option>
+                                      <option value="lunch">Bữa trưa</option>
+                                      <option value="dinner">Bữa tối</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-sm-5 form-group">
+                                    <label for="">Thêm vào ngày</label>
+                                    <input type="date" class="form-control" name="" id="" />
+                                  </div>
+                                  <div class="col-sm-1 form-group mx-1">
+                                    <button class="btn btn-success add-to-meal">
+                                      Thêm
+                                    </button>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div data-toggle="modal" data-target="#chitietmonan" class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                  <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
-                                    <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                  <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
-                                    <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                  <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
-                                    <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                  <div class="main_right_search_icon_clone col-4 col-sm-4 col-md-4">
-                                    <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        
+                        <!-- list menu mon an -->
                       </div>
                       <div id="main_search_setmenu" class="main_right_search_list">
                         <div class="main_right_bua_search">
                           <form class="form-inline row">
                             <div style="padding: 0px;" class="col-7">
-                              <input class="form-control" type="search" placeholder="tìm set món ăn"
+                              <input class="form-control" type="search" placeholder="Menu món ăn"
                                 aria-label="Search">
 
                             </div>
@@ -2190,116 +2097,9 @@
                             </div>
                           </form>
                         </div>
-                        <div class="row">
-                          <div class="col-10 col-sm-10 col-md-10">
-                            <h4>set 2 món</h4>
-                          </div>
-                          <div class="main_right_search_icon_clone col-2 col-sm-2 col-md-2">
-                            <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
-                          </div>
-                        </div>
+                        
 
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2  text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-10 col-sm-10 col-md-10">
-                            <h4>set 2 món</h4>
-                          </div>
-                          <div class="main_right_search_icon_clone col-2 col-sm-2 col-md-2">
-                            <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
-                          </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-10 col-sm-10 col-md-10">
-                            <h4>set 1 món</h4>
-                          </div>
-                          <div class="main_right_search_icon_clone col-2 col-sm-2 col-md-2">
-                            <i data-toggle="modal" data-target="#addthucphammd" class="fas fa-plus-circle"></i>
-                          </div>
-                        </div>
-                        <div class="card mb-3" style="max-width: 540px;">
-                          <div class="row no-gutters">
-                            <div data-toggle="modal" data-target="#chitietmonan" class="col-md-2 text-center">
-                              <img src="img/shrimp.jpg" class="card-img" alt="...">
-                            </div>
-                            <div class="col-md-10">
-                              <div class="">
-                                <div class="row">
-                                  <div data-toggle="modal" data-target="#chitietmonan" class="col-8 col-sm-8 col-md-8">
-                                    <h5 class="card-title">Cá xào tỏi tây</h5>
-                                    <p class="card-text">220 kCal</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                       
                       </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-4"></div>

@@ -173,9 +173,10 @@ col,
 	color: #fff;
 	background-color: #51931b;
 }
-button.close:focus, .navbar-toggler:focus {
-	outline: none;
+button.close:focus, .navbar-toggler:focus, button:focus {
+	outline: none !important;
 }
+
 .main_right_list_btn {
 	margin: 50px 50px 10px 50px;
 }
