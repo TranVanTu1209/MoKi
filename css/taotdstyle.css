@@ -16,6 +16,10 @@ body {
 	float: left;
 	border-right: 1px solid #ddd;
 }
+section.co-operate {
+	padding-left: 0;
+	padding-right: 0;
+}
 li:focus {
 	outline: none;
 }
@@ -28,9 +32,11 @@ li:focus {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	-webkit-line-clamp: 1;
+	width: 100px;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	height: 20px;
+	cursor: pointer;
 }
 col,
 .col-1,
@@ -289,6 +295,8 @@ button:focus {
 	text-align: right;
 	transform: scale(0);
 	transition: 0.5s;
+	position: relative;
+	z-index: 1000;
 }
 .main_right_bua_title:hover .main_right_bua_list_icon {
 	transform: scale(1);
@@ -322,9 +330,11 @@ button:focus {
 }
 .main_right_search_list {
 	margin-top: 10px;
-	/* box-shadow: 5px 5px 5px 0px #0000005e; */
 	border-radius: 5px;
 	display: none;
+}
+.main_right_search_list .dish img {
+	width: 60px !important;
 }
 .main_right_search_list.show {
 	display: block;
@@ -334,7 +344,7 @@ button:focus {
 }
 .main_right_day_menu_list {
 	position: relative;
-	z-index: 3;
+	z-index: 1000;
 }
 .main_right_day_menu_list.show {
 	display: block;
@@ -474,52 +484,47 @@ a:focus {
 .tdngay {
 	display: none;
 }
-.owl-dots {
-	display: none;
-}
-.owl-nav {
-	position: absolute;
-	top: 0px;
-	height: 100%;
-	width: 100%;
-	z-index: -999;
-}
-.owl-nav .owl-prev {
-	position: absolute;
-	left: -40px;
-	height: 100%;
-	width: 30px;
-	background-color: rgba(255, 0, 0, 0);
-	border-radius: 10px 0px 0px 10px;
-}
-.owl-theme .owl-nav [class*="owl-"]:hover {
-	background-color: #51931b00;
-}
-.owl-prev span {
-	font-size: 50px;
-	color: red;
-	font-weight: 600;
-	background-color: rgba(0, 0, 0, 0) !important;
-}
-.owl-next span {
-	font-size: 50px;
-	color: red;
-	font-weight: 600;
-	background-color: rgba(0, 0, 0, 0) !important;
-}
-.owl-nav .owl-next {
-	position: absolute;
-	right: -40px;
-	height: 100%;
-	width: 30px;
-	background-color: red;
-}
+
 .td_show {
 	display: block;
 }
 .tdthang {
 	display: none;
 }
+#tdthang #owl-co-operate .item {
+	padding: 0 0.2rem !important;
+	position: relative;
+	z-index: 10;
+}
+#tdthang #owl-co-operate {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+.main_right .meal .list-food img {
+	width: 80px;
+	border-radius: 3px;
+	transition: 0.4s all ease;
+}
+.main_right .meal .list-food img:hover {
+	transform: scale(1.03);
+}
+.meal {
+	padding-bottom: 0.2rem;
+}
+.search-meal .search-btn {
+	border-radius: 3px;
+	border: #51931b 1px solid;
+	transition: all 0.4s ease;
+}
+.search-meal .search-btn.active {
+	background-color: #51931b;
+	color: #fff;
+}
+.search-meal .search-btn:hover {
+	background-color: rgb(8, 168, 70);
+	color: #fff;
+}
+
 @media (max-width: 1024px) {
 	.main_right {
 		margin-top: 50px;
@@ -560,9 +565,9 @@ a:focus {
 		position: absolute;
 		width: 100%;
 	}
-		.main_right .navbar-collapse {
-			margin-top: 0.5rem;
-		}
+	.main_right .navbar-collapse {
+		margin-top: 0.5rem;
+	}
 	.main_right nav ul button {
 		margin-top: 0.3rem;
 		display: inline-block;
@@ -636,14 +641,14 @@ a:focus {
 		padding-left: 0;
 		padding-right: 0;
 	}
-
+	.main_right .navbar,
+	.main_right .title-td {
+		margin-left: 0.5rem;
+	}
 	.main_right .meal img {
 		width: 80px;
 	}
-	.main_right .meal .list-food .row {
-		display: flex;
-		flex-direction: row;
-	}
+
 	.main_right .thuc-don {
 		padding-left: 0;
 		padding-right: 0;
