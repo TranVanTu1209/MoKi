@@ -23,7 +23,8 @@ $("#main_search_monan_btns").click(function () {
     $("#main_search_monan_btns").addClass("main_right_btn_active");
 });
 $listsltpp = "";
-for ($i = 1; $i < 10; $i++) {
+for ($i = 1; $i < 10; $i++)
+{
     $listsltpp += '<option value="p' + $i + '">' + $i + ' người</option>'
 }
 $("#peopleform").html($listsltpp);
@@ -32,36 +33,41 @@ $("#clickshow").click(function () {
     $(".main_left").addClass("show");
 })
 $(".main_right").click(function () {
-    if ($(".main_left").attr("class") == "main_left show") {
+    if ($(".main_left").attr("class") == "main_left show")
+    {
         $(".main_left").removeClass("show");
     }
 });
-$('.owl-carousel').owlCarousel({
-    autoplay: false,
-    autoplayHoverPause: true,
-    items: 3,
-    nav: true,
-    loop: true,
-    responsiveClass: true,
-    responsive: {
-        0: {
-            items: 1,
-            nav: true
-        },
-        500: {
-            items: 1,
-            nav: true
-        },
-        768: {
-            items: 2,
-            nav: true
-        },
-        1000: {
-            items: 3,
-            nav: true
+if ($('.owl-carousel') != undefined)
+{
+    $('.owl-carousel').owlCarousel({
+        autoplay: false,
+        autoplayHoverPause: true,
+        items: 3,
+        nav: true,
+        loop: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            500: {
+                items: 1,
+                nav: true
+            },
+            768: {
+                items: 2,
+                nav: true
+            },
+            1000: {
+                items: 3,
+                nav: true
+            }
         }
-    }
-});
+    });
+
+}
 
 $("#btn_td_ngay").click(function () {
     $("#tdngay").addClass("td_show");

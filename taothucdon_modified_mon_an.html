@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tạo thực đơn | Ban đầu</title>
+		<title>Chỉnh sửa món ăn</title>
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -33,10 +33,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css"
 		/>
-
 		<link rel="icon" href="icon.ico" />
 	</head>
-
 	<body>
 		<header class="container-fluid">
 			<button id="clickshow">
@@ -473,17 +471,17 @@
 									><i class="fas fa-shopping-cart"></i> Đặt món</a
 								>
 							</li>
-						
+
 							<li class="nav-item">
 								<a class="nav-link" href="order_food.html"
 									><i class="fas fa-shopping-cart"></i> Mua thực phẩm</a
 								>
 							</li>
-								<li class="nav-item">
-									<a href="order_history.html" class="nav-link">
-										<i class="fas fa-history"></i> Lịch sử đơn hàng
-									</a>
-								</li>
+							<li class="nav-item">
+								<a href="order_history.html" class="nav-link">
+									<i class="fas fa-history"></i> Lịch sử đơn hàng
+								</a>
+							</li>
 							<li class="nav-item main_left_list_search">
 								<input
 									data-toggle="modal"
@@ -499,176 +497,170 @@
 				</div>
 				<!-- menu right -->
 				<div class="main_right">
-					<div class="main_right_list_btn">
-						<h5 class="font-weight-bold">Kế hoạch thực đơn, Tháng 4 2020</h5>
-						<nav
-							class="navbar_main_right_list navbar navbar-expand-lg navbar-light"
-						>
-							<button
-								class="navbar-toggler mb-3"
-								id="navbar_main_right_list_btn"
-								type="button"
-								data-toggle="collapse"
-								data-target="#navbarSupportedContent"
-								aria-controls="navbarSupportedContent"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								<nav
-									class="width-100 navbar_main_right_list navbar navbar-light"
-								>
-									<div style="float: right;" class="create">
-										<button
-											type="button"
-											class="btn btn-outline-success"
-											data-toggle="modal"
-											data-target="#addthucdon"
-										>
-											Thêm <i class="fas fa-plus-circle"></i>
-										</button>
-									</div>
-									<br />
-									<div style="float: right;" class="create">
-										<button type="button" class="btn main_right_list_btn_list">
-											<i class="fas fa-backward"></i>
-										</button>
-										<button
-											type="button"
-											class="btn main_right_btn_active clickday"
-										>
-											Hôm nay
-										</button>
-										<button
-											type="button"
-											class="btn main_right_list_btn_list datepicker"
-										>
-											<i class="far fa-calendar-check"></i>
-										</button>
-										<button type="button" class="btn main_right_list_btn_list">
-											<i class="fas fa-forward"></i>
-										</button>
-										<button
-											type="button"
-											class="btn main_right_btn_active clickday"
-										>
-											Ngày
-										</button>
-										<button
-											type="button"
-											class="btn main_right_list_btn_list clickday"
-										>
-											Tháng
-										</button>
-									</div>
-								</nav>
+					<!-- chinh sua mon an theo y minh -->
+					<div class="" id="modified-meal">
+						<div class="inner p-5">
+							<div class="">
+								<h4 class="modal-title text-center">
+									Chỉnh sửa món ăn theo phong cách của bạn
+								</h4>
 							</div>
-						</nav>
-						<div class="navbar_main_right_list_day mt-4">
-							<a class="navbar-brand">Chủ nhật</a><br />
-							<i class="fas fa-calendar-day"></i>
-							<span class="navbar_main_right_list_today">15</span>
-						</div>
-						<div id="main_right_main">
-							<div class="container main_right_container py-5">
-								<h5 class="main_right_container_title">
-									Bạn chưa có thực đơn cho hôm nay?
-								</h5>
-								<div class="main_right_container_listbtn">
-									<button
-										type="button"
-										id="taorand"
-										class="btn main_right_btn_active main_right_container_listbtn_clone"
+							<div class="body">
+								<!-- image -->
+								<div class="row top-20 image">
+									<div class="col-3 col-sm-3 col-md-3">
+										<p><b>Hình ảnh</b></p>
+									</div>
+									<div
+										class="chinhsuabuan_chinhsua_img text-center col-8 col-sm-8 col-md-8"
 									>
-										<a href="setmenu.html"
-											><i class="fas fa-sync-alt"></i> Tạo ngẫu nhiên</a
-										>
-									</button>
-									<button
-										type="button"
-										class="btn main_right_btn_active main_right_container_listbtn_clone"
-									>
-										<a href="#"
-											><i class="far fa-copy"></i> Lấy từ ngày trước</a
-										>
-									</button>
-									<button
-										type="button"
-										class="btn main_right_btn_active main_right_container_listbtn_clone"
-									>
-										<a href="taothucdon_menu_moi.html"
-											><i class="fas fa-plus-circle"></i> Tạo menu mới</a
-										>
-									</button>
+										<img
+											src="img/banh-mi-kep-thit-thumb.jpg"
+											alt=""
+											class="rounded"
+										/>
+										<label for="fileimgchinhsua" class="btn btn-primary"
+											>Thay đổi <i class="far fa-imgs"></i
+										></label>
+										<input
+											type="file"
+											name=""
+											id="fileimgchinhsua"
+											class="d-none"
+										/>
+									</div>
 								</div>
+								<!-- name -->
+								<div class="row top-20 name">
+									<div class="col-sm-3">
+										<p><b>Tên món ăn</b></p>
+									</div>
+									<div class="col-sm-9">
+										<input
+											class="width-100 form-control"
+											type="text"
+											placeholder=""
+										/>
+									</div>
+								</div>
+								<!-- ingredients -->
+								<div class="row top-20 ingredients">
+									<div class="col-sm-3">
+										<p><b>Thành phần</b></p>
+									</div>
+									<div class="col-sm-9">
+										<!-- list ingredients -->
+										<div class="chinhsuabuan_chinhsua_listtp p-2 rounded">
+											<!--food 1 -->
+											<div class="dish food card mb-2 p-3">
+												<div class="no-gutters">
+													<div class="">
+														<div class="info row">
+															<div
+																class="main-info col-sm-10 d-flex align-items-center"
+															>
+																<div>
+																	<h5 class="font-weight-bold name">
+																		<i class="fas fa-pepper-hot"></i> Cá lọc lấy
+																		thịt
+																		<button class="delete border-0 ml-2">
+																			<i class="fas fa-trash text-danger"></i>
+																		</button>
+																	</h5>
+																	<p class="amount mb-0">
+																		200g
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!--food 2 -->
+											<div class="dish food card mb-2 p-3">
+												<div class="no-gutters">
+													<div class="">
+														<div class="info row">
+															<div
+																class="main-info col-sm-10 d-flex align-items-center"
+															>
+																<div>
+																	<h5 class="font-weight-bold name">
+																		<i class="fas fa-pepper-hot"></i> Hành tây
+																		thái nhỏ
+																		<button class="delete border-0 ml-2">
+																			<i class="fas fa-trash text-danger"></i>
+																		</button>
+																	</h5>
+																	<p class="amount mb-0">
+																		400g
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- end -->
+										</div>
+										<div class="width-100 text-center mt-2">
+											<button
+												type="button"
+												data-toggle="modal"
+												data-target="#add-ingredients"
+												class="main_right_list_btn_list btn main_right_btn_active"
+											>
+												Thêm nguyên liệu
+											</button>
+										</div>
+									</div>
+								</div>
+								<!-- recipe -->
+								<div class="recipe">
+									<h4 class="py-3">Các bước nấu ăn</h4>
+									<div class="steps">
+										<!-- step 1 -->
+										<div class="step row">
+											<div class="col-sm-3">
+												<h4 class="font-weight-bold text-danger">Bước 1</h4>
+											</div>
+											<div class="col-sm-9">
+												<div class="form-group step">
+													<textarea
+														name=""
+														id=""
+														cols="30"
+														rows="4"
+														class="form-control"
+													></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="add-step py-3">
+										<button class="btn btn-success">
+											Thêm bước <i class="fas fa-plus-cicle"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="footer pt-4">
+								<button
+									type="button"
+									class="btn btn-secondary"
+									data-dismiss="modal"
+								>
+									Hủy
+								</button>
+								<button type="button" class="btn btn-primary">Lưu</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</main>
-		<!-- add thuc don to modal -->
-		<div
-			class="modal fade"
-			id="addthucdon"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="exampleModalScrollableTitle"
-			aria-hidden="true"
-		>
-			<div
-				class="thucandinhkymd modal-dialog modal-dialog-scrollable"
-				role="document"
-			>
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5
-							class="modal-title text-center"
-							id="exampleModalScrollableTitle"
-						>
-							Tạo thực đơn cho gia đình bạn
-						</h5>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-							aria-label="Close"
-						>
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<form class="my-3">
-							<div class="form-group row">
-								<label for="ipnametd" class="col-sm-6 col-form-label"
-									>Tên thực đơn</label
-								>
-								<div class="col-sm-6">
-									<input
-										type="text"
-										class="form-control"
-										placeholder="Thực đơn cho bé"
-										id="ipnametd"
-									/>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<button
-							type="button"
-							class="btn btn-secondary"
-							data-dismiss="modal"
-						>
-							Hủy
-						</button>
-						<button type="button" class="btn btn-danger">Tạo thực đơn</button>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!--  -->
+
 		<!-- chi tiết món ăn và chỉnh sửa -->
 		<div
 			class="modal fade"
@@ -701,10 +693,12 @@
 					</div>
 					<div class="modal-body">
 						<div class="chitietmonan_nl_btncs my-2">
-							<a href="taothucdon_modified_mon_an.html" class="main_right_list_btn_list btn main_right_btn_active">
+							<a
+								href="taothucdon_modified_mon_an.html"
+								class="main_right_list_btn_list btn main_right_btn_active"
+							>
 								Chỉnh sửa
 							</a>
-
 						</div>
 						<div class="row my-2 p-3">
 							<div
@@ -905,6 +899,63 @@
 				</div>
 			</div>
 		</div>
+		<!-- thêm nguyên liệu cho món ăn -->
+		<div
+			class="modal fade"
+			id="add-ingredients"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalScrollableTitle"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-scrollable" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5
+							class="modal-title text-center"
+							id="exampleModalScrollableTitle"
+						>
+							Thêm nguyên liệu cho món Cá xào tỏi tây
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body p-4">
+						<form action="">
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+										<label for="name-ingredient">Tên nguyên liệu</label>
+										<input type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="col-xs-5 ml-2">
+									<div class="form-group">
+										<label for="name-ingredient">Khối lượng</label>
+										<input
+											type="text"
+											class="form-control"
+											placeholder="200g"
+										/>
+									</div>
+								</div>
+							</div>
+							<input
+								type="submit"
+								class="btn btn-primary"
+								value="Thêm nguyên liệu"
+							/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<footer class="container-fluid"></footer>
 		<script
@@ -931,5 +982,6 @@
 		<script src="./js/create_menu_datepciker.js"></script>
 		<script src="js/taotdscript.js"></script>
 		<script src="./js/collapse_meal_choice_create_menu.js"></script>
+		<script src="./js/add_more_step_dish.js"></script>
 	</body>
 </html>

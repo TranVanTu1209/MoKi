@@ -147,6 +147,12 @@ col,
 	width: 84%;
 	float: right;
 }
+
+.main_right .meal {
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
 .main_right .create button {
 	transition: 0.2s all ease-out;
 }
@@ -240,6 +246,9 @@ button:focus {
 	box-shadow: 0px 0px 2px 1px #51931bc4;
 	margin-top: 50px;
 }
+.main_right .dropdown button:hover i {
+	color: #fff !important;
+}
 .main_right_container_title {
 	margin-top: 10px;
 	width: 100%;
@@ -262,6 +271,14 @@ button:focus {
 	width: 100%;
 	text-align: right;
 	position: relative;
+	z-index: 999;
+}
+.main_right_day_menu .dropdown-item {
+	margin-bottom: 0.7rem;
+}
+.main_right_day_menu .dropdown {
+	position: relative;
+	z-index: 999;
 }
 .main_right_bua {
 	margin-top: 10px;
@@ -358,6 +375,9 @@ button:focus {
 	width: 100%;
 	height: 250px;
 }
+#chitietmonan .food img {
+	width: 70px;
+}
 .chitietmonan_nl {
 	height: 250px;
 	/* border: 1px solid #51931b; */
@@ -386,17 +406,21 @@ button:focus {
 .chinhsuabuan_chinhsua_img_ip {
 	display: none;
 }
+#chinhsuabuan_chinhsua .modal-body {
+	overflow-x: hidden;
+}
 .chinhsuabuan_chinhsua_img {
 	position: relative;
+	width: 400px;
 }
 .chinhsuabuan_chinhsua_img label {
 	display: block;
 	position: absolute;
 	top: 40%;
-	left: 40%;
+	left: 45%;
 	opacity: 0.7;
 	border: 1px solid #51931b;
-	background-color: #51931b;
+	background-color: #67c31b;
 	color: #fff;
 	padding: 5px 10px;
 }
@@ -412,10 +436,13 @@ button:focus {
 .chinhsuabuan_chinhsua_listtp {
 	width: 100%;
 	border: 1px solid #00000059;
-	height: 500px;
+	height: auto;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
-
+.chinhsuabuan_chinhsua_listtp .food img {
+	width: 80px;
+}
 .main_left.show {
 	z-index: 999;
 	opacity: 1;
@@ -434,6 +461,12 @@ button:focus {
 	border-radius: 30px;
 	background-color: #51931bd0;
 	color: #fff;
+}
+div:focus {
+	outline: auto !important;
+}
+a:focus {
+	outline: none !important;
 }
 #clickshow:focus {
 	outline: none;
@@ -460,17 +493,19 @@ button:focus {
 	border-radius: 10px 0px 0px 10px;
 }
 .owl-theme .owl-nav [class*="owl-"]:hover {
-	background-color: #51931b59;
+	background-color: #51931b00;
 }
 .owl-prev span {
 	font-size: 50px;
 	color: red;
 	font-weight: 600;
+	background-color: rgba(0, 0, 0, 0) !important;
 }
 .owl-next span {
 	font-size: 50px;
 	color: red;
 	font-weight: 600;
+	background-color: rgba(0, 0, 0, 0) !important;
 }
 .owl-nav .owl-next {
 	position: absolute;
@@ -525,6 +560,9 @@ button:focus {
 		position: absolute;
 		width: 100%;
 	}
+		.main_right .navbar-collapse {
+			margin-top: 0.5rem;
+		}
 	.main_right nav ul button {
 		margin-top: 0.3rem;
 		display: inline-block;
@@ -557,4 +595,61 @@ button:focus {
 #timkiemsettp .notification {
 	transition: all 0.4s ease-in-out;
 	transform: scale(0);
+}
+#history-transaction .list-orders .order img {
+	width: 130px;
+}
+#history-transaction .list-orders .order {
+	margin-bottom: 1rem;
+}
+#history-transaction .list-orders .order .card {
+	display: flex !important;
+	flex-direction: row;
+}
+#history-transaction .list-orders .order .buy {
+	height: 30px;
+	width: 200px;
+}
+
+@media (max-width: 500px) {
+	#history-transaction .list-orders .order img {
+		width: 100px;
+	}
+	#history-transaction .list-orders .order .buy {
+		width: 140px;
+	}
+	#history-transaction .list-orders .order .card .card-body {
+		padding: 0.2rem;
+	}
+	#history-transaction .list-orders .order .card .card-body .name h4 {
+		font-size: 0.9rem;
+	}
+	/* .main_right .search-meal{
+		display: none;
+	} */
+}
+@media (max-width: 414px) {
+	.main_right .create {
+		margin-top: 0.5rem;
+	}
+	section.co-operate {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.main_right .meal img {
+		width: 80px;
+	}
+	.main_right .meal .list-food .row {
+		display: flex;
+		flex-direction: row;
+	}
+	.main_right .thuc-don {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.main_right i:focus,
+.main_right button:focus {
+	outline: none !important;
 }
