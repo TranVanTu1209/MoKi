@@ -36,3 +36,42 @@ $(".main_right").click(function () {
         $(".main_left").removeClass("show");
     }
 });
+$('.owl-carousel').owlCarousel({
+    autoplay: false,
+    autoplayHoverPause: true,
+    items: 3,
+    nav: true,
+    loop: true,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        500: {
+            items: 1,
+            nav: true
+        },
+        768: {
+            items: 2,
+            nav: true
+        },
+        1000: {
+            items: 3,
+            nav: true
+        }
+    }
+});
+
+$("#btn_td_ngay").click(function () {
+    $("#tdngay").addClass("td_show");
+    $("#tdthang").addClass("tdthang");
+    $("#btn_td_ngay").addClass("main_right_btn_active");
+    $("#btn_td_thang").removeClass("main_right_btn_active");
+});
+$("#btn_td_thang").click(function () {
+    $("#tdthang").removeClass("tdthang");
+    $("#tdngay").removeClass("td_show");
+    $("#btn_td_thang").addClass("main_right_btn_active");
+    $("#btn_td_ngay").removeClass("main_right_btn_active");
+});
