@@ -16,6 +16,9 @@ body {
 	float: left;
 	border-right: 1px solid #ddd;
 }
+li:focus {
+	outline: none;
+}
 .card {
 	position: initial;
 	cursor: pointer;
@@ -173,7 +176,9 @@ col,
 	color: #fff;
 	background-color: #51931b;
 }
-button.close:focus, .navbar-toggler:focus, button:focus {
+button.close:focus,
+.navbar-toggler:focus,
+button:focus {
 	outline: none !important;
 }
 
@@ -210,13 +215,13 @@ button.close:focus, .navbar-toggler:focus, button:focus {
 .main_right_container_listbtn_clone {
 	width: 160px;
 }
-.main_right_list_btn_list.loaitd{
+.main_right_list_btn_list.loaitd {
 	width: 96px;
 }
-.clickday{
+.clickday {
 	width: 79px;
 }
-.main_right_container_listbtn_clone{
+.main_right_container_listbtn_clone {
 	width: 160px;
 }
 .main_right_list_btn_list a {
@@ -369,7 +374,7 @@ button.close:focus, .navbar-toggler:focus, button:focus {
 .chitietmonan_list_btn {
 	margin-top: 20px;
 }
-.chitietmonan_list_btn button:hover i{
+.chitietmonan_list_btn button:hover i {
 	color: #fff !important;
 }
 .chitietmonan_list_btn hr {
@@ -541,7 +546,6 @@ button.close:focus, .navbar-toggler:focus, button:focus {
 	}
 	.main_right_list_btn {
 		margin: 5px;
-	
 	}
 	.chitietmonan_img img {
 		height: auto;
@@ -551,6 +555,6 @@ button.close:focus, .navbar-toggler:focus, button:focus {
 }
 
 #timkiemsettp .notification {
-	transition: all 0.4s ease-in-out ;
+	transition: all 0.4s ease-in-out;
 	transform: scale(0);
 }
