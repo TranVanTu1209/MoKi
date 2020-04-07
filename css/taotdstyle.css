@@ -20,6 +20,15 @@ body {
 	position: initial;
 	cursor: pointer;
 }
+.card-title{
+display: inline-block;
+text-overflow: ellipsis;
+overflow: hidden;
+-webkit-line-clamp: 1;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+height: 20px;
+}
 col,
 .col-1,
 .col-10,
@@ -188,6 +197,15 @@ col,
 	border: 1px solid #51931b;
 	padding: 5px 20px;
 }
+.main_right_list_btn_list.loaitd{
+	width: 96px;
+}
+.clickday{
+	width: 79px;
+}
+.main_right_container_listbtn_clone{
+	width: 160px;
+}
 .main_right_list_btn_list a {
 	color: #000;
 }
@@ -244,7 +262,7 @@ col,
 	transform: scale(1);
 }
 .main_right_bua_list_icon i {
-	font-size: 25px;
+	font-size: 15px;
 	margin-left: 10px;
 }
 .main_right_bua_title {
@@ -403,6 +421,53 @@ col,
 #clickshow:focus {
 	outline: none;
 }
+.tdngay{
+	display: none;
+}
+.owl-dots{
+	display: none;
+}
+.owl-nav{
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -999;
+}
+.owl-nav .owl-prev{
+	position: absolute;
+	left: -40px;
+	height: 100%;
+	width: 30px;
+	background-color: red;
+	border-radius: 10px 0px 0px 10px;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+	background-color: #51931b59;
+}
+.owl-prev span{
+	font-size: 50px;
+	color: red;
+	font-weight: 600;
+}
+.owl-next span{
+	font-size: 50px;
+	color: red;
+	font-weight: 600;
+}
+.owl-nav .owl-next{
+	position: absolute;
+	right: -40px;
+	height: 100%;
+	width: 30px;
+	background-color: red;
+}
+.td_show{
+	display: block;
+}
+.tdthang{
+	display: none;
+}
 @media (min-width: 576px) {
 	.form-inline .form-control {
 		display: inline-block;
@@ -452,5 +517,13 @@ col,
 	}
 	.width-mb {
 		display: none;
+	}
+	.main_right_list_btn{
+		margin: 5px;
+	}
+	.chitietmonan_img img{
+		height: auto;
+		width: 60%;
+		margin: 0px auto;
 	}
 }
