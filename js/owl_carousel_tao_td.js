@@ -3,9 +3,9 @@ $('.owl-carousel').owlCarousel({
   autoplay: true,
   autoplayHoverPause: true,
   items: 3,
-  nav: true,
+  nav: false,
   loop: true,
-  dots: true,
+  dots: false,
   responsiveClass: true,
   responsive: {
     0: {
@@ -21,7 +21,7 @@ $('.owl-carousel').owlCarousel({
       nav: true
     },
     1000: {
-      items: 3,
+      items: 2,
       nav: true
     }
   }
