@@ -2,986 +2,710 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Chỉnh sửa món ăn</title>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="css/taotdstyle.css" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
-			integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css"
-			integrity="sha256-AjyoyaRtnGVTywKH/Isxxu5PXI0s4CcE0BzPAX83Ppc="
-			crossorigin="anonymous"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css"
-		/>
-		<link rel="icon" href="icon.ico" />
-	</head>
-	<body>
-		<header class="container-fluid">
-			<button id="clickshow">
-				<i class="fas fa-arrow-right"></i>
-			</button>
-			<div
-				class="modal fade"
-				id="timkiemsettp"
-				tabindex="-1"
-				role="dialog"
-				aria-labelledby="exampleModalScrollableTitle"
-				aria-hidden="true"
-			>
-				<div
-					class="thucandinhkymd modal-dialog modal-dialog-scrollable modal-lg"
-					role="document"
-				>
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5
-								class="modal-title text-center"
-								id="exampleModalScrollableTitle"
-							>
-								Lựa chọn món ăn
-							</h5>
-							<button
-								type="button"
-								class="close font-weight-bold"
-								data-dismiss="modal"
-								aria-label="Close"
-							>
-								<span aria-hidden="true">&times;</span>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Chỉnh sửa món ăn</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/taotdstyle.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+		integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css"
+		integrity="sha256-AjyoyaRtnGVTywKH/Isxxu5PXI0s4CcE0BzPAX83Ppc=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.css" />
+	<link rel="icon" href="icon.ico" />
+</head>
+
+<body>
+	<header class="container-fluid">
+		<button id="clickshow">
+			<i class="fas fa-arrow-right"></i>
+		</button>
+		<div class="modal fade" id="timkiemsettp" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+			aria-hidden="true">
+			<div class="thucandinhkymd modal-dialog modal-dialog-scrollable modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title text-center" id="exampleModalScrollableTitle">
+							Lựa chọn món ăn
+						</h5>
+						<button type="button" class="close font-weight-bold" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body py-3">
+						<div style="margin: 0px auto;" class="col-12 col-sm-12 col-md-12 col-lg-9">
+							<button id="main_search_monan_btns" type="button" style="margin-left: 10px;"
+								class="btn main_right_list_btn_list main_right_btn_active">
+								Món ăn
 							</button>
-						</div>
-						<div class="modal-body py-3">
-							<div
-								style="margin: 0px auto;"
-								class="col-12 col-sm-12 col-md-12 col-lg-9"
-							>
-								<button
-									id="main_search_monan_btns"
-									type="button"
-									style="margin-left: 10px;"
-									class="btn main_right_list_btn_list main_right_btn_active"
-								>
-									Món ăn
-								</button>
-								<button
-									id="main_search_setmenu_btns"
-									type="button"
-									class="btn main_right_list_btn_list"
-								>
-									Menu theo bữa
-								</button>
-								<!-- menu theo mon -->
-								<div
-									id="main_search_monans"
-									class="main_right_search_list show"
-								>
-									<div class="main_right_bua_search">
-										<form style="margin: 0px;" class="form-inline row">
-											<div style="padding: 0px;" class="col-7">
-												<input
-													class="form-control"
-													type="search"
-													placeholder="Món ăn"
-													aria-label="Search"
-												/>
-											</div>
-											<div style="padding: 0px;" class="col-5">
-												<button
-													style="width: 100%; padding: auto;"
-													class="btn btn-outline-success"
-													type="submit"
-												>
-													Tìm kiếm
-												</button>
-											</div>
-										</form>
-									</div>
-									<div class="notification text-center text-success">
-										Bạn đã thêm món thịt chó mắm tôm vào bữa sáng hôm nay
-										<i class="fas fa-check"></i>
-									</div>
-									<!-- dish 1 -->
-									<div class="dish card mb-2 p-1">
-										<div class="no-gutters">
-											<div class="">
-												<div class="info row">
-													<div
-														class="main-info col-sm-10 d-flex align-items-center"
-													>
-														<img
-															src="img/food_1.jpg"
-															class="mr-3 w-25"
-															alt="Món ăn Moki"
-														/>
-														<div>
-															<h5
-																class="font-weight-bold name"
-																data-toggle="modal"
-																data-target="#chitietmonan"
-															>
-																Sườn sào chua ngọt
-															</h5>
-															<div class="price">
-																Giá gợi ý
-																<span class="money text-danger font-weight-bold"
-																	>24.66đ/ suất</span
-																>
-																<p class="text-success small mt-2">
-																	Món ăn đang giảm giá 20% tại Moki
-																</p>
-															</div>
+							<button id="main_search_setmenu_btns" type="button" class="btn main_right_list_btn_list">
+								Menu theo bữa
+							</button>
+							<!-- menu theo mon -->
+							<div id="main_search_monans" class="main_right_search_list show">
+								<div class="main_right_bua_search">
+									<form style="margin: 0px;" class="form-inline row">
+										<div style="padding: 0px;" class="col-7">
+											<input class="form-control" type="search" placeholder="Món ăn" aria-label="Search" />
+										</div>
+										<div style="padding: 0px;" class="col-5">
+											<button style="width: 100%; padding: auto;" class="btn btn-outline-success" type="submit">
+												Tìm kiếm
+											</button>
+										</div>
+									</form>
+								</div>
+								<div class="notification text-center text-success">
+									Bạn đã thêm món thịt chó mắm tôm vào bữa sáng hôm nay
+									<i class="fas fa-check"></i>
+								</div>
+								<!-- dish 1 -->
+								<div class="dish card mb-2 p-1">
+									<div class="no-gutters">
+										<div class="">
+											<div class="info row">
+												<div class="main-info col-sm-10 d-flex align-items-center">
+													<img src="img/food_1.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
+													<div>
+														<h5 class="font-weight-bold name" data-toggle="modal" data-target="#chitietmonan">
+															Sườn sào chua ngọt
+														</h5>
+														<div class="price">
+															Giá gợi ý
+															<span class="money text-danger font-weight-bold">24.66đ/ suất</span>
+															<p class="text-success small mt-2">
+																Món ăn đang giảm giá 20% tại Moki
+															</p>
 														</div>
 													</div>
-													<div class="add col-sm-2">
-														<button
-															data-target="#add-meal-1"
-															data-toggle="collapse"
-															class="btn btn-success mt-2"
-														>
-															<i class="fas fa-plus-circle"></i>
-														</button>
-													</div>
 												</div>
-											</div>
-										</div>
-
-										<div class="collapse" id="add-meal-1">
-											<div class="card-body">
-												<div class="row">
-													<div class="col-sm-5 form-group">
-														<label for="">Thêm vào bữa</label>
-														<select name="" id="" class="form-control">
-															<option value="breakfast">Bữa sáng</option>
-															<option value="lunch">Bữa trưa</option>
-															<option value="dinner">Bữa tối</option>
-														</select>
-													</div>
-													<div class="col-sm-5 form-group">
-														<label for="">Thêm vào ngày</label>
-														<input
-															type="date"
-															class="form-control"
-															name=""
-															id=""
-														/>
-													</div>
-													<div class="col-sm-1 form-group mx-1">
-														<button class="btn btn-success add-to-meal">
-															Thêm
-														</button>
-													</div>
+												<div class="add col-sm-2">
+													<button data-target="#add-meal-1" data-toggle="collapse" class="btn btn-success mt-2">
+														<i class="fas fa-plus-circle"></i>
+													</button>
 												</div>
 											</div>
 										</div>
 									</div>
-									<!-- dish 2 -->
-									<div class="dish card mb-2 p-1">
-										<div class="no-gutters">
-											<div class="">
-												<div class="info row">
-													<div
-														class="main-info col-sm-10 d-flex align-items-center"
-													>
-														<img
-															src="img/food_2.jpg"
-															class="mr-3 w-25"
-															alt="Món ăn Moki"
-														/>
-														<div>
-															<h5
-																class="font-weight-bold name"
-																data-toggle="modal"
-																data-target="#chitietmonan"
-															>
-																Bánh mì kẹp thịt
-															</h5>
-															<div class="price">
-																Giá gợi ý
-																<span class="money text-danger font-weight-bold"
-																	>14.66đ/ suất</span
-																>
-																<p class="text-success small mt-2">
-																	Món ăn đang giảm giá 20% tại Moki
-																</p>
-															</div>
-														</div>
-													</div>
-													<div class="add col-sm-2">
-														<button
-															data-target="#add-meal-2"
-															data-toggle="collapse"
-															class="btn btn-success mt-2"
-														>
-															<i class="fas fa-plus-circle"></i>
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
 
-										<div class="collapse" id="add-meal-2">
-											<div class="card-body">
-												<div class="row">
-													<div class="col-sm-5 form-group">
-														<label for="">Thêm vào bữa</label>
-														<select name="" id="" class="form-control">
-															<option value="breakfast">Bữa sáng</option>
-															<option value="lunch">Bữa trưa</option>
-															<option value="dinner">Bữa tối</option>
-														</select>
-													</div>
-													<div class="col-sm-5 form-group">
-														<label for="">Thêm vào ngày</label>
-														<input
-															type="date"
-															class="form-control"
-															name=""
-															id=""
-														/>
-													</div>
-													<div class="col-sm-1 form-group mx-1">
-														<button class="btn btn-success add-to-meal">
-															Thêm
-														</button>
-													</div>
+									<div class="collapse" id="add-meal-1">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-sm-5 form-group">
+													<label for="">Thêm vào bữa</label>
+													<select name="" id="" class="form-control">
+														<option value="breakfast">Bữa sáng</option>
+														<option value="lunch">Bữa trưa</option>
+														<option value="dinner">Bữa tối</option>
+													</select>
+												</div>
+												<div class="col-sm-5 form-group">
+													<label for="">Thêm vào ngày</label>
+													<input type="date" class="form-control" name="" id="" />
+												</div>
+												<div class="col-sm-1 form-group mx-1">
+													<button class="btn btn-success add-to-meal">
+														Thêm
+													</button>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!-- menu theo bua -->
-								<div id="main_search_setmenus" class="main_right_search_list">
-									<div class="main_right_bua_search">
-										<form style="margin: 0px;" class="form-inline row">
-											<div style="padding: 0px;" class="col-7">
-												<input
-													class="form-control"
-													type="search"
-													placeholder="Tìm món theo bữa"
-													aria-label="Search"
-												/>
-											</div>
-											<div style="padding: 0px;" class="col-5">
-												<button
-													style="width: 100%;"
-													class="btn btn-outline-success"
-													type="submit"
-												>
-													Tìm kiếm
-												</button>
-											</div>
-										</form>
-									</div>
-									<div class="notification text-center text-success">
-										Bạn đã thêm Combo bánh mì + sữa đậu vào bữa sáng hôm nay
-										<i class="fas fa-check"></i>
-									</div>
-									<!--menu dish 1 -->
-									<div class="dish card mb-2 p-1">
-										<div class="no-gutters">
-											<div class="">
-												<div class="info row">
-													<div
-														class="main-info col-sm-10 d-flex align-items-center"
-													>
-														<img
-															src="img/food_3.jpg"
-															class="mr-3 w-25"
-															alt="Món ăn Moki"
-														/>
-														<div>
-															<h5 class="font-weight-bold name">
-																Combo bánh mì + sữa đậu
-															</h5>
-															<div class="price">
-																Giá gợi ý
-																<span class="money text-danger font-weight-bold"
-																	>150.66đ/ suất</span
-																>
-																<p class="text-success small mt-2">
-																	Combo đang giảm giá 20% tại Moki
-																</p>
-																<a href="taothucdon_chi_tiet.html">Chi tiết</a>
-															</div>
+								<!-- dish 2 -->
+								<div class="dish card mb-2 p-1">
+									<div class="no-gutters">
+										<div class="">
+											<div class="info row">
+												<div class="main-info col-sm-10 d-flex align-items-center">
+													<img src="img/food_2.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
+													<div>
+														<h5 class="font-weight-bold name" data-toggle="modal" data-target="#chitietmonan">
+															Bánh mì kẹp thịt
+														</h5>
+														<div class="price">
+															Giá gợi ý
+															<span class="money text-danger font-weight-bold">14.66đ/ suất</span>
+															<p class="text-success small mt-2">
+																Món ăn đang giảm giá 20% tại Moki
+															</p>
 														</div>
 													</div>
-													<div class="add col-sm-2">
-														<button
-															data-target="#add-combo-1"
-															data-toggle="collapse"
-															class="btn btn-success mt-2"
-														>
-															<i class="fas fa-plus-circle"></i>
-														</button>
-													</div>
 												</div>
-											</div>
-										</div>
-
-										<div class="collapse" id="add-combo-1">
-											<div class="card-body">
-												<div class="row">
-													<div class="col-sm-5 form-group">
-														<label for="">Thêm vào bữa</label>
-														<select name="" id="" class="form-control">
-															<option value="breakfast">Bữa sáng</option>
-															<option value="lunch">Bữa trưa</option>
-															<option value="dinner">Bữa tối</option>
-														</select>
-													</div>
-													<div class="col-sm-5 form-group">
-														<label for="">Thêm vào ngày</label>
-														<input
-															type="date"
-															class="form-control"
-															name=""
-															id=""
-														/>
-													</div>
-													<div class="col-sm-1 form-group mx-1">
-														<button class="btn btn-success add-to-meal">
-															Thêm
-														</button>
-													</div>
+												<div class="add col-sm-2">
+													<button data-target="#add-meal-2" data-toggle="collapse" class="btn btn-success mt-2">
+														<i class="fas fa-plus-circle"></i>
+													</button>
 												</div>
 											</div>
 										</div>
 									</div>
-									<!--menu dish 2 -->
-									<div class="dish card mb-2 p-1">
-										<div class="no-gutters">
-											<div class="">
-												<div class="info row">
-													<div
-														class="main-info col-sm-10 d-flex align-items-center"
-													>
-														<img
-															src="img/food_4.jpg"
-															class="mr-3 w-25"
-															alt="Món ăn Moki"
-														/>
-														<div>
-															<h5 class="font-weight-bold name">
-																Combo thịt gà rang + Dưa muối
-															</h5>
-															<div class="price">
-																Giá gợi ý
-																<span class="money text-danger font-weight-bold"
-																	>84.66đ/ suất</span
-																>
-																<p class="text-success small mt-2">
-																	Combo đang giảm giá 20% tại Moki
-																</p>
-																<a href="taothucdon_chi_tiet.html">Chi tiết</a>
-															</div>
-														</div>
-													</div>
-													<div class="add col-sm-2">
-														<button
-															data-target="#add-combo-2"
-															data-toggle="collapse"
-															class="btn btn-success mt-2"
-														>
-															<i class="fas fa-plus-circle"></i>
-														</button>
-													</div>
-												</div>
-											</div>
-										</div>
 
-										<div class="collapse" id="add-combo-2">
-											<div class="card-body">
-												<div class="row">
-													<div class="col-sm-5 form-group">
-														<label for="">Thêm vào bữa</label>
-														<select name="" id="" class="form-control">
-															<option value="breakfast">Bữa sáng</option>
-															<option value="lunch">Bữa trưa</option>
-															<option value="dinner">Bữa tối</option>
-														</select>
-													</div>
-													<div class="col-sm-5 form-group">
-														<label for="">Thêm vào ngày</label>
-														<input
-															type="date"
-															class="form-control"
-															name=""
-															id=""
-														/>
-													</div>
-													<div class="col-sm-1 form-group mx-1">
-														<button class="btn btn-success add-to-meal">
-															Thêm
-														</button>
-													</div>
+									<div class="collapse" id="add-meal-2">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-sm-5 form-group">
+													<label for="">Thêm vào bữa</label>
+													<select name="" id="" class="form-control">
+														<option value="breakfast">Bữa sáng</option>
+														<option value="lunch">Bữa trưa</option>
+														<option value="dinner">Bữa tối</option>
+													</select>
+												</div>
+												<div class="col-sm-5 form-group">
+													<label for="">Thêm vào ngày</label>
+													<input type="date" class="form-control" name="" id="" />
+												</div>
+												<div class="col-sm-1 form-group mx-1">
+													<button class="btn btn-success add-to-meal">
+														Thêm
+													</button>
 												</div>
 											</div>
 										</div>
 									</div>
-									<!-- end -->
 								</div>
+							</div>
+							<!-- menu theo bua -->
+							<div id="main_search_setmenus" class="main_right_search_list">
+								<div class="main_right_bua_search">
+									<form style="margin: 0px;" class="form-inline row">
+										<div style="padding: 0px;" class="col-7">
+											<input class="form-control" type="search" placeholder="Tìm món theo bữa" aria-label="Search" />
+										</div>
+										<div style="padding: 0px;" class="col-5">
+											<button style="width: 100%;" class="btn btn-outline-success" type="submit">
+												Tìm kiếm
+											</button>
+										</div>
+									</form>
+								</div>
+								<div class="notification text-center text-success">
+									Bạn đã thêm Combo bánh mì + sữa đậu vào bữa sáng hôm nay
+									<i class="fas fa-check"></i>
+								</div>
+								<!--menu dish 1 -->
+								<div class="dish card mb-2 p-1">
+									<div class="no-gutters">
+										<div class="">
+											<div class="info row">
+												<div class="main-info col-sm-10 d-flex align-items-center">
+													<img src="img/food_3.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
+													<div>
+														<h5 class="font-weight-bold name">
+															Combo bánh mì + sữa đậu
+														</h5>
+														<div class="price">
+															Giá gợi ý
+															<span class="money text-danger font-weight-bold">150.66đ/ suất</span>
+															<p class="text-success small mt-2">
+																Combo đang giảm giá 20% tại Moki
+															</p>
+															<a href="taothucdon_chi_tiet.html">Chi tiết</a>
+														</div>
+													</div>
+												</div>
+												<div class="add col-sm-2">
+													<button data-target="#add-combo-1" data-toggle="collapse" class="btn btn-success mt-2">
+														<i class="fas fa-plus-circle"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="collapse" id="add-combo-1">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-sm-5 form-group">
+													<label for="">Thêm vào bữa</label>
+													<select name="" id="" class="form-control">
+														<option value="breakfast">Bữa sáng</option>
+														<option value="lunch">Bữa trưa</option>
+														<option value="dinner">Bữa tối</option>
+													</select>
+												</div>
+												<div class="col-sm-5 form-group">
+													<label for="">Thêm vào ngày</label>
+													<input type="date" class="form-control" name="" id="" />
+												</div>
+												<div class="col-sm-1 form-group mx-1">
+													<button class="btn btn-success add-to-meal">
+														Thêm
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--menu dish 2 -->
+								<div class="dish card mb-2 p-1">
+									<div class="no-gutters">
+										<div class="">
+											<div class="info row">
+												<div class="main-info col-sm-10 d-flex align-items-center">
+													<img src="img/food_4.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
+													<div>
+														<h5 class="font-weight-bold name">
+															Combo thịt gà rang + Dưa muối
+														</h5>
+														<div class="price">
+															Giá gợi ý
+															<span class="money text-danger font-weight-bold">84.66đ/ suất</span>
+															<p class="text-success small mt-2">
+																Combo đang giảm giá 20% tại Moki
+															</p>
+															<a href="taothucdon_chi_tiet.html">Chi tiết</a>
+														</div>
+													</div>
+												</div>
+												<div class="add col-sm-2">
+													<button data-target="#add-combo-2" data-toggle="collapse" class="btn btn-success mt-2">
+														<i class="fas fa-plus-circle"></i>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="collapse" id="add-combo-2">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-sm-5 form-group">
+													<label for="">Thêm vào bữa</label>
+													<select name="" id="" class="form-control">
+														<option value="breakfast">Bữa sáng</option>
+														<option value="lunch">Bữa trưa</option>
+														<option value="dinner">Bữa tối</option>
+													</select>
+												</div>
+												<div class="col-sm-5 form-group">
+													<label for="">Thêm vào ngày</label>
+													<input type="date" class="form-control" name="" id="" />
+												</div>
+												<div class="col-sm-1 form-group mx-1">
+													<button class="btn btn-success add-to-meal">
+														Thêm
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end -->
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</header>
-		<main class="container-fluid">
-			<div class="row">
-				<!-- menu left -->
-				<div class="main_left">
-					<div class="main_left_logo">
-						<a href="index.html"
-							><img src="img/logo.png" alt="Moki tạo menu thực đơn"
-						/></a>
-					</div>
-					<div class="main_left_list">
-						<ul class="nav flex-column">
-							<li class="nav-item main_left_logoprf">
-								<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
-									Nguyễn Văn Ngọc
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" href="taothucdon.html">
-									<i class="fas fa-utensils"></i> Thực đơn của tôi</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="order_dish.html"
-									><i class="fas fa-shopping-cart"></i> Đặt món</a
-								>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link" href="order_food.html"
-									><i class="fas fa-shopping-cart"></i> Mua thực phẩm</a
-								>
-							</li>
-							<li class="nav-item">
-								<a href="order_history.html" class="nav-link">
-									<i class="fas fa-history"></i> Lịch sử đơn hàng
-								</a>
-							</li>
-							<li class="nav-item main_left_list_search">
-								<input
-									data-toggle="modal"
-									data-target="#timkiemsettp"
-									class="form-control mr-sm-2"
-									type="search"
-									placeholder="Món ăn, thực phẩm..."
-									aria-label="Search"
-								/>
-							</li>
-						</ul>
-					</div>
+		</div>
+	</header>
+	<main class="container-fluid">
+		<div class="row">
+			<!-- menu left -->
+			<div class="main_left">
+				<div class="main_left_logo">
+					<a href="index.html"><img src="img/logo.png" alt="Moki tạo menu thực đơn" /></a>
 				</div>
-				<!-- menu right -->
-				<div class="main_right">
-					<!-- chinh sua mon an theo y minh -->
-					<div class="" id="modified-meal">
-						<div class="inner p-5">
-							<div class="">
-								<h4 class="modal-title text-center">
-									Chỉnh sửa món ăn theo phong cách của bạn
-								</h4>
+				<div class="main_left_list">
+					<ul class="nav flex-column">
+						<li class="nav-item main_left_logoprf">
+							<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">
+								Nguyễn Văn Ngọc
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="taothucdon.html">
+								<i class="fas fa-utensils"></i> Thực đơn của tôi</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="order_dish.html"><i class="fas fa-shopping-cart"></i> Đặt món</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" href="order_food.html"><i class="fas fa-shopping-cart"></i> Mua thực phẩm</a>
+						</li>
+						<li class="nav-item">
+							<a href="order_history.html" class="nav-link">
+								<i class="fas fa-history"></i> Lịch sử đơn hàng
+							</a>
+						</li>
+						<li class="nav-item main_left_list_search">
+							<input data-toggle="modal" data-target="#timkiemsettp" class="form-control mr-sm-2" type="search"
+								placeholder="Món ăn, thực phẩm..." aria-label="Search" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- menu right -->
+			<div class="main_right">
+				<!-- chinh sua mon an theo y minh -->
+				<div class="" id="modified-meal">
+					<div class="inner p-5">
+						<div class="">
+							<h4 class="modal-title text-center">
+								Chỉnh sửa món ăn theo phong cách của bạn
+							</h4>
+						</div>
+						<div class="body">
+							<!-- image -->
+							<div class="row top-20 image">
+								<div class="col-3 col-sm-3 col-md-3">
+									<p><b>Hình ảnh</b></p>
+								</div>
+								<div class="chinhsuabuan_chinhsua_img text-center col-8 col-sm-8 col-md-8">
+									<img src="img/banh-mi-kep-thit-thumb.jpg" alt="" class="rounded" />
+									<label for="fileimgchinhsua" class="btn btn-primary">Thay đổi <i class="far fa-imgs"></i></label>
+									<input type="file" name="" id="fileimgchinhsua" class="d-none" />
+								</div>
 							</div>
-							<div class="body">
-								<!-- image -->
-								<div class="row top-20 image">
-									<div class="col-3 col-sm-3 col-md-3">
-										<p><b>Hình ảnh</b></p>
-									</div>
-									<div
-										class="chinhsuabuan_chinhsua_img text-center col-8 col-sm-8 col-md-8"
-									>
-										<img
-											src="img/banh-mi-kep-thit-thumb.jpg"
-											alt=""
-											class="rounded"
-										/>
-										<label for="fileimgchinhsua" class="btn btn-primary"
-											>Thay đổi <i class="far fa-imgs"></i
-										></label>
-										<input
-											type="file"
-											name=""
-											id="fileimgchinhsua"
-											class="d-none"
-										/>
-									</div>
+							<!-- name -->
+							<div class="row top-20 name">
+								<div class="col-sm-3">
+									<p><b>Tên món ăn</b></p>
 								</div>
-								<!-- name -->
-								<div class="row top-20 name">
-									<div class="col-sm-3">
-										<p><b>Tên món ăn</b></p>
-									</div>
-									<div class="col-sm-9">
-										<input
-											class="width-100 form-control"
-											type="text"
-											placeholder=""
-										/>
-									</div>
+								<div class="col-sm-9">
+									<input class="width-100 form-control" type="text" placeholder="" />
 								</div>
-								<!-- ingredients -->
-								<div class="row top-20 ingredients">
-									<div class="col-sm-3">
-										<p><b>Thành phần</b></p>
-									</div>
-									<div class="col-sm-9">
-										<!-- list ingredients -->
-										<div class="chinhsuabuan_chinhsua_listtp p-2 rounded">
-											<!--food 1 -->
-											<div class="dish food card mb-2 p-3">
-												<div class="no-gutters">
-													<div class="">
-														<div class="info row">
-															<div
-																class="main-info col-sm-10 d-flex align-items-center"
-															>
-																<div>
-																	<h5 class="font-weight-bold name">
-																		<i class="fas fa-pepper-hot"></i> Cá lọc lấy
-																		thịt
-																		<button class="delete border-0 ml-2">
-																			<i class="fas fa-trash text-danger"></i>
-																		</button>
-																	</h5>
-																	<p class="amount mb-0">
-																		200g
-																	</p>
-																</div>
+							</div>
+							<!-- ingredients -->
+							<div class="row top-20 ingredients">
+								<div class="col-sm-3">
+									<p><b>Thành phần</b></p>
+								</div>
+								<div class="col-sm-9">
+									<!-- list ingredients -->
+									<div class="chinhsuabuan_chinhsua_listtp p-2 rounded">
+										<!--food 1 -->
+										<div class="dish food card mb-2 p-3">
+											<div class="no-gutters">
+												<div class="">
+													<div class="info row">
+														<div class="main-info col-sm-10 d-flex align-items-center">
+															<div>
+																<h5 class="font-weight-bold name">
+																	<i class="fas fa-pepper-hot"></i> Cá lọc lấy
+																	thịt
+																	<button class="delete border-0 ml-2">
+																		<i class="fas fa-trash text-danger"></i>
+																	</button>
+																</h5>
+																<p class="amount mb-0">
+																	200g
+																</p>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<!--food 2 -->
-											<div class="dish food card mb-2 p-3">
-												<div class="no-gutters">
-													<div class="">
-														<div class="info row">
-															<div
-																class="main-info col-sm-10 d-flex align-items-center"
-															>
-																<div>
-																	<h5 class="font-weight-bold name">
-																		<i class="fas fa-pepper-hot"></i> Hành tây
-																		thái nhỏ
-																		<button class="delete border-0 ml-2">
-																			<i class="fas fa-trash text-danger"></i>
-																		</button>
-																	</h5>
-																	<p class="amount mb-0">
-																		400g
-																	</p>
-																</div>
+										</div>
+										<!--food 2 -->
+										<div class="dish food card mb-2 p-3">
+											<div class="no-gutters">
+												<div class="">
+													<div class="info row">
+														<div class="main-info col-sm-10 d-flex align-items-center">
+															<div>
+																<h5 class="font-weight-bold name">
+																	<i class="fas fa-pepper-hot"></i> Hành tây
+																	thái nhỏ
+																	<button class="delete border-0 ml-2">
+																		<i class="fas fa-trash text-danger"></i>
+																	</button>
+																</h5>
+																<p class="amount mb-0">
+																	400g
+																</p>
 															</div>
 														</div>
 													</div>
 												</div>
 											</div>
-											<!-- end -->
 										</div>
-										<div class="width-100 text-center mt-2">
-											<button
-												type="button"
-												data-toggle="modal"
-												data-target="#add-ingredients"
-												class="main_right_list_btn_list btn main_right_btn_active"
-											>
-												Thêm nguyên liệu
-											</button>
-										</div>
+										<!-- end -->
 									</div>
-								</div>
-								<!-- recipe -->
-								<div class="recipe">
-									<h4 class="py-3">Các bước nấu ăn</h4>
-									<div class="steps">
-										<!-- step 1 -->
-										<div class="step row">
-											<div class="col-sm-3">
-												<h4 class="font-weight-bold text-danger">Bước 1</h4>
-											</div>
-											<div class="col-sm-9">
-												<div class="form-group step">
-													<textarea
-														name=""
-														id=""
-														cols="30"
-														rows="4"
-														class="form-control"
-													></textarea>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="add-step py-3">
-										<button class="btn btn-success">
-											Thêm bước <i class="fas fa-plus-cicle"></i>
+									<div class="width-100 text-center mt-2">
+										<button type="button" data-toggle="modal" data-target="#add-ingredients"
+											class="main_right_list_btn_list btn main_right_btn_active">
+											Thêm nguyên liệu
 										</button>
 									</div>
 								</div>
 							</div>
-							<div class="footer pt-4">
-								<button
-									type="button"
-									class="btn btn-secondary"
-									data-dismiss="modal"
-								>
-									Hủy
-								</button>
-								<button type="button" class="btn btn-primary">Lưu</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<!--  -->
-
-		<!-- chi tiết món ăn và chỉnh sửa -->
-		<div
-			class="modal fade"
-			id="chitietmonan"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="exampleModalScrollableTitle"
-			aria-hidden="true"
-		>
-			<div
-				class="chitietmonanmd modal-dialog modal-dialog-scrollable"
-				role="document"
-			>
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5
-							class="modal-title text-center"
-							id="exampleModalScrollableTitle"
-						>
-							CÁ XÀO TỎI TÂY
-						</h5>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-							aria-label="Close"
-						>
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<div class="chitietmonan_nl_btncs my-2">
-							<a
-								href="taothucdon_modified_mon_an.html"
-								class="main_right_list_btn_list btn main_right_btn_active"
-							>
-								Chỉnh sửa
-							</a>
-						</div>
-						<div class="row my-2 p-3">
-							<div
-								class="chitietmonan_img col-sm-3 col-md-6 col-lg-5 col-xs-12 text-center"
-							>
-								<img src="img/banh-mi-kep-thit-thumb.jpg" alt="Món ăn Moki" />
-							</div>
-							<div class="col-12 col-sm-12 col-md-7">
-								<div class="chitietmonan_nl">
-									<!--food 1 -->
-									<div class="dish food card mb-2 p-1">
-										<div class="no-gutters">
-											<div class="">
-												<div class="info row">
-													<div
-														class="main-info col-sm-10 d-flex align-items-center"
-													>
-														<img
-															src="img/food_4.jpg"
-															class="mr-3 w-25"
-															alt="Món ăn Moki"
-														/>
-														<div>
-															<h5 class="font-weight-bold name">
-																Cá lọc lấy thịt
-															</h5>
-															<p class="amount mb-0">
-																200g
-															</p>
-															<div class="price">
-																Giá gợi ý tại moki
-																<span class="money text-danger font-weight-bold"
-																	>84.66đ</span
-																>
-															</div>
-														</div>
-													</div>
-												</div>
+							<!-- recipe -->
+							<div class="recipe">
+								<h4 class="py-3">Các bước nấu ăn</h4>
+								<div class="steps">
+									<!-- step 1 -->
+									<div class="step row">
+										<div class="col-sm-3">
+											<h4 class="font-weight-bold text-danger">Bước 1</h4>
+										</div>
+										<div class="col-sm-9">
+											<div class="form-group step">
+												<textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
 											</div>
 										</div>
 									</div>
-									<!--food 2 -->
-									<div class="dish food card mb-2 p-1">
-										<div class="no-gutters">
-											<div class="">
-												<div class="info row">
-													<div
-														class="main-info col-sm-10 d-flex align-items-center"
-													>
-														<img
-															src="img/food_5.jpg"
-															class="mr-3 w-25"
-															alt="Món ăn Moki"
-														/>
-														<div>
-															<h5 class="font-weight-bold name">
-																Hành tây
-															</h5>
-															<p class="amount mb-0">
-																100g/ 3 củ
-															</p>
-															<div class="price">
-																Giá gợi ý tại moki
-																<span class="money text-danger font-weight-bold"
-																	>34.66đ</span
-																>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--food 3 -->
-									<div class="dish food card mb-2 p-1">
-										<div class="no-gutters">
-											<div class="">
-												<div class="info row">
-													<div
-														class="main-info col-sm-10 d-flex align-items-center"
-													>
-														<img
-															src="img/food_6.jpg"
-															class="mr-3 w-25"
-															alt="Món ăn Moki"
-														/>
-														<div>
-															<h5 class="font-weight-bold name">
-																Muối
-															</h5>
-															<p class="amount mb-0">
-																50g/ 3 thìa
-															</p>
-															<div class="price">
-																Giá gợi ý tại moki
-																<span class="money text-danger font-weight-bold"
-																	>1.366đ</span
-																>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end -->
+								</div>
+								<div class="add-step py-3">
+									<button class="btn btn-success">
+										Thêm bước <i class="fas fa-plus-cicle"></i>
+									</button>
 								</div>
 							</div>
 						</div>
-						<div class="text-center chitietmonan_list_btn">
-							<button type="button" class="btn main_right_list_btn_list">
-								<i class="fas fa-thumbs-up"></i>
+						<div class="footer pt-4">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">
+								Hủy
 							</button>
-							<button type="button" class="btn main_right_list_btn_list">
-								<i class="fas fa-thumbs-down"></i>
-							</button>
-							<button type="button" class="btn main_right_list_btn_list">
-								<i class="far fa-star"></i>
-							</button>
-							<button type="button" class="btn main_right_list_btn_list">
-								<i class="fas fa-cart-plus"></i>
-							</button>
-							<button type="button" class="btn main_right_list_btn_list">
-								<i class="fas fa-sync-alt"></i>
-							</button>
-							<hr />
+							<button type="button" class="btn btn-primary">Lưu</button>
 						</div>
-						<div class="step-recipe">
-							<br />
-							<h4>Các bước nấu ăn</h4>
-							<div class="row">
-								<div class="col-10 col-sm-10 col-md-10">
-									<div class="row">
-										<div class="col-2 col-sm-2 col-md-2">
-											<p><b>Bước 1</b></p>
-										</div>
-										<div class="col-8 col-sm-8 col-md-8">
-											<p>
-												Bánh mì nướng. Bánh mì hàng đầu với bơ, bơ hạnh nhân, và
-												sau đó là mật ong. Thưởng thức!
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-10 col-sm-10 col-md-10">
-									<div class="row">
-										<div class="col-2 col-sm-2 col-md-2">
-											<p><b>Bước 2</b></p>
-										</div>
-										<div class="col-8 col-sm-8 col-md-8">
-											<p>
-												Bánh mì nướng. Bánh mì hàng đầu với bơ, bơ hạnh nhân, và
-												sau đó là mật ong. Thưởng thức!
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-10 col-sm-10 col-md-10">
-									<div class="row">
-										<div class="col-2 col-sm-2 col-md-2">
-											<p><b>Bước 3</b></p>
-										</div>
-										<div class="col-8 col-sm-8 col-md-8">
-											<p>
-												Bánh mì nướng. Bánh mì hàng đầu với bơ, bơ hạnh nhân, và
-												sau đó là mật ong. Thưởng thức!
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<a
-							href="payment.html"
-							target="_blank"
-							type="button"
-							style="margin-left: 10px;"
-							class="main_right_list_btn_list btn main_right_btn_active"
-						>
-							Đặt mua nguyên liệu
-						</a>
-						<a
-							href="payment.html"
-							target="_blank"
-							type="button"
-							style="margin-left: 10px;"
-							class="main_right_list_btn_list btn main_right_btn_active"
-						>
-							Đặt món
-						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- thêm nguyên liệu cho món ăn -->
-		<div
-			class="modal fade"
-			id="add-ingredients"
-			tabindex="-1"
-			role="dialog"
-			aria-labelledby="exampleModalScrollableTitle"
-			aria-hidden="true"
-		>
-			<div class="modal-dialog modal-dialog-scrollable" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5
-							class="modal-title text-center"
-							id="exampleModalScrollableTitle"
-						>
-							Thêm nguyên liệu cho món Cá xào tỏi tây
-						</h5>
-						<button
-							type="button"
-							class="close"
-							data-dismiss="modal"
-							aria-label="Close"
-						>
-							<span aria-hidden="true">&times;</span>
-						</button>
+	</main>
+	<!--  -->
+
+	<!-- chi tiết món ăn và chỉnh sửa -->
+	<div class="modal fade" id="chitietmonan" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+		aria-hidden="true">
+		<div class="chitietmonanmd modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center" id="exampleModalScrollableTitle">
+						CÁ XÀO TỎI TÂY
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="chitietmonan_nl_btncs my-2">
+						<a href="taothucdon_modified_mon_an.html" class="main_right_list_btn_list btn main_right_btn_active">
+							Chỉnh sửa
+						</a>
 					</div>
-					<div class="modal-body p-4">
-						<form action="">
-							<div class="row">
-								<div class="col-xs-6">
-									<div class="form-group">
-										<label for="name-ingredient">Tên nguyên liệu</label>
-										<input type="text" class="form-control" />
+					<div class="row my-2 p-3">
+						<div class="chitietmonan_img col-sm-3 col-md-6 col-lg-5 col-xs-12 text-center">
+							<img src="img/banh-mi-kep-thit-thumb.jpg" alt="Món ăn Moki" />
+						</div>
+						<div class="col-12 col-sm-12 col-md-7">
+							<div class="chitietmonan_nl">
+								<!--food 1 -->
+								<div class="dish food card mb-2 p-1">
+									<div class="no-gutters">
+										<div class="">
+											<div class="info row">
+												<div class="main-info col-sm-10 d-flex align-items-center">
+													<img src="img/food_4.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
+													<div>
+														<h5 class="font-weight-bold name">
+															Cá lọc lấy thịt
+														</h5>
+														<p class="amount mb-0">
+															200g
+														</p>
+														<div class="price">
+															Giá gợi ý tại moki
+															<span class="money text-danger font-weight-bold">84.66đ</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="col-xs-5 ml-2">
-									<div class="form-group">
-										<label for="name-ingredient">Khối lượng</label>
-										<input
-											type="text"
-											class="form-control"
-											placeholder="200g"
-										/>
+								<!--food 2 -->
+								<div class="dish food card mb-2 p-1">
+									<div class="no-gutters">
+										<div class="">
+											<div class="info row">
+												<div class="main-info col-sm-10 d-flex align-items-center">
+													<img src="img/food_5.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
+													<div>
+														<h5 class="font-weight-bold name">
+															Hành tây
+														</h5>
+														<p class="amount mb-0">
+															100g/ 3 củ
+														</p>
+														<div class="price">
+															Giá gợi ý tại moki
+															<span class="money text-danger font-weight-bold">34.66đ</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--food 3 -->
+								<div class="dish food card mb-2 p-1">
+									<div class="no-gutters">
+										<div class="">
+											<div class="info row">
+												<div class="main-info col-sm-10 d-flex align-items-center">
+													<img src="img/food_6.jpg" class="mr-3 w-25" alt="Món ăn Moki" />
+													<div>
+														<h5 class="font-weight-bold name">
+															Muối
+														</h5>
+														<p class="amount mb-0">
+															50g/ 3 thìa
+														</p>
+														<div class="price">
+															Giá gợi ý tại moki
+															<span class="money text-danger font-weight-bold">1.366đ</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- end -->
+							</div>
+						</div>
+					</div>
+					<div class="text-center chitietmonan_list_btn">
+						<button type="button" class="btn main_right_list_btn_list">
+							<i class="fas fa-thumbs-up"></i>
+						</button>
+						<button type="button" class="btn main_right_list_btn_list">
+							<i class="fas fa-thumbs-down"></i>
+						</button>
+						<button type="button" class="btn main_right_list_btn_list">
+							<i class="far fa-star"></i>
+						</button>
+						<button type="button" class="btn main_right_list_btn_list">
+							<i class="fas fa-cart-plus"></i>
+						</button>
+						<button type="button" class="btn main_right_list_btn_list">
+							<i class="fas fa-sync-alt"></i>
+						</button>
+						<hr />
+					</div>
+					<div class="step-recipe">
+						<br />
+						<h4>Các bước nấu ăn</h4>
+						<div class="row">
+							<div class="col-10 col-sm-10 col-md-10">
+								<div class="row">
+									<div class="col-2 col-sm-2 col-md-2">
+										<p><b>Bước 1</b></p>
+									</div>
+									<div class="col-8 col-sm-8 col-md-8">
+										<p>
+											Bánh mì nướng. Bánh mì hàng đầu với bơ, bơ hạnh nhân, và
+											sau đó là mật ong. Thưởng thức!
+										</p>
 									</div>
 								</div>
 							</div>
-							<input
-								type="submit"
-								class="btn btn-primary"
-								value="Thêm nguyên liệu"
-							/>
-						</form>
+						</div>
+						<div class="row">
+							<div class="col-10 col-sm-10 col-md-10">
+								<div class="row">
+									<div class="col-2 col-sm-2 col-md-2">
+										<p><b>Bước 2</b></p>
+									</div>
+									<div class="col-8 col-sm-8 col-md-8">
+										<p>
+											Bánh mì nướng. Bánh mì hàng đầu với bơ, bơ hạnh nhân, và
+											sau đó là mật ong. Thưởng thức!
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-10 col-sm-10 col-md-10">
+								<div class="row">
+									<div class="col-2 col-sm-2 col-md-2">
+										<p><b>Bước 3</b></p>
+									</div>
+									<div class="col-8 col-sm-8 col-md-8">
+										<p>
+											Bánh mì nướng. Bánh mì hàng đầu với bơ, bơ hạnh nhân, và
+											sau đó là mật ong. Thưởng thức!
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="payment.html" target="_blank" type="button" style="margin-left: 10px;"
+						class="main_right_list_btn_list btn main_right_btn_active">
+						Đặt mua nguyên liệu
+					</a>
+					<a href="payment.html" target="_blank" type="button" style="margin-left: 10px;"
+						class="main_right_list_btn_list btn main_right_btn_active">
+						Đặt món
+					</a>
 				</div>
 			</div>
 		</div>
+	</div>
+	<!-- thêm nguyên liệu cho món ăn -->
+	<div class="modal fade" id="add-ingredients" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title text-center" id="exampleModalScrollableTitle">
+						Thêm nguyên liệu cho món Cá xào tỏi tây
+					</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body p-4">
+					<form action="">
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="form-group">
+									<label for="name-ingredient">Tên nguyên liệu</label>
+									<input type="text" class="form-control" />
+								</div>
+							</div>
+							<div class="col-xs-5 ml-2">
+								<div class="form-group">
+									<label for="name-ingredient">Khối lượng</label>
+									<input type="text" class="form-control" placeholder="200g" />
+								</div>
+							</div>
+						</div>
+						<input type="submit" class="btn btn-primary" value="Thêm nguyên liệu" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		<footer class="container-fluid"></footer>
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
-			integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM="
-			crossorigin="anonymous"
-		></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"></script>
-		<script src="./js/create_menu_datepciker.js"></script>
-		<script src="js/taotdscript.js"></script>
-		<script src="./js/collapse_meal_choice_create_menu.js"></script>
-		<script src="./js/add_more_step_dish.js"></script>
-	</body>
+	<footer class="container-fluid"></footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/0.6.5/datepicker.min.js"></script>
+	<script src="./js/create_menu_datepciker.js"></script>
+	<script src="js/taotdscript.js"></script>
+	<script src="./js/collapse_meal_choice_create_menu.js"></script>
+	<script src="./js/add_more_step_dish.js"></script>
+</body>
+
 </html>

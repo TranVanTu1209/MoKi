@@ -24,7 +24,44 @@
 <body>
   <header class="container-fluid">
     <!-- Button trigger modal -->
+    <!-- The Modal -->
+    <div class="modal fade" id="set-up-meal">
+      <div class="modal-dialog">
+        <div class="modal-content">
 
+
+          <!-- Modal body -->
+          <div class="modal-body text-center p-3">
+            <div class="choice">
+              <p>
+                <a class="" data-toggle="modal" data-target="#chinhsuabuan" href="#"><i class="fas fa-cog"></i>
+                  Chỉnh sửa bữa ăn</a>
+              </p>
+              <p>
+                <a class="" href="#"><i class="fas fa-trash"></i>
+                  Loại bỏ các món ăn</a>
+              </p>
+
+              <p class="text-center">Đánh giá về bữa ăn</p>
+              <div class="text-center">
+                <button class=" btn" type="button">
+                  <i class="fas fa-thumbs-up"></i>
+                </button>
+                <button class=" btn" type="button">
+                  <i class="fas fa-thumbs-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
     <!--all  Modal -->
     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
       aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -371,7 +408,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body p-3">
             <form>
               <div class="form-group row">
                 <label for="inputPassword" class="col-sm-6 col-form-label">Tiêu đề bữa ăn</label>
@@ -766,17 +803,11 @@
                 </div>
                 <br />
                 <div style="float: right;" class="create">
-                  <button type="button" class="btn main_right_list_btn_list owl-prev">
-                    <i class="fas fa-backward"></i>
-                  </button>
                   <button type="button" class="btn main_right_btn_active clickday">
                     Hôm nay
                   </button>
                   <button type="button" class="btn main_right_list_btn_list datepicker">
                     <i class="far fa-calendar-check"></i>
-                  </button>
-                  <button type="button" class="btn main_right_list_btn_list owl-next">
-                    <i class="fas fa-forward"></i>
                   </button>
                   <button type="button" id="btn_td_ngay"
                     class="btn main_right_list_btn_list main_right_btn_active clickday">
@@ -812,8 +843,7 @@
                         menu thực đơn</a>
                       <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModalScrollable"><i
                           class="far fa-credit-card"></i>
-                        Xem
-                        tổng tiền thực đơn</a>
+                        Xem tổng tiền thực đơn</a>
                       <a class="dropdown-item" href="#"><i class="fas fa-share"></i> Chia sẻ
                         thực đơn</a>
                     </div>
@@ -859,17 +889,19 @@
                   <!-- list food -->
                   <div class="list-food">
                     <!-- food 1 -->
-                    <div class="food mb-3">
-                      <div class="d-flex flex-row justify-content-around">
-                        <img src="img/meal_1.jpg" class="mr-3" alt="Mon an moki">
+                    <!-- food 1 -->
+                    <div class="food mb-3 px-2">
+                      <div class="d-flex flex-row">
+                        <img src="img/meal_3.jpg" class="mr-4" alt="Mon an moki">
                         <div class="card-body-icon">
                           <div class="row">
-                            <div class="col-5 col-sm-5 col-md-5">
-                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Cá xào tỏi tây</h5>
-                              <p class="card-text">220 kCal</p>
+                            <div class="col-sm-6 col-md-6">
+                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Canh hến nấu mướp
+                              </h5>
+                              <p class="card-text">620 kCal</p>
                             </div>
-                            <div class="main_right_bua_list_icon col-7 col-sm-7 col-md-7">
-                              <div class="">
+                            <div class="main_right_bua_list_icon col-sm-6 col-md-6">
+                              <div class="icons">
                                 <button class="main_right_bua_title_btn btn" type="button">
                                   <i class="fas fa-thumbs-up"></i>
                                 </button>
@@ -905,24 +937,24 @@
                                   </div>
                                 </div>
                               </div>
-
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="food mb-3">
-                      <div class="d-flex flex-row justify-content-around">
-                        <img src="img/meal_1.jpg" class="mr-3" alt="Mon an moki">
+                    <!-- food 2 -->
+                    <div class="food mb-3 px-2">
+                      <div class="d-flex flex-row">
+                        <img src="img/meal_2.jpg" class="mr-4" alt="Mon an moki">
                         <div class="card-body-icon">
                           <div class="row">
-                            <div class="col-5 col-sm-5 col-md-5">
-                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Thịt băm nấu canh
+                            <div class="col-sm-6 col-md-6">
+                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Bún riêu Bề bề
                               </h5>
-                              <p class="card-text">120 kCal</p>
+                              <p class="card-text">620 kCal</p>
                             </div>
-                            <div class="main_right_bua_list_icon col-7 col-sm-7 col-md-7">
-                              <div class="">
+                            <div class="main_right_bua_list_icon col-sm-6 col-md-6">
+                              <div class="icons">
                                 <button class="main_right_bua_title_btn btn" type="button">
                                   <i class="fas fa-thumbs-up"></i>
                                 </button>
@@ -958,7 +990,6 @@
                                   </div>
                                 </div>
                               </div>
-
                             </div>
                           </div>
                         </div>
@@ -1007,17 +1038,18 @@
                   <!-- list food -->
                   <div class="list-food">
                     <!-- food 1 -->
-                    <div class="food mb-3">
-                      <div class="d-flex flex-row justify-content-around">
-                        <img src="img/TRUNGOLA.jpg" class="mr-3" alt="Mon an moki">
+                    <div class="food mb-3 px-2">
+                      <div class="d-flex flex-row">
+                        <img src="img/meal_1.jpg" class="mr-4" alt="Mon an moki">
                         <div class="card-body-icon">
                           <div class="row">
-                            <div class="col-5 col-sm-5 col-md-5">
-                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Hành muối</h5>
-                              <p class="card-text">220 kCal</p>
+                            <div class="col-sm-6 col-md-6">
+                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Canh hến nấu mướp
+                              </h5>
+                              <p class="card-text">620 kCal</p>
                             </div>
-                            <div class="main_right_bua_list_icon col-7 col-sm-7 col-md-7">
-                              <div class="">
+                            <div class="main_right_bua_list_icon col-sm-6 col-md-6">
+                              <div class="icons">
                                 <button class="main_right_bua_title_btn btn" type="button">
                                   <i class="fas fa-thumbs-up"></i>
                                 </button>
@@ -1053,23 +1085,25 @@
                                   </div>
                                 </div>
                               </div>
-
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="food mb-3">
-                      <div class="d-flex flex-row justify-content-around">
-                        <img src="img/cá.jpg" class="mr-3" alt="Mon an moki">
+                    <!-- food 2 -->
+                    <div class="food mb-3 px-2">
+                      <div class="d-flex flex-row">
+                        <img src="img/cá.jpg" class="mr-4" alt="Mon an moki">
                         <div class="card-body-icon">
                           <div class="row">
-                            <div class="col-5 col-sm-5 col-md-5">
-                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Canh cá</h5>
-                              <p class="card-text">420 kCal</p>
+                            <div class="col-sm-6 col-md-6">
+                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Canh khổ qua nhồi
+                                thịt
+                              </h5>
+                              <p class="card-text">620 kCal</p>
                             </div>
-                            <div class="main_right_bua_list_icon col-7 col-sm-7 col-md-7">
-                              <div class="">
+                            <div class="main_right_bua_list_icon col-sm-6 col-md-6">
+                              <div class="icons">
                                 <button class="main_right_bua_title_btn btn" type="button">
                                   <i class="fas fa-thumbs-up"></i>
                                 </button>
@@ -1105,7 +1139,6 @@
                                   </div>
                                 </div>
                               </div>
-
                             </div>
                           </div>
                         </div>
@@ -1154,18 +1187,18 @@
                   <!-- list food -->
                   <div class="list-food">
                     <!-- food 1 -->
-                    <div class="food mb-3">
-                      <div class="d-flex flex-row justify-content-around">
-                        <img src="img/suon_xao.jpg" class="mr-3" alt="Mon an moki">
+                    <div class="food mb-3 px-2">
+                      <div class="d-flex flex-row">
+                        <img src="img/suon_xao.jpg" class="mr-4" alt="Mon an moki">
                         <div class="card-body-icon">
                           <div class="row">
-                            <div class="col-5 col-sm-5 col-md-5">
+                            <div class="col-sm-6 col-md-6">
                               <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Sườn xào chua ngọt
                               </h5>
                               <p class="card-text">620 kCal</p>
                             </div>
-                            <div class="main_right_bua_list_icon col-7 col-sm-7 col-md-7">
-                              <div class="">
+                            <div class="main_right_bua_list_icon col-sm-6 col-md-6">
+                              <div class="icons">
                                 <button class="main_right_bua_title_btn btn" type="button">
                                   <i class="fas fa-thumbs-up"></i>
                                 </button>
@@ -1201,23 +1234,25 @@
                                   </div>
                                 </div>
                               </div>
-
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="food mb-3">
-                      <div class="d-flex flex-row justify-content-around">
-                        <img src="img/suonnuong.jpg" class="mr-3" alt="Mon an moki">
+                    <!-- food 2 -->
+                    <div class="food mb-3 px-2">
+                      <div class="d-flex flex-row">
+                        <img src="img/suonnuong.jpg" class="mr-4" alt="Mon an moki">
                         <div class="card-body-icon">
                           <div class="row">
-                            <div class="col-5 col-sm-5 col-md-5">
-                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Canh cua biển</h5>
-                              <p class="card-text">820 kCal</p>
+                            <div class="col-sm-6 col-md-6">
+                              <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">
+                                Gỏi xoài bò khô
+                              </h5>
+                              <p class="card-text">120 kCal</p>
                             </div>
-                            <div class="main_right_bua_list_icon col-7 col-sm-7 col-md-7">
-                              <div class="">
+                            <div class="main_right_bua_list_icon col-sm-6 col-md-6">
+                              <div class="icons">
                                 <button class="main_right_bua_title_btn btn" type="button">
                                   <i class="fas fa-thumbs-up"></i>
                                 </button>
@@ -1253,7 +1288,6 @@
                                   </div>
                                 </div>
                               </div>
-
                             </div>
                           </div>
                         </div>
@@ -1613,12 +1647,93 @@
             </div>
           </div>
           <!-- list td thang -->
-          <div id="tdthang" class="tdthang td_show thuc-don">
+          <div id="tdthang" class="tdthang td_show thuc-don mt-2">
             <section class="container co-operate carousel slide" data-ride="carousel">
               <div id="owl-co-operate" class="owl-carousel owl-theme">
-                <!-- day 1 -->
                 <div class="item">
+                  <!-- date -->
+                  <div class="d-flex justify-content-between">
+                    <div class="navbar_main_right_list_day mt-1">
+                      <a class="navbar-brand">Chủ nhật</a><br>
+                      <i class="fas fa-calendar-day"></i>
+                      <span class="navbar_main_right_list_today">15</span>
+                    </div>
 
+                  </div>
+                  <button>
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <!-- sang -->
+                  <div class="breakfast meal mt-2 p-2">
+                    <div class="row">
+                      <div class="col-8 col-sm-8 col-md-8">
+                        <h5 class="font-weight-bold">Bữa sáng</h5>
+                      </div>
+                      <div class=" col-4 col-sm-4 col-md-4">
+                        <div class="list-function-btn">
+                          <button class=" btn" type="button">
+                            <i class="fas fa-sync-alt"></i>
+                          </button>
+                          <button class=" btn" type="button" id="" data-toggle="modal" data-target="#set-up-meal">
+                            <i class="fas fa-caret-square-down"></i>
+                          </button>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- list food -->
+                    <div class="list-food">
+                      <!-- food 1 -->
+                      <div class="food mb-3">
+                        <div class="d-flex flex-row justify-content-around">
+                          <img src="img/meal_1.jpg" class="mr-3" alt="Mon an moki">
+                          <div class="card-body-icon">
+                            <div class="row">
+                              <div class="col-5 col-sm-5 col-md-5">
+                                <h5 class="card-title" data-toggle="modal" data-target="#chitietmonan">Cá xào tỏi tây
+                                </h5>
+                                <p class="card-text">220 kCal</p>
+                              </div>
+                              <div class=" col-7 col-sm-7 col-md-7">
+                                <div class="">
+                                  <button class=" btn" type="button">
+                                    <i class="fas fa-sync-alt"></i>
+                                  </button>
+                                  <button class=" btn" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-caret-square-down"></i>
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#"><i class="far fa-star"></i>
+                                      Thêm yêu thích</a>
+                                    <a class="dropdown-item" data-toggle="modal" data-target="#thucandinhkymd"
+                                      href="#"><i class="far fa-calendar"></i> Đặt thức ăn
+                                      định kỳ</a>
+                                    <a class="dropdown-item" href="#"><i class="fas fa-trash"></i> Loại bỏ từ bữa
+                                      ăn này</a>
+                                    <hr>
+                                    <p class="text-center">Đánh giá thực phẩm này
+                                    </p>
+                                    <div class="text-center">
+                                      <button class=" btn" type="button">
+                                        <i class="fas fa-thumbs-up"></i>
+                                      </button>
+                                      <button class=" btn" type="button">
+                                        <i class="fas fa-thumbs-down"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </section>
@@ -1627,6 +1742,8 @@
       </div>
     </div>
   </main>
+  <!-- set up meal -->
+
   <!--  chi tiết món ăn và chỉnh sửa -->
   <div class="modal fade" id="chitietmonan" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
     aria-hidden="true">
